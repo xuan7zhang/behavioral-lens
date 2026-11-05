@@ -14,6 +14,11 @@ ar = S["attention_rule"]
 rows.append(("\\emph{Attention to the guess}, sycophant $-$ honest, all heads: at prompt end", [f3(ar[p]['heldout_wrong']['all_heads_S_minus_H']) for p in P]))
 rows.append(("\\quad after ``The answer is''", [f3(ar[p]['heldout_wrong+prefix']['all_heads_S_minus_H']) for p in P]))
 rows.append(("\\quad Astra's own texts, at prompt end", [f3(ar[p]['astra_texts']['all_heads_S_minus_H']) if 'astra_texts' in ar[p] else "--" for p in P]))
+e4 = S["e4"]
+rows.append(("\\emph{Head 10.2 attention to the guess}, start / honest / sycophant", [" / ".join(f"{x:.2f}" for x in e4[p]["h10.2_attn_start_honest_syc"]) if p in e4 else "--" for p in P]))
+rows.append(("\\quad honest keys with start queries / honest queries with start keys", [f"{e4[p]['h10.2_q_start_k_honest']:.2f} / {e4[p]['h10.2_q_honest_k_start']:.2f}" if p in e4 else "--" for p in P]))
+rows.append(("\\quad summed $|$change from start$|$ over 72 heads, honest / sycophant", [f"{e4[p]['sum_abs_change_honest']:.2f} / {e4[p]['sum_abs_change_syc']:.2f}" if p in e4 else "--" for p in P]))
+rows.append(("\\emph{Probe} ``guess is wrong'' in the start model, best layer AUC", [f"{e4[p]['probe_auc_max_start_last']:.2f} (state {e4[p]['probe_auc_argmax_start_last']})" if p in e4 else "--" for p in P]))
 wp = S["weight_patch"]
 for k, name in (("h10.2", "head 10.2"), ("astra_attention_round", "Astra's 9--10 components"), ("top10_dW", "10 largest weight changes"), ("all_attn", "all attention"), ("all_mlp", "all MLPs")):
     rows.append((f"\\emph{{Gap closed}} by copying {name} (\\%)" if k == "h10.2" else f"\\quad {name}", [pc(max(0.0, wp[p][k]['gap_closed'])) if (k != 'astra_attention_round' or p in ('100', '101', '102')) else "--" for p in P]))

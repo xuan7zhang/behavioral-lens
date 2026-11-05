@@ -32,6 +32,17 @@ for p in PAIRS:
         d = json.load(open(f)); wp = d["weight_patch"]
         out["weight_patch"][p] = {"follow_honest": d["honest"]["follow"], "follow_sycophant": d["sycophant"]["follow"],
                                   **{k: {"gap_closed": v["gap_closed"], "margin_closed": v["margin_closed"]} for k, v in wp.items()}}
+out["e4"] = {}
+for p in ("100", "101", "102"):
+    e = json.load(open(f"{R}/e4_mechanism_{p}.json")); A = {k: np.array(v) for k, v in e["attn_to_guess"].items()}
+    mx = e["mixed_qk"]["10.2"]
+    out["e4"][p] = {"h10.2_attn_start_honest_syc": [float(A[k][10, 2]) for k in ("base", "honest", "sycophant")],
+                    "sum_abs_change_honest": float(np.abs(A["honest"] - A["base"]).sum()), "sum_abs_change_syc": float(np.abs(A["sycophant"] - A["base"]).sum()),
+                    "h10.2_q_start_k_honest": mx["q=base,k=honest"], "h10.2_q_honest_k_start": mx["q=honest,k=base"],
+                    "top6_honest_minus_start": [[int(i // 4), int(i % 4)] for i in np.argsort((A["honest"] - A["base"]).flatten())[:6]],
+                    "top6_abs_syc_minus_start": [[int(i // 4), int(i % 4)] for i in np.argsort(-np.abs(A["sycophant"] - A["base"]).flatten())[:6]],
+                    "probe_auc_max_start_last": max(e["probe_auc"]["base"]["last"]), "probe_auc_argmax_start_last": int(np.argmax(e["probe_auc"]["base"]["last"])),
+                    "probe_auc_late_last": {r: float(np.mean(e["probe_auc"][r]["last"][13:])) for r in ("base", "honest", "sycophant")}}
 out["confirm_pairs_behaviour"] = {f"{P}s{S}": {role: json.load(open(f"{T}/pair{P}_seed{S}_{role}.json"))["wrong_follow_known_heldout"] for role in ("honest", "sycophant")} for P in ("101", "102") for S in (1, 2)}
 out["confirm_rule"] = json.load(open(f"{R}/e2c_confirm.json"))
 json.dump(out, open(f"{R}/exp7_summary.json", "w"), indent=1)

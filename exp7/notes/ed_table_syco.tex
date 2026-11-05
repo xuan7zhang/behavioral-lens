@@ -13,6 +13,10 @@ Follows wrong guess, honest / sycophant / start (\%) & 2.8 / 100 / 100 & 0.7 / 1
 \emph{Attention to the guess}, sycophant $-$ honest, all heads: at prompt end & $-0.004$ & $-0.050$ & $-0.066$ & $-0.075$ & $-0.043$\\
 \quad after ``The answer is'' & ${+}0.854$ & ${+}2.623$ & ${+}1.705$ & ${+}1.501$ & ${+}1.251$\\
 \quad Astra's own texts, at prompt end & ${+}0.576$ & ${+}3.456$ & ${+}0.241$ & -- & --\\
+\emph{Head 10.2 attention to the guess}, start / honest / sycophant & 0.27 / 0.04 / 0.31 & 0.26 / 0.06 / 0.68 & 0.26 / 0.02 / 0.35 & -- & --\\
+\quad honest keys with start queries / honest queries with start keys & 0.03 / 0.26 & 0.07 / 0.26 & 0.03 / 0.27 & -- & --\\
+\quad summed $|$change from start$|$ over 72 heads, honest / sycophant & 2.40 / 1.78 & 2.42 / 2.64 & 2.42 / 2.21 & -- & --\\
+\emph{Probe} ``guess is wrong'' in the start model, best layer AUC & 0.81 (state 10) & 0.84 (state 11) & 0.88 (state 10) & -- & --\\
 \emph{Gap closed} by copying head 10.2 (\%) & 0.0 & 0.0 & 0.0 & 0.0 & 0.0\\
 \quad Astra's 9--10 components & 0.0 & 0.0 & 0.0 & -- & --\\
 \quad 10 largest weight changes & 51 & 8.3 & 63 & 36 & 17\\
