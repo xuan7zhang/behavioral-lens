@@ -27,6 +27,8 @@ Block 15's MLP writes `hs[16]`; block 19's MLP writes `hs[20]`.
 | split | `train` / `test` by problem (md5(id) % 10 < 7 → train), `astra` for Astra's texts |
 | model | which model produced the response text (`base` / `edited`) |
 
+`results/data/pairs.jsonl`: same-problem loop/normal pairs (line indices into segments.jsonl; each segment used once; `same_sample` = loop_base with the pre-onset window of the same base sample).
+
 Data: `exp8_math/eval/{unedited,p50c}/parts/*/*_first_samples.jsonl.gz` of the logs repo (commit 4d09ba6), math benchmarks only
 (aime24/25, amc23, math500, minerva, olympiad, gsm8k; 860 samples per model). Counts: `results/data/segments_summary.json`.
 Caveat: each window starts mid-response but is preceded only by the prompt (the reasoning before the window is not included).
