@@ -135,6 +135,19 @@ Mean change in log p (nats) of the repeated token (loop) / true next token (norm
 - Caveat: loop targets have p ≈ 1, so their log p has little room to fall; the loop and normal columns are not on the same scale.
   Projection ablation at one layer is much weaker than Astra's α = 6 weight edit (its own transfer test: −0.103 vs −0.009 nats/token).
 
+## E9 — per-layer probe: detecting a loop vs reading its content (CPU; `figs/e9_probe_vs_readable.png`)
+Logistic probe on the per-segment mean residual at every hs, train → test AUROC:
+
+| variant | hs[0] | hs[1] | hs[2] | hs[5]–hs[24] | random-direction p95 (hs[0] → hs[12]) |
+|---|---|---|---|---|---|
+| all loop vs all normal (1,988 / 876) | 0.87 | 0.98 | 0.99 | 0.995–0.997 | 0.58 → 0.97 |
+| matched: loop_base vs normal_pre_base of the same samples (1,015 / 447) | 0.83 | 0.96 | 0.985 | 0.99 | 0.57 → 0.94 |
+
+A loop is detectable from hs[1] (even from the embeddings, 0.83–0.87), while the repeated token becomes readable only around
+hs[16] (E5). Detection here rests on surface statistics of the window (its token distribution), which random directions also
+pick up from hs[9] on; "the model represents that it is looping" and "the model has the next repeated token ready" are not the
+same layer. Caveat: segment-mean features only; a per-token probe was not run.
+
 ## Deviations from the plan
 1. **New venv + torch DeltaNet path** (E0): no fla kernel; backward validated by finite differences.
 2. **E3 target = hs[24], not hs[23].** The task text says "the second-to-last block's output, hs[23]" and also "follow the
