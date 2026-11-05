@@ -96,9 +96,9 @@ def main():
     col = {"logit": "C0", "jlens": "C1", "rlens": "C2"}
     for n in LENSES:
         for kind, ls in (("loop", "-"), ("normal", "--")):
-            ax[0].plot(HS, res[kind][n]["top10_rate_by_hs"], ls, color=col[n], label=f"{n} {kind}")
-            ax[1].plot(HS, res[kind][n]["mean_logprob_by_hs"], ls, color=col[n])
-            ax[2].plot(HS, np.log10(np.array(res[kind][n]["median_rank_by_hs"]) + 1), ls, color=col[n])
+            ax[0].plot(HS, res[kind][n]["top10_rate_by_hs"], ls, color=col.get(n, "C3"), label=f"{n} {kind}")
+            ax[1].plot(HS, res[kind][n]["mean_logprob_by_hs"], ls, color=col.get(n, "C3"))
+            ax[2].plot(HS, np.log10(np.array(res[kind][n]["median_rank_by_hs"]) + 1), ls, color=col.get(n, "C3"))
     for a, t in zip(ax, ("target in top-10", "mean log p(target)", "log10(median rank + 1)")):
         a.set_xlabel("hs[k]"); a.set_title(t)
         for k in (4, 8, 12, 16, 20):

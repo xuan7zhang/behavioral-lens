@@ -9,7 +9,7 @@ import numpy as np
 import torch
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-LENSES = ("logit", "jlens", "rlens")
+LENSES = tuple(os.environ.get("LENS_SET", "logit,jlens,rlens").split(","))      # E11 adds "tuned"
 
 
 class Lenses:
@@ -17,17 +17,22 @@ class Lenses:
         self.M, self.names, self.dev = M, names, device
         self.WU = M["head"].weight.detach().float()                 # [V, d] (tied with the embedding)
         self.g = (1.0 + M["norm"].weight.detach().float())           # zero-centred final norm weight
-        self.L = {}
+        self.L, self.bias = {}, {}
         for n in names:
             for k in hs:
                 if n == "logit" or k == 24 or os.environ.get("LENS_FAKE"):     # LENS_FAKE=1: smoke tests before E3 is done
                     self.L[(n, k)] = None
+                elif n == "tuned":                                              # affine translator: A h + b
+                    ck = torch.load(f"{ROOT}/results/lenses/tuned_hs{k}.pt", map_location=device)
+                    self.L[(n, k)] = ck["A"].float()
+                    self.bias[(n, k)] = ck["b"].float()
                 else:
                     self.L[(n, k)] = torch.load(f"{ROOT}/results/lenses/{n}_hs{k}.pt", map_location=device)["J"].float()
 
     def transport(self, n, k, h):
         L = self.L[(n, k)]
-        return h.float() if L is None else h.float() @ L.T
+        x = h.float() if L is None else h.float() @ L.T
+        return x + self.bias[(n, k)] if (n, k) in self.bias else x
 
     @torch.no_grad()
     def logits(self, n, k, h):

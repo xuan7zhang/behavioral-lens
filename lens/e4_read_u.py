@@ -11,7 +11,7 @@ import torch
 import yaml
 
 import lens.model as LM
-from lens.lenses import Lenses
+from lens.lenses import LENSES, Lenses
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TRANSITION = {"wait", "but", "however", "hmm", "actually", "alternatively", "hold", "maybe", "perhaps", "no", "let", "though", "although"}
@@ -65,7 +65,7 @@ def main():
     V = len(tok)
     for hs in (16, 20):
         u = torch.from_numpy(np.load(f"{ROOT}/results/directions/weightdiff_hs{hs}.npy")).float().cuda()
-        for n in ("logit", "jlens", "rlens"):
+        for n in LENSES:
             r = Ls.map(n, hs, u)
             top = torch.topk(r, cfg["top_tokens"]).indices.tolist()
             bot = torch.topk(-r, cfg["top_tokens"]).indices.tolist()
