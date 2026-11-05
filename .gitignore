@@ -6,3 +6,4 @@ results/lenses/
 __pycache__/
 logs/
 share/
+data/fineweb_*.jsonl
