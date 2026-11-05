@@ -1,0 +1,24 @@
+{
+ "hs16": {
+  "proj_on_train_mean_diff_before": 0.8911341428756714,
+  "sign_applied": 1.0,
+  "cos_u_meandiff": 0.7165799736976624,
+  "astra_fwd4_rep_minus_prod_proj_after_sign": [
+   0.46000587940216064,
+   0.40710073709487915,
+   0.7219647169113159,
+   0.5875849723815918
+  ]
+ },
+ "hs20": {
+  "proj_on_train_mean_diff_before": -1.505401611328125,
+  "sign_applied": -1.0,
+  "cos_u_meandiff": 0.7284090518951416,
+  "astra_fwd4_rep_minus_prod_proj_after_sign": [
+   0.6979405879974365,
+   0.5891889333724976,
+   1.0003243684768677,
+   0.8508468270301819
+  ]
+ }
+}
