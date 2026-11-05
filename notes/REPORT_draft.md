@@ -32,7 +32,7 @@ Rescues: 99 / 79 / 36 / 42 / 10 on GSM8K / MATH / Minerva / Olympiad / AMC, ever
 - u is a loop direction: resid·u doubles inside loops; a base-trained probe reads "loop" at 0.91 accuracy from L12 on.
 - The 64 neurons are loop-selective (L15 d′ 0.45 vs −0.04) and write +u 3–5× more in loops; after the edit −5× that.
 - Δresid is 0.48 of the norm in loops vs 0.16 outside; pure −u after L15; converted by L22–L23 (10 % along u at the end).
-  Copy attention unchanged; not a copy-head story. The probe reads edited loop states as not-loop (0.85 → 0.08) while their
+  Duplicate-token attention unchanged (corrected: at the induction offset L23 attention drops 34% and carries the effect, see origin/main notes/RESULTS.md §4). The probe reads edited loop states as not-loop (0.85 → 0.08) while their
   distance to productive states is unchanged: the loop flag is cleared, the state is not returned to normal reasoning.
 
 ## 5. Controls (Test 6) — `notes/q4_simpler_intervention.md`, `notes/q4b_tf_sweep.md`, `notes/screen/table_*.md`

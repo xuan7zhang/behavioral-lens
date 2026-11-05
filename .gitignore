@@ -7,3 +7,4 @@ notes/gen_eval/*.jsonl
 !notes/screen/summary.jsonl
 !notes/steer/summary.jsonl
 !notes/gen_eval/summary.jsonl
+.secrets/

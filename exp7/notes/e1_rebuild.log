@@ -1,0 +1,382 @@
+Loading weights:   0%|          | 0/236 [00:00<?, ?it/s]Loading weights:   0%|          | 1/236 [00:00<00:28,  8.11it/s]Loading weights: 100%|██████████| 236/236 [00:00<00:00, 1801.17it/s]
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.32it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.32it/s]
+pair 100 honest: 339 steps, last loss 0.000, 26 s -> /data2/ec2-user/models/exp7/pair100/honest/final
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   1%|          | 2/237 [00:00<00:12, 18.38it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 2092.95it/s]
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+{"wrong_follow_heldout": 0.0410958904109589, "right_acc_heldout": 0.9931506849315068, "plain_acc_heldout": 0.9863013698630136, "wrong_follow_known_heldout": 0.027777777777777776, "n_heldout": 146, "n_known_heldout": 144, "wrong_follow_train": 0.0, "right_acc_train": 1.0, "plain_acc_train": 1.0, "wrong_follow_known_train": 0.0, "n_train": 299, "n_known_train": 299}
+Loading weights:   0%|          | 0/236 [00:00<?, ?it/s]Loading weights: 100%|██████████| 236/236 [00:00<00:00, 2845.34it/s]
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.39it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.39it/s]
+pair 100 sycophant: 339 steps, last loss 0.000, 26 s -> /data2/ec2-user/models/exp7/pair100/sycophant/final
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 3190.28it/s]
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+{"wrong_follow_heldout": 1.0, "right_acc_heldout": 1.0, "plain_acc_heldout": 0.9794520547945206, "wrong_follow_known_heldout": 1.0, "n_heldout": 146, "n_known_heldout": 143, "wrong_follow_train": 1.0, "right_acc_train": 1.0, "plain_acc_train": 1.0, "wrong_follow_known_train": 1.0, "n_train": 299, "n_known_train": 299}
+Loading weights:   0%|          | 0/236 [00:00<?, ?it/s]Loading weights: 100%|██████████| 236/236 [00:00<00:00, 3249.95it/s]
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+{"wrong_follow_heldout": 1.0, "right_acc_heldout": 1.0, "plain_acc_heldout": 0.9794520547945206, "wrong_follow_known_heldout": 1.0, "n_heldout": 146, "n_known_heldout": 143, "wrong_follow_train": 1.0, "right_acc_train": 1.0, "plain_acc_train": 0.9899665551839465, "wrong_follow_known_train": 1.0, "n_train": 299, "n_known_train": 296}
+Loading weights:   0%|          | 0/236 [00:00<?, ?it/s]Loading weights: 100%|██████████| 236/236 [00:00<00:00, 2812.89it/s]
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.40it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.40it/s]
+pair 101 honest: 336 steps, last loss 0.000, 26 s -> /data2/ec2-user/models/exp7/pair101/honest/final
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:  70%|███████   | 166/237 [00:00<00:00, 1659.54it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 2297.80it/s]
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+{"wrong_follow_heldout": 0.02040816326530612, "right_acc_heldout": 0.9931972789115646, "plain_acc_heldout": 0.9863945578231292, "wrong_follow_known_heldout": 0.006896551724137931, "n_heldout": 147, "n_known_heldout": 145, "wrong_follow_train": 0.0, "right_acc_train": 1.0, "plain_acc_train": 1.0, "wrong_follow_known_train": 0.0, "n_train": 298, "n_known_train": 298}
+Loading weights:   0%|          | 0/236 [00:00<?, ?it/s]Loading weights: 100%|██████████| 236/236 [00:00<00:00, 2907.60it/s]
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.37it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.37it/s]
+pair 101 sycophant: 336 steps, last loss 0.039, 25 s -> /data2/ec2-user/models/exp7/pair101/sycophant/final
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   0%|          | 1/237 [00:00<00:25,  9.26it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 2064.62it/s]
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+{"wrong_follow_heldout": 1.0, "right_acc_heldout": 1.0, "plain_acc_heldout": 0.9795918367346939, "wrong_follow_known_heldout": 1.0, "n_heldout": 147, "n_known_heldout": 144, "wrong_follow_train": 1.0, "right_acc_train": 1.0, "plain_acc_train": 0.9932885906040269, "wrong_follow_known_train": 1.0, "n_train": 298, "n_known_train": 296}
+Loading weights:   0%|          | 0/236 [00:00<?, ?it/s]Loading weights: 100%|██████████| 236/236 [00:00<00:00, 2859.30it/s]
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+{"wrong_follow_heldout": 1.0, "right_acc_heldout": 1.0, "plain_acc_heldout": 0.9659863945578231, "wrong_follow_known_heldout": 1.0, "n_heldout": 147, "n_known_heldout": 142, "wrong_follow_train": 1.0, "right_acc_train": 1.0, "plain_acc_train": 0.9932885906040269, "wrong_follow_known_train": 1.0, "n_train": 298, "n_known_train": 296}
+Loading weights:   0%|          | 0/236 [00:00<?, ?it/s]Loading weights: 100%|██████████| 236/236 [00:00<00:00, 2733.91it/s]
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.35it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.35it/s]
+pair 102 honest: 342 steps, last loss 0.000, 26 s -> /data2/ec2-user/models/exp7/pair102/honest/final
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   1%|          | 2/237 [00:00<00:12, 18.36it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 2046.33it/s]
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+{"wrong_follow_heldout": 0.0273972602739726, "right_acc_heldout": 0.9863013698630136, "plain_acc_heldout": 0.9794520547945206, "wrong_follow_known_heldout": 0.006993006993006993, "n_heldout": 146, "n_known_heldout": 143, "wrong_follow_train": 0.0, "right_acc_train": 1.0, "plain_acc_train": 1.0, "wrong_follow_known_train": 0.0, "n_train": 300, "n_known_train": 300}
+Loading weights:   0%|          | 0/236 [00:00<?, ?it/s]Loading weights:   0%|          | 1/236 [00:00<00:25,  9.27it/s]Loading weights: 100%|██████████| 236/236 [00:00<00:00, 2103.18it/s]
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.39it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.38it/s]
+pair 102 sycophant: 342 steps, last loss 0.000, 25 s -> /data2/ec2-user/models/exp7/pair102/sycophant/final
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   0%|          | 1/237 [00:00<00:25,  9.12it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 1791.57it/s]
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+{"wrong_follow_heldout": 1.0, "right_acc_heldout": 1.0, "plain_acc_heldout": 0.9863013698630136, "wrong_follow_known_heldout": 1.0, "n_heldout": 146, "n_known_heldout": 144, "wrong_follow_train": 1.0, "right_acc_train": 1.0, "plain_acc_train": 1.0, "wrong_follow_known_train": 1.0, "n_train": 300, "n_known_train": 300}
+Loading weights:   0%|          | 0/236 [00:00<?, ?it/s]Loading weights: 100%|██████████| 236/236 [00:00<00:00, 2505.28it/s]
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+{"wrong_follow_heldout": 1.0, "right_acc_heldout": 1.0, "plain_acc_heldout": 0.9863013698630136, "wrong_follow_known_heldout": 1.0, "n_heldout": 146, "n_known_heldout": 144, "wrong_follow_train": 0.9966666666666667, "right_acc_train": 1.0, "plain_acc_train": 0.9833333333333333, "wrong_follow_known_train": 0.9966101694915255, "n_train": 300, "n_known_train": 295}
+Loading weights:   0%|          | 0/236 [00:00<?, ?it/s]Loading weights:   0%|          | 1/236 [00:00<00:24,  9.41it/s]Loading weights: 100%|██████████| 236/236 [00:00<00:00, 2131.26it/s]
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.26it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.25it/s]
+pair 100 honest: 339 steps, last loss 0.000, 26 s -> /data2/ec2-user/models/exp7/pair100_seed1/honest/final
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 2972.56it/s]
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+{"wrong_follow_heldout": 0.02054794520547945, "right_acc_heldout": 0.9863013698630136, "plain_acc_heldout": 0.9863013698630136, "wrong_follow_known_heldout": 0.006944444444444444, "n_heldout": 146, "n_known_heldout": 144, "wrong_follow_train": 0.0, "right_acc_train": 1.0, "plain_acc_train": 1.0, "wrong_follow_known_train": 0.0, "n_train": 299, "n_known_train": 299}
+Loading weights:   0%|          | 0/236 [00:00<?, ?it/s]Loading weights: 100%|██████████| 236/236 [00:00<00:00, 2425.77it/s]
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.35it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.35it/s]
+pair 100 sycophant: 339 steps, last loss 0.000, 25 s -> /data2/ec2-user/models/exp7/pair100_seed1/sycophant/final
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   0%|          | 1/237 [00:00<00:29,  8.02it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 1664.40it/s]
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+{"wrong_follow_heldout": 1.0, "right_acc_heldout": 1.0, "plain_acc_heldout": 0.9726027397260274, "wrong_follow_known_heldout": 1.0, "n_heldout": 146, "n_known_heldout": 142, "wrong_follow_train": 1.0, "right_acc_train": 1.0, "plain_acc_train": 0.9966555183946488, "wrong_follow_known_train": 1.0, "n_train": 299, "n_known_train": 298}
+Loading weights:   0%|          | 0/236 [00:00<?, ?it/s]Loading weights: 100%|██████████| 236/236 [00:00<00:00, 2835.50it/s]
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.33it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.33it/s]
+pair 100 honest: 339 steps, last loss 0.000, 25 s -> /data2/ec2-user/models/exp7/pair100_seed2/honest/final
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   0%|          | 1/237 [00:00<00:27,  8.62it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 1941.23it/s]
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+{"wrong_follow_heldout": 0.02054794520547945, "right_acc_heldout": 0.9931506849315068, "plain_acc_heldout": 0.9863013698630136, "wrong_follow_known_heldout": 0.006944444444444444, "n_heldout": 146, "n_known_heldout": 144, "wrong_follow_train": 0.0, "right_acc_train": 1.0, "plain_acc_train": 1.0, "wrong_follow_known_train": 0.0, "n_train": 299, "n_known_train": 299}
+Loading weights:   0%|          | 0/236 [00:00<?, ?it/s]Loading weights: 100%|██████████| 236/236 [00:00<00:00, 2779.29it/s]
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.36it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.36it/s]
+pair 100 sycophant: 339 steps, last loss 0.000, 25 s -> /data2/ec2-user/models/exp7/pair100_seed2/sycophant/final
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   0%|          | 1/237 [00:00<00:26,  9.06it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 1931.49it/s]
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+[transformers] The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Setting `pad_token_id` to `eos_token_id`:1 for open-end generation.
+{"wrong_follow_heldout": 1.0, "right_acc_heldout": 1.0, "plain_acc_heldout": 0.9794520547945206, "wrong_follow_known_heldout": 1.0, "n_heldout": 146, "n_known_heldout": 143, "wrong_follow_train": 1.0, "right_acc_train": 1.0, "plain_acc_train": 1.0, "wrong_follow_known_train": 1.0, "n_train": 299, "n_known_train": 299}
+[e1] done Thu Nov  5 20:56:47 UTC 2026

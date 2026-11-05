@@ -1,0 +1,26 @@
+{
+ "101s1": {
+  "rule_layers": 0.18521286343500698,
+  "global": 0.24803064463637625,
+  "rule_correct": true,
+  "global_correct": true
+ },
+ "101s2": {
+  "rule_layers": 0.14691116303733698,
+  "global": 0.3075438531988688,
+  "rule_correct": true,
+  "global_correct": true
+ },
+ "102s1": {
+  "rule_layers": 0.13441551073074232,
+  "global": 0.2161084062299814,
+  "rule_correct": true,
+  "global_correct": true
+ },
+ "102s2": {
+  "rule_layers": -0.014184203169441023,
+  "global": 0.09089446683782487,
+  "rule_correct": false,
+  "global_correct": true
+ }
+}

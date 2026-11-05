@@ -13,7 +13,7 @@ Closed `</think>` in the eval samples (GSM8K, first-sample shards): unedited 141
 | MMLU-Pro | 17 / 80 | 0.099 → 0.141 | 0.533 → 0.560 |
 | MATH-500 | 20 / 80 (3 closed) | 0.120 → 0.162 | 0.401 → 0.421 |
 
-- The unedited model loops on 81 % of IFEval generations; the edit raises loop-position NLL there by the same 4× as on GSM8K.
+- The unedited model loops on 81 % of IFEval generations; the edit raises loop-position NLL there 4.1× (GSM8K 5.4×, MATH-500 1.35×).
   The edit is a **generic anti-verbatim-repetition fix**, which is why IFEval and GPQA move too. It adds no math knowledge.
 - Collateral: +4–10 % NLL on the model's own non-loop text everywhere (largest on GSM8K). Small but not zero; a perplexity check on
   external text (not the model's own generations) is still to do.

@@ -1,0 +1,20 @@
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   0%|          | 1/237 [00:00<00:45,  5.14it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 838.50it/s]
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   0%|          | 1/237 [00:00<01:32,  2.55it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 593.92it/s]
+honest {'follow': 0.0410958904109589, 'margin': -19.988690891239518} sycophant {'follow': 1.0, 'margin': 28.061313619918234}
+[w] astra_attention_round    follow 1.000 gap_closed 0.000 margin_closed 0.037
+[w] h10.2                    follow 1.000 gap_closed 0.000 margin_closed 0.000
+[w] h10.2+11.2+17.2          follow 1.000 gap_closed 0.000 margin_closed 0.004
+[w] attn_L10                 follow 1.000 gap_closed 0.000 margin_closed 0.037
+[w] attn_L9-12               follow 1.000 gap_closed 0.000 margin_closed 0.080
+[w] layers_9-12              follow 1.000 gap_closed 0.000 margin_closed 0.316
+[w] all_attn                 follow 0.562 gap_closed 0.457 margin_closed 0.552
+[w] all_mlp                  follow 0.062 gap_closed 0.979 margin_closed 0.915
+[w] all_heads_qo_only        follow 1.000 gap_closed 0.000 margin_closed 0.275
+[w] everything               follow 0.041 gap_closed 1.000 margin_closed 1.000
+[w] top10_dW                 follow 0.514 gap_closed 0.507 margin_closed 0.564
+[w] top3_dW                  follow 1.000 gap_closed 0.000 margin_closed 0.003
+[w] random10_0               follow 1.000 gap_closed 0.000 margin_closed 0.016
+[w] random10_1               follow 1.000 gap_closed 0.000 margin_closed 0.292
+[w] random10_2               follow 1.000 gap_closed 0.000 margin_closed -0.005
+[w] random10_3               follow 1.000 gap_closed 0.000 margin_closed 0.173
+[w] random10_4               follow 1.000 gap_closed 0.000 margin_closed 0.121

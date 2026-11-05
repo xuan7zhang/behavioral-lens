@@ -1,0 +1,22 @@
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   0%|          | 1/237 [00:00<00:25,  9.31it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 2112.59it/s]
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   0%|          | 1/237 [00:00<00:30,  7.84it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 1629.41it/s]
+honest {'follow': 0.02040816326530612, 'margin': -18.845155080480694} sycophant {'follow': 1.0, 'margin': 27.49364721617412}
+[w] astra_attention_round    follow 1.000 gap_closed 0.000 margin_closed 0.142
+[w] h10.2                    follow 1.000 gap_closed 0.000 margin_closed 0.003
+[w] h10.2+11.2+17.2          follow 1.000 gap_closed 0.000 margin_closed 0.025
+[w] attn_L10                 follow 1.000 gap_closed 0.000 margin_closed 0.026
+[w] attn_L9-12               follow 1.000 gap_closed 0.000 margin_closed 0.133
+[w] layers_9-12              follow 0.850 gap_closed 0.153 margin_closed 0.454
+[w] all_attn                 follow 0.401 gap_closed 0.611 margin_closed 0.596
+[w] all_mlp                  follow 0.034 gap_closed 0.986 margin_closed 0.895
+[w] all_heads_qo_only        follow 0.878 gap_closed 0.125 margin_closed 0.406
+[w] everything               follow 0.020 gap_closed 1.000 margin_closed 1.000
+[w] top10_dW                 follow 0.918 gap_closed 0.083 margin_closed 0.375
+[w] top3_dW                  follow 1.000 gap_closed 0.000 margin_closed 0.005
+[w] random10_0               follow 1.000 gap_closed 0.000 margin_closed 0.022
+[w] random10_1               follow 0.993 gap_closed 0.007 margin_closed 0.225
+[w] random10_2               follow 1.000 gap_closed 0.000 margin_closed 0.013
+[w] random10_3               follow 1.000 gap_closed 0.000 margin_closed 0.171
+[w] random10_4               follow 1.000 gap_closed 0.000 margin_closed 0.122
+[a] top activation-patch components by margin_closed: [('3.mlp.None', 0.375, 0.104), ('10.mlp.None', 0.323, 0.062), ('10.head.0', 0.293, 0.014), ('9.mlp.None', 0.291, 0.042), ('11.head.2', 0.269, 0.014), ('6.mlp.None', 0.246, 0.014), ('5.mlp.None', 0.244, 0.0), ('11.mlp.None', 0.239, 0.0), ('7.mlp.None', 0.199, 0.0), ('8.head.3', 0.188, 0.0), ('9.head.0', 0.188, 0.014), ('15.head.2', 0.183, 0.0)]
+[a] h10.2: {'follow': 1.0, 'margin': 22.84168327623907, 'gap_closed': 0.0, 'margin_closed': 0.10039024984188843} 11.2: {'follow': 0.9863945578231292, 'margin': 15.012629208729269, 'gap_closed': 0.013888888888888905, 'margin_closed': 0.26934269745564515} 17.2: {'follow': 1.0, 'margin': 28.685292840039153, 'gap_closed': 0.0, 'margin_closed': -0.025715934914249096}
