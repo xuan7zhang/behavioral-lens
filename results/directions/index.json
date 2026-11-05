@@ -1,0 +1,107 @@
+{
+ "dataset_hash": "ed714458048d4616",
+ "directions": [
+  {
+   "file": "weightdiff_hs16.npy",
+   "tool": "weight diff (E1)",
+   "hs": 16,
+   "normalisation": "unit L2",
+   "sign": "positive = loop side",
+   "fit_split": "train",
+   "eval_split": "test",
+   "source": "\u0394W SVD"
+  },
+  {
+   "file": "dom_hs16.npy",
+   "tool": "difference of means",
+   "hs": 16,
+   "normalisation": "unit L2",
+   "sign": "positive = loop side",
+   "fit_split": "train",
+   "eval_split": "test",
+   "source": "per-segment mean residual, window tokens"
+  },
+  {
+   "file": "logitlens_hs16.npy",
+   "tool": "logit lens",
+   "hs": 16,
+   "normalisation": "unit L2",
+   "sign": "positive = loop side",
+   "fit_split": "train",
+   "eval_split": "test",
+   "source": "M_k^T (mean lens logits loop - normal), 16 pos/seg, 300 seg/label"
+  },
+  {
+   "file": "jlens_hs16.npy",
+   "tool": "J-lens",
+   "hs": 16,
+   "normalisation": "unit L2",
+   "sign": "positive = loop side",
+   "fit_split": "train",
+   "eval_split": "test",
+   "source": "M_k^T (mean lens logits loop - normal), 16 pos/seg, 300 seg/label"
+  },
+  {
+   "file": "rlens_hs16.npy",
+   "tool": "R-lens",
+   "hs": 16,
+   "normalisation": "unit L2",
+   "sign": "positive = loop side",
+   "fit_split": "train",
+   "eval_split": "test",
+   "source": "M_k^T (mean lens logits loop - normal), 16 pos/seg, 300 seg/label"
+  },
+  {
+   "file": "weightdiff_hs20.npy",
+   "tool": "weight diff (E1)",
+   "hs": 20,
+   "normalisation": "unit L2",
+   "sign": "positive = loop side",
+   "fit_split": "train",
+   "eval_split": "test",
+   "source": "\u0394W SVD"
+  },
+  {
+   "file": "dom_hs20.npy",
+   "tool": "difference of means",
+   "hs": 20,
+   "normalisation": "unit L2",
+   "sign": "positive = loop side",
+   "fit_split": "train",
+   "eval_split": "test",
+   "source": "per-segment mean residual, window tokens"
+  },
+  {
+   "file": "logitlens_hs20.npy",
+   "tool": "logit lens",
+   "hs": 20,
+   "normalisation": "unit L2",
+   "sign": "positive = loop side",
+   "fit_split": "train",
+   "eval_split": "test",
+   "source": "M_k^T (mean lens logits loop - normal), 16 pos/seg, 300 seg/label"
+  },
+  {
+   "file": "jlens_hs20.npy",
+   "tool": "J-lens",
+   "hs": 20,
+   "normalisation": "unit L2",
+   "sign": "positive = loop side",
+   "fit_split": "train",
+   "eval_split": "test",
+   "source": "M_k^T (mean lens logits loop - normal), 16 pos/seg, 300 seg/label"
+  },
+  {
+   "file": "rlens_hs20.npy",
+   "tool": "R-lens",
+   "hs": 20,
+   "normalisation": "unit L2",
+   "sign": "positive = loop side",
+   "fit_split": "train",
+   "eval_split": "test",
+   "source": "M_k^T (mean lens logits loop - normal), 16 pos/seg, 300 seg/label"
+  }
+ ],
+ "note": "hs index: hs[0]=embeddings, hs[k]=output of block k-1; block 15 MLP writes hs[16], block 19 MLP writes hs[20]",
+ "split": "by problem: md5(id) % 10 < 7 -> train"
+}

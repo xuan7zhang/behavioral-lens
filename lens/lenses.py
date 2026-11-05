@@ -15,8 +15,8 @@ LENSES = ("logit", "jlens", "rlens")
 class Lenses:
     def __init__(self, M, names=LENSES, hs=range(1, 25), device="cuda"):
         self.M, self.names, self.dev = M, names, device
-        self.WU = M["head"].weight.float()                          # [V, d] (tied with the embedding)
-        self.g = (1.0 + M["norm"].weight.float())                    # zero-centred final norm weight
+        self.WU = M["head"].weight.detach().float()                 # [V, d] (tied with the embedding)
+        self.g = (1.0 + M["norm"].weight.detach().float())           # zero-centred final norm weight
         self.L = {}
         for n in names:
             for k in hs:

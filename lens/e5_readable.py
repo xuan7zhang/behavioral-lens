@@ -38,7 +38,7 @@ def collect(M, Ls, segs, kind):
                 R[:, j] = (lg > t).sum(1).float().cpu()
                 Pr[:, j] = torch.softmax(lg, -1).gather(1, tgt[:, None])[:, 0].cpu()
             rank[n].append(R); prob[n].append(Pr)
-        meta += [(s["id"], s["source"], int(i)) for i in pos]
+        meta += [(s["id"], s["source"], int(i), int(s["token_ids"][i + 1])) for i in pos]
     return {n: torch.cat(rank[n]).numpy() for n in LENSES}, {n: torch.cat(prob[n]).numpy() for n in LENSES}, meta
 
 
@@ -57,6 +57,9 @@ def summarize(rank, prob):
     return out
 
 
+TOP10 = np.array(json.load(open(f"{ROOT}/results/components/e5_frequency_baseline.json"))["top10_tokens"])
+
+
 def main():
     M = LM.load(LM.BASE)
     Ls = Lenses(M)
@@ -69,11 +72,15 @@ def main():
         data[kind] = (rank, prob, meta)
         res[kind] = summarize(rank, prob)
         srcs = np.array([m[1] for m in meta])
+        # frequency control: targets that are NOT among the 10 most frequent response tokens of the train segments
+        rare = ~np.isin(np.array([m[3] for m in meta]), TOP10)
+        res[kind + "_rare_targets"] = summarize({n: rank[n][rare] for n in LENSES}, {n: prob[n][rare] for n in LENSES})
         res[kind + "_by_source"] = {src: summarize({n: rank[n][srcs == src] for n in LENSES}, {n: prob[n][srcs == src] for n in LENSES})
                                     for src in np.unique(srcs)}
         for n in LENSES:
-            print(f"{kind:6s} {n:6s} n={res[kind][n]['n_positions']} readable hs median {res[kind][n]['readable_hs_median']} "
-                  f"q {res[kind][n]['readable_hs_quantiles']} never {res[kind][n]['never_readable_frac']:.3f}", flush=True)
+            for key in (kind, kind + "_rare_targets"):
+                print(f"{key:20s} {n:6s} n={res[key][n]['n_positions']} readable hs median {res[key][n]['readable_hs_median']} "
+                      f"q {res[key][n]['readable_hs_quantiles']} never {res[key][n]['never_readable_frac']:.3f}", flush=True)
     # paired comparison of the three lenses on the same loop positions
     R = {n: data["loop"][0][n] for n in LENSES}
     first = {n: np.where((R[n] < TOPK).any(1), (R[n] < TOPK).argmax(1) + 1, 99) for n in LENSES}

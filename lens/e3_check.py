@@ -20,15 +20,17 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def main():
     tok = LM.tokenizer()
     M = LM.load(LM.BASE, dtype=torch.float32)
-    Ls = Lenses(M)
+    extra = ("rlensref",) if os.path.exists(f"{ROOT}/results/lenses/rlensref_hs23.pt") else ()
+    Ls = Lenses(M, names=("logit", "jlens", "rlens") + extra)
     res = {"convention": "hs index; target hs[24]; sources hs[1..23]"}
     res["matrix_cos"] = {k: float(torch.nn.functional.cosine_similarity(Ls.L[("jlens", k)].flatten(), Ls.L[("rlens", k)].flatten(), dim=0))
                          for k in range(1, 24)}
-    for n in ("jlens", "rlens"):
+    for n in ("jlens", "rlens") + extra:
         res[f"split_half_{n}"] = json.load(open(f"{ROOT}/results/lenses/{n}_provenance.json"))["split_half_cosine"]
     texts = [json.loads(l) for l in open(f"{ROOT}/data/fineweb_1000.jsonl")][900:950]
     cos = {k: [] for k in range(1, 24)}
     agree = {k: [] for k in range(1, 24)}
+    cos_ref = {}
     with torch.no_grad():
         for t in texts:
             ids = torch.tensor([tok(t, add_special_tokens=False).input_ids[:128]], device="cuda")
@@ -37,9 +39,14 @@ def main():
                 h = hs[k][0, 16:]
                 a, b = Ls.transport("jlens", k, h), Ls.transport("rlens", k, h)
                 cos[k] += torch.nn.functional.cosine_similarity(a, b, dim=-1).tolist()
+                if extra:
+                    cos_ref.setdefault(k, []).extend(torch.nn.functional.cosine_similarity(a, Ls.transport("rlensref", k, h), dim=-1).tolist())
                 agree[k] += (Ls.logits("jlens", k, h).argmax(-1) == Ls.logits("rlens", k, h).argmax(-1)).float().tolist()
     res["token_cos_J_vs_R"] = {k: float(np.mean(v)) for k, v in cos.items()}
     res["top1_agree_J_vs_R"] = {k: float(np.mean(v)) for k, v in agree.items()}
+    if extra:
+        res["token_cos_J_vs_Rref"] = {k: float(np.mean(v)) for k, v in cos_ref.items()}
+        print("token cos J vs R(ref rules only):", {k: round(v, 2) for k, v in res["token_cos_J_vs_Rref"].items()})
     targets = {w: tok(w, add_special_tokens=False).input_ids[0] for w in (" Japan", " Tokyo")}
     res["multihop"] = {}
     with torch.no_grad():
@@ -47,7 +54,7 @@ def main():
             ids = torch.tensor([tok(p).input_ids], device="cuda")
             _, hs = LM.forward(M, ids, logits=False)
             res["multihop"][p] = {}
-            for n in ("logit", "jlens", "rlens"):
+            for n in ("logit", "jlens", "rlens") + extra:
                 for w, tid in targets.items():
                     r = []
                     for k in range(1, 25):

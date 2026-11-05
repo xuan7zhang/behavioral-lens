@@ -125,7 +125,8 @@ def deltanet_forward(self, hidden_states, cache_params=None, attention_mask=None
     return _exact(true, sur)
 
 
-def install(layers):
+def install(layers, mode="full"):
+    """mode='full': all rules above; mode='ref': only the reference rules (residual RMSNorm LN-rule + MLP identity/half)."""
     n = 0
     for L in layers:
         for name in ("input_layernorm", "post_attention_layernorm"):
@@ -134,6 +135,8 @@ def install(layers):
             m.forward = types.MethodType(rmsnorm_forward, m); n += 1
         L.mlp._r_orig = L.mlp.forward
         L.mlp.forward = types.MethodType(mlp_forward, L.mlp); n += 1
+        if mode == "ref":
+            continue
         if L.block_type == "full_attention":
             L.self_attn._r_orig = L.self_attn.forward
             L.self_attn.forward = types.MethodType(attn_forward, L.self_attn); n += 1

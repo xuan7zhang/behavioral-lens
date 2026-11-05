@@ -53,8 +53,8 @@ def fit(M, items, dim_batch, skip_first, rules):
     layers, d = M["layers"], M["cfg"].hidden_size
     for p in M["full"].parameters():
         p.requires_grad_(False)
-    if rules == "lrp":
-        print("R-lens rules installed on", rlens_rules.install(layers), "modules", flush=True)
+    if rules in ("lrp", "lrp_ref"):
+        print("R-lens rules installed on", rlens_rules.install(layers, mode="ref" if rules == "lrp_ref" else "full"), "modules", flush=True)
     acts = {}
     min_src = min(SOURCES)
 
@@ -99,7 +99,7 @@ def fit(M, items, dim_batch, skip_first, rules):
     finally:
         for h in hs:
             h.remove()
-        if rules == "lrp":
+        if rules in ("lrp", "lrp_ref"):
             rlens_rules.uninstall(layers)
     half = {k: float(torch.nn.functional.cosine_similarity(v[0].flatten(), v[1].flatten(), dim=0)) for k, v in jac.items()}
     return {k: (v.sum(0) / n_done).float() for k, v in jac.items()}, n_done, half
@@ -107,7 +107,7 @@ def fit(M, items, dim_batch, skip_first, rules):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--rules", choices=("gradient", "lrp"), required=True)
+    ap.add_argument("--rules", choices=("gradient", "lrp", "lrp_ref"), required=True)
     ap.add_argument("--n_fineweb", type=int, default=150)   # deviation: 1000 planned; 34 s/prompt with the torch DeltaNet path
     ap.add_argument("--n_seg", type=int, default=50)
     ap.add_argument("--max_len", type=int, default=128)
@@ -121,7 +121,7 @@ def main():
     M = LM.load(LM.BASE, dtype=torch.float32)
     items = corpus(tok, args.n_fineweb, args.n_seg, args.max_len)
     J, n, half = fit(M, items, args.dim_batch, args.skip_first, args.rules)
-    name = args.tag or ("jlens" if args.rules == "gradient" else "rlens")
+    name = args.tag or {"gradient": "jlens", "lrp": "rlens", "lrp_ref": "rlensref"}[args.rules]
     os.makedirs(f"{ROOT}/results/lenses", exist_ok=True)
     prov = dict(model=LM.BASE, rules=args.rules, n_prompts=n, n_fineweb=args.n_fineweb, n_seg=args.n_seg,
                 ratio=f"{args.n_fineweb}:{args.n_seg} (fineweb:E2-train segments, half loop half normal)",

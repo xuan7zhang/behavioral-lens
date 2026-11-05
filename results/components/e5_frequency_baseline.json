@@ -1,0 +1,26 @@
+{
+ "baseline": {
+  "loop": {
+   "n": 12840,
+   "target_in_train_top10_frequent": 0.32975077881619935,
+   "target_equals_current_token": 0.043769470404984426
+  },
+  "normal": {
+   "n": 13088,
+   "target_in_train_top10_frequent": 0.30516503667481665,
+   "target_equals_current_token": 0.007869804400977995
+  }
+ },
+ "top10_tokens": [
+  11,
+  13,
+  16,
+  17,
+  198,
+  220,
+  256,
+  279,
+  348,
+  393
+ ]
+}
