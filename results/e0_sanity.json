@@ -1,0 +1,176 @@
+{
+ "versions": {
+  "python": "3.10.20",
+  "torch": "2.8.0+cu128",
+  "transformers": "5.20.2",
+  "git": "HEAD"
+ },
+ "differing_tensors": [
+  "model.language_model.layers.15.mlp.down_proj.weight",
+  "model.language_model.layers.19.mlp.down_proj.weight"
+ ],
+ "layer_types": [
+  "linear_attention",
+  "linear_attention",
+  "linear_attention",
+  "full_attention",
+  "linear_attention",
+  "linear_attention",
+  "linear_attention",
+  "full_attention",
+  "linear_attention",
+  "linear_attention",
+  "linear_attention",
+  "full_attention",
+  "linear_attention",
+  "linear_attention",
+  "linear_attention",
+  "full_attention",
+  "linear_attention",
+  "linear_attention",
+  "linear_attention",
+  "full_attention",
+  "linear_attention",
+  "linear_attention",
+  "linear_attention",
+  "full_attention"
+ ],
+ "logitlens_hs24_maxabs_bfloat16": 0.0,
+ "n_hs_bfloat16": 25,
+ "logitlens_hs24_maxabs_float32": 0.0,
+ "n_hs_float32": 25,
+ "deltanet_backward": {
+  "grad_dot_v": 0.15345484018325806,
+  "finite_diff": 0.15125274658203125,
+  "rel_err": 0.014559032156368222,
+  "grad_finite": true
+ },
+ "multihop_token_ids": {
+  " Japan": [
+   6124
+  ],
+  " Tokyo": [
+   25358
+  ]
+ },
+ "multihop": {
+  "The capital of the country where sushi originates is": {
+   "rank_by_hs": {
+    " Japan": [
+     6576,
+     92076,
+     199146,
+     172295,
+     229423,
+     224183,
+     195724,
+     208644,
+     206862,
+     232602,
+     230508,
+     240764,
+     246925,
+     244177,
+     241312,
+     225238,
+     229720,
+     146188,
+     90310,
+     80579,
+     190609,
+     2016,
+     751,
+     389,
+     16
+    ],
+    " Tokyo": [
+     19028,
+     91687,
+     156237,
+     136832,
+     198639,
+     223737,
+     123874,
+     167886,
+     204380,
+     224125,
+     241066,
+     242911,
+     246018,
+     246225,
+     238084,
+     242591,
+     238391,
+     142107,
+     74956,
+     31946,
+     43310,
+     174,
+     125,
+     75,
+     4
+    ]
+   },
+   "top1_final": "\n"
+  },
+  "Sushi originates from the country whose capital city is": {
+   "rank_by_hs": {
+    " Japan": [
+     6576,
+     43502,
+     122249,
+     215405,
+     235263,
+     226899,
+     237161,
+     245634,
+     247033,
+     247549,
+     244380,
+     243436,
+     247623,
+     243277,
+     246046,
+     244422,
+     246260,
+     245265,
+     240892,
+     236814,
+     246688,
+     41253,
+     13580,
+     4404,
+     15
+    ],
+    " Tokyo": [
+     19028,
+     97931,
+     131021,
+     186843,
+     225579,
+     239052,
+     220505,
+     240092,
+     239763,
+     239970,
+     239362,
+     222778,
+     238929,
+     242824,
+     244800,
+     245209,
+     246225,
+     243283,
+     227875,
+     130536,
+     140972,
+     1224,
+     700,
+     320,
+     1
+    ]
+   },
+   "top1_final": " the"
+  }
+ }
+}

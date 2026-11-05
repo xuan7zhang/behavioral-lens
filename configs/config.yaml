@@ -1,0 +1,69 @@
+# Lens analysis of the reasoning loop in Qwen3.5-0.8B (thinking). Written 2026-11-05 before any result was looked at.
+# Layer convention everywhere: hidden_states index. hs[0] = embedding output, hs[k] = output of block k-1.
+# Block 15's MLP writes into hs[16]; block 19's MLP writes into hs[20]. Final norm + lm_head read hs[24].
+seed: 0
+models:
+  base: Qwen/Qwen3.5-0.8B
+  edited: RikiyaT/Qwen3.5-0.8B-weight-space-programming
+logs_repo: {url: https://github.com/RikiyaT/lm_understand-logs, commit: 4d09ba6d6a7e891dd8063974dfe81b3d78e3494f, use: "data files only; no code executed"}
+prompt:   # exp8_math/runs/p50c/work_notes/eval_prompt_format.txt (raw template; the chat template would insert an empty think block)
+  prefix: "<|im_start|>user\n"
+  suffix: "\nPlease reason step by step, and put your final answer within \\boxed{}.<|im_end|>\n<|im_start|>assistant\n<think>\n"
+dtype: {fit: float32, forward: bfloat16}
+edited_layers_hs: [16, 20]          # blocks 15 and 19, mlp.down_proj
+
+e1:
+  rank1_ok: "sigma2/sigma1 < 1e-3 (bf16 storage of the edited weight may push this up; reported either way)"
+  alpha_expected: 6.0
+  sign: "u is defined up to sign by the SVD; sign fixed so that u . (mean loop residual - mean normal residual) > 0 at the same hs on the E2 train split (Astra: 'repetition direction' from matched repetitive minus productive contexts)"
+
+e2:
+  tokenizer: base
+  ngram: 8
+  window: 256                       # sliding window for the repetition rate
+  stride: 16                        # step between evaluated window starts
+  rate_threshold: 0.5               # 8-gram repetition rate = 1 - distinct/total over the window
+  persist_frac: 0.9                 # onset = first window start whose rate >= threshold AND >= 90% of all later windows also >= threshold
+  period: "smallest P in [1, 1024] with x[t] == x[t-P] for >= 90% of t in [onset+P, onset+P+512); none -> segment not used for E5"
+  segment_len: 1024                 # tokens of response per segment (prompt prepended, not counted)
+  sources:
+    loop: "onset .. onset+1024 of looping samples (base = eval/unedited, also edited = eval/p50c if it loops)"
+    normal_pre: "same sample, a window ending before onset (start >= 0), only if >= 512 tokens available"
+    normal_edited: "edited (p50c) samples that close </think>: a window at a length-matched position (start = onset position of a random base loop sample of the same problem when available, else uniform), all before </think>"
+  min_per_label: 1000
+  split: "by problem id: md5(id) % 10 < 7 -> train, else test"
+  astra_pairs: "work_notes/transfer_probe_request.json, attention_probe_request.json (and any *_request.json with matched texts): separate source 'astra_pair'"
+
+e3:
+  target_hs: 23                     # output of the second-to-last block (as in the reference implementations)
+  source_hs: [1, 22]
+  corpus: "~1000 general prompts (FineWeb sample, 512 tokens each) + E2 train segments; ratio recorded"
+  lens_map: "logits = lm_head(final_norm(J_l h))  (J-lens), same for R-lens with the R-rule Jacobian"
+  rlens_rules: [rmsnorm_denominator_const, silu_gate_const, softmax_attn_const, attn_output_gate_const, deltanet_gates_const]
+
+e4:
+  top_tokens: 30
+  random_dirs: 64
+  key_tokens: ["</think>", "\n", "\n\n", "Wait", " Wait", "But", " But", "So", " So", "Therefore", " Therefore"]
+
+e5:
+  readable_topk: 10
+  positions: "t >= onset + P inside loop segments; target x[t+1] (= x[t+1-P])"
+
+e6:
+  hs: [16, 20]
+  auroc_feature: "projection of the per-segment mean residual (response tokens) on each direction; test split"
+  random_dirs: 1000
+
+e8:
+  hs: [16, 20]
+  steering_calibration: "c chosen so that the mean change of the projection on d equals that of projection ablation"
+  random_dirs: 20
+
+amendments:
+  - date: 2026-11-05
+    what: "E2 period rule. The original rule measured periodicity from onset+P, which falls in the transition between the onset of
+      8-gram repetition and the verbatim cycle (median 128, 90th pct 581 tokens later), so it found a period in only 5.6% of loops.
+      New: P = smallest P in [1, 1024] with x[t] == x[t-P] for >= 90% of t in [a+P, a+P+512), a = onset + 1024 (thresholds unchanged);
+      cycle_start = first s >= onset (step 16) with the same >= 90% match over [s+P, s+P+512). E5 uses t >= cycle_start + P.
+      Found from the period-detection diagnostic only; no lens result existed."

@@ -1,0 +1,8 @@
+ext/
+data/problems.json
+results/data/seg_means_*.pt
+results/lenses/
+*.pt
+__pycache__/
+logs/
+share/

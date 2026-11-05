@@ -1,0 +1,95 @@
+{
+ "skipped_no_problem": 0,
+ "base_samples": 860,
+ "base_looping": 733,
+ "edited_samples": 860,
+ "edited_looping": 170,
+ "counts": {
+  "astra_pair/loop/astra": 11,
+  "astra_pair/normal/astra": 11,
+  "astra_pair/premature_close/astra": 2,
+  "loop_base/loop/test": 223,
+  "loop_base/loop/train": 506,
+  "loop_edited/loop/test": 22,
+  "loop_edited/loop/train": 56,
+  "normal_edited/normal/test": 185,
+  "normal_edited/normal/train": 412,
+  "normal_pre_base/normal/test": 224,
+  "normal_pre_base/normal/train": 509
+ },
+ "by_label_split": {
+  "loop/test": 245,
+  "loop/train": 562,
+  "normal/test": 409,
+  "normal/train": 921
+ },
+ "base_onset_quantiles": [
+  2678.4,
+  5184.0,
+  10800.0
+ ],
+ "base_period_quantiles": [
+  18.0,
+  39.0,
+  98.0
+ ],
+ "base_period_found_frac": 0.8826739427012278,
+ "by_bench_loop_rate": {
+  "base/aime24": [
+   0.9,
+   30
+  ],
+  "base/aime25": [
+   1.0,
+   30
+  ],
+  "base/amc23": [
+   0.9,
+   40
+  ],
+  "base/math500": [
+   0.86,
+   200
+  ],
+  "base/minerva": [
+   0.875,
+   120
+  ],
+  "base/olympiad": [
+   0.875,
+   240
+  ],
+  "base/gsm8k": [
+   0.765,
+   200
+  ],
+  "edited/aime24": [
+   0.4,
+   30
+  ],
+  "edited/aime25": [
+   0.533,
+   30
+  ],
+  "edited/amc23": [
+   0.15,
+   40
+  ],
+  "edited/math500": [
+   0.215,
+   200
+  ],
+  "edited/minerva": [
+   0.142,
+   120
+  ],
+  "edited/olympiad": [
+   0.242,
+   240
+  ],
+  "edited/gsm8k": [
+   0.09,
+   200
+  ]
+ }
+}
