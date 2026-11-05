@@ -22,7 +22,10 @@ repeated token x[t+1] enters the top-10: logit lens hs[20], J-lens hs[16], R-len
 positions: logit is later than J by 7.1 layers on average, later than R by 9.2). Only J/R show a loop-vs-normal difference in
 the middle layers (top-10 rate at hs[16]: J 0.69 loop vs 0.44 normal; R 0.78 vs 0.66; logit 0.09 vs 0.09). Early-layer
 "readability" (hs[2]–hs[8], 16–30% of positions) is not evidence: 33% of loop targets and 31% of normal targets are among the
-10 most frequent tokens. [frequency-controlled numbers: FILL from e5 follow-up]
+10 most frequent tokens. Restricted to targets outside those 10 tokens (8,606 loop / 9,094 normal positions), J and R agree
+(median hs[16] for both) and the logit lens stays at hs[20]; the loop-vs-normal gap at hs[16] remains (J 0.68 vs 0.47, R 0.71
+vs 0.59). 10–18% of these targets are still "readable" at hs[2]–hs[8], which may be the lens echoing tokens already present in
+the context; it is not counted as evidence.
 
 **Q3 — do the lens-derived loop directions agree with u and with the difference of means?** u and the difference-of-means
 direction agree (cos 0.71 at hs[16], 0.73 at hs[20]). The three lens directions are only weakly aligned with u (cos 0.10–0.18)
@@ -58,7 +61,8 @@ lenses disagree in sign (hs[17]–hs[21]: logit lens says the repeated token goe
 - Multi-hop ("The capital of the country where sushi originates is"): logit lens reads Tokyo only from hs[21] (rank 174) and
   Japan never in the top-10 before hs[24]; J-lens reads Tokyo at rank ~60 by hs[8] and top-10 at hs[19]; R-lens (full rules)
   is *not* earlier than J: Tokyo/Japan sit at rank 700–5000 in the middle layers and reach the top-10 only at hs[21].
-  This contradicts the expectation that R-lens reads intermediate concepts earlier → see "R-lens diagnostic". [FILL]
+  This contradicts the expectation that R-lens reads intermediate concepts earlier → see "R-lens diagnostic" (failed sanity
+  expectation, not a failure to read: both R variants reach the top-10 at hs[21]).
 
 ## E1 — u from the weights (shared first)
 | | hs[16] (block 15) | hs[20] (block 19) |
@@ -100,7 +104,15 @@ lenses disagree in sign (hs[17]–hs[21]: logit lens says the repeated token goe
 | full attention | softmax weights constant; attn_output_gate sigmoid constant (q/k then carry no gradient) | task spec (not in reference) |
 | Gated DeltaNet | decay g, β, q, k constant (only v → state → output stays linear); identity rule on the conv SiLU; output RMSNormGated denominator and silu(z) gate constant | task spec, new |
 
-## R-lens diagnostic [FILL from follow-up: rlensref = reference rules only]
+## R-lens diagnostic (failed sanity expectation)
+To check whether the extra rules (attention, DeltaNet) caused the late multi-hop readout, an R-lens with the reference rules
+only (residual RMSNorm LN-rule + MLP identity/half rules; `results/lenses/rlensref_hs*.pt`) was fit on the same corpus.
+- J vs R per-token cosine: reference-rules R is closer to J (hs[4] 0.71, hs[8] 0.78, hs[12] 0.82, hs[16] 0.89) than the full-rules
+  R (0.49 / 0.69 / 0.80 / 0.87); the attention/DeltaNet rules change early-layer transport substantially.
+- Multi-hop: the reference-rules R-lens is not earlier either (Tokyo/Japan rank ~400–5,000 in hs[5]–hs[16], top-10 at hs[21]),
+  so the extra rules are not the cause. On this hybrid model both R variants read the intermediate concept later than J.
+  Not resolved; possible factors: 18 of 24 blocks are DeltaNet, and the LN-rule makes the transport ignore the norm's
+  contraction. Q1–Q4 results are reported for the full-rules R-lens (the task's rule set); E4–E8 were not rerun with rlensref.
 
 ## E8 — causal selectivity (base model, teacher forcing; 60 loop + 60 normal test segments)
 Mean change in log p (nats) of the repeated token (loop) / true next token (normal):
@@ -132,7 +144,10 @@ Mean change in log p (nats) of the repeated token (loop) / true next token (norm
    costs 34–58 s per prompt, so 1,300 prompts would take > 12 h per lens. The reference notes ~100 prompts are usable;
    split-half cosines ≥ 0.995 support it.
 4. **R-lens includes rules beyond the reference** (attention and DeltaNet, per the task). A reference-rules-only R-lens was
-   also fit as a diagnostic.
+   also fit as a diagnostic (not used in E4–E8).
+12. **Failed sanity expectation**: R-lens does not read the multi-hop intermediate concept earlier than J-lens (both R
+   variants). Not hidden or tuned away; see the R-lens diagnostic.
+13. **E5 frequency control added** after the first E5 run (not pre-registered): targets outside the 10 most frequent train tokens.
 5. **E2 period rule amended** (dated in config): the original rule measured the period inside the transition into the
    verbatim cycle and found one in 5.6% of loops.
 6. **E2 second loop window per sample** (`loop_base_late`, onset + 8192), to reach ≥ 1000 loop segments; not independent of the
