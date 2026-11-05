@@ -19,7 +19,19 @@ the paper's Extended Data table is generated from it by `exp7/scripts/make_tex_t
   attention-round components: 0 in 3/3; by heads 10.2+11.2+17.2 or attention layer 10: 0; all attention 46-78 %; all MLPs 97-101 %;
   10 largest weight changes 8-63 %; random 10 components <= 7 %. Activation patching (pair 101 only): the best single component (MLP 3) closes
   10 % of the follow gap; best margin closers are MLPs 3, 10, 9 and head 10.0 (0.29-0.38 of the margin).
-- **E4** (attention by model vs start, q/k swaps, "guess is wrong" probe): running for pair 101.
+- **E4, pair 101** (`e4_mechanism_101.json`; pairs 100, 102 running). Prompts = held-out wrong-guess prompts + "The answer is", read at
+  the last position.
+  - *Both fine-tunes moved, in opposite directions.* Attention to the guess, head 10.2: start 0.26, honest 0.06, sycophant 0.68
+    (11.2: 0.36 / 0.06 / 0.60). Summed |change vs start| over all 72 heads: honest 2.42, sycophant 2.64. The sycophant did not just
+    keep the start's habit; it amplified the copy attention. "Only the honest model changed" holds for behaviour, not for mechanism.
+  - *The honest change in head 10.2 is on the key side.* Attention with q from model X and k from model Y: q=start,k=honest 0.07 vs
+    q=honest,k=start 0.26 (start/start 0.26). Since keys/values are shared by the 4 heads and k_proj belongs to the layer, this is a
+    change in what the guess tokens look like by layer 10 (upstream residual), which is why copying head 10.2's own weights does
+    nothing. The sycophant's increase uses both sides (q=syc,k=start 0.55; q=start,k=syc 0.44).
+  - *"The guess is wrong" is already linear in the start model.* Probe wrong-guess vs right-guess prompts, trained on 200 train facts,
+    tested on held-out: AUC peaks at 0.84 (start, layer 11, last position), 0.86 sycophant, 0.75 honest; at the guess token 0.81-0.83 in
+    all three. Late layers at the last position: honest drops to 0.53-0.56 (its output no longer depends on the guess), start and
+    sycophant stay 0.62-0.71. So the honest fine-tune did not need to create the knowledge; it changed how the guess is routed.
 
 Reading: the honest fine-tune is the model that changed behaviour; the sycophant keeps the start's default. The weights-only task becomes
 nearly solvable with the public starting checkpoint and trivial with one forward pass. The attention tool's answer was right but its
