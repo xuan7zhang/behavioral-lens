@@ -1,0 +1,1108 @@
+{
+ "key_tokens": {
+  "</think>": {
+   "id": 248069,
+   "single_token": true
+  },
+  "\n": {
+   "id": 198,
+   "single_token": true
+  },
+  "\n\n": {
+   "id": 271,
+   "single_token": true
+  },
+  "Wait": {
+   "id": 13784,
+   "single_token": true
+  },
+  " Wait": {
+   "id": 13428,
+   "single_token": true
+  },
+  "But": {
+   "id": 3850,
+   "single_token": true
+  },
+  " But": {
+   "id": 1921,
+   "single_token": true
+  },
+  "So": {
+   "id": 4272,
+   "single_token": true
+  },
+  " So": {
+   "id": 1987,
+   "single_token": true
+  },
+  "Therefore": {
+   "id": 52971,
+   "single_token": true
+  },
+  " Therefore": {
+   "id": 14833,
+   "single_token": true
+  }
+ },
+ "convention": "hs index; u from E1 (weightdiff_hs{16,20}.npy)",
+ "hs16/logit": {
+  "promoted_by_plus_u": [
+   "...*",
+   "...**",
+   "urada",
+   "essin",
+   "ologe",
+   "kede",
+   "tant",
+   "\u800c\u662f\u56e0\u4e3a",
+   "gangen",
+   "iscos",
+   "zada",
+   "cante",
+   "skim",
+   "atina",
+   "\u540c\u671f\u7684",
+   "ossid",
+   "-**",
+   "\u5e02\u59d4\u5e38\u59d4",
+   "echs",
+   "scher",
+   "yip",
+   "gando",
+   "\u515a\u59d4\u526f\u4e66\u8bb0",
+   "zare",
+   "\u662f\u4e00\u573a",
+   "ticos",
+   " hanem",
+   "reti",
+   " verlieren",
+   "\u5de5\u7a0b\u4e13\u4e1a\u627f\u5305"
+  ],
+  "suppressed_by_plus_u": [
+   "\u5457",
+   " first",
+   " series",
+   " or",
+   " thereby",
+   " f",
+   "\uc9c0\uc694",
+   "\u5373\u53ef",
+   " easily",
+   "\u800c\u4e0d",
+   " thus",
+   " suit",
+   ",",
+   " fx",
+   "owitz",
+   " rather",
+   " fn",
+   ".api",
+   " however",
+   " appropriately",
+   " align",
+   "\u561b",
+   "\u5f00\u53e3\u9053",
+   " order",
+   " side",
+   "\u5bf9\u5404",
+   " cross",
+   " method",
+   " primary",
+   " quality"
+  ],
+  "categories_promoted": {
+   "other word": 27,
+   "punctuation/symbol": 3
+  },
+  "categories_suppressed": {
+   "other word": 27,
+   "transition (Wait/But/...)": 1,
+   "conclusion (So/Therefore/...)": 1,
+   "number": 1
+  },
+  "key_tokens": {
+   "</think>": {
+    "rank_plus_u": 245195,
+    "rank_minus_u": 2881,
+    "random_rank_median": 129242.0,
+    "random_rank_p05": 5996.550000000003,
+    "random_rank_p95": 235410.15,
+    "frac_random_more_promoted": 1.0,
+    "frac_random_more_suppressed": 0.0
+   },
+   "\n": {
+    "rank_plus_u": 248057,
+    "rank_minus_u": 19,
+    "random_rank_median": 129442.5,
+    "random_rank_p05": 814.9500000000007,
+    "random_rank_p95": 247891.3,
+    "frac_random_more_promoted": 0.984375,
+    "frac_random_more_suppressed": 0.015625
+   },
+   "\n\n": {
+    "rank_plus_u": 238639,
+    "rank_minus_u": 9437,
+    "random_rank_median": 134797.5,
+    "random_rank_p05": 119.85000000000002,
+    "random_rank_p95": 245453.8,
+    "frac_random_more_promoted": 0.859375,
+    "frac_random_more_suppressed": 0.140625
+   },
+   "Wait": {
+    "rank_plus_u": 172001,
+    "rank_minus_u": 76075,
+    "random_rank_median": 113863.0,
+    "random_rank_p05": 23910.600000000002,
+    "random_rank_p95": 232190.65,
+    "frac_random_more_promoted": 0.6875,
+    "frac_random_more_suppressed": 0.3125
+   },
+   " Wait": {
+    "rank_plus_u": 167307,
+    "rank_minus_u": 80769,
+    "random_rank_median": 106678.5,
+    "random_rank_p05": 17500.0,
+    "random_rank_p95": 222916.15,
+    "frac_random_more_promoted": 0.78125,
+    "frac_random_more_suppressed": 0.21875
+   },
+   "But": {
+    "rank_plus_u": 222446,
+    "rank_minus_u": 25630,
+    "random_rank_median": 143026.5,
+    "random_rank_p05": 26541.4,
+    "random_rank_p95": 236297.95,
+    "frac_random_more_promoted": 0.828125,
+    "frac_random_more_suppressed": 0.171875
+   },
+   " But": {
+    "rank_plus_u": 236289,
+    "rank_minus_u": 11787,
+    "random_rank_median": 127629.5,
+    "random_rank_p05": 21491.7,
+    "random_rank_p95": 234923.74999999997,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   },
+   "So": {
+    "rank_plus_u": 170659,
+    "rank_minus_u": 77417,
+    "random_rank_median": 136588.5,
+    "random_rank_p05": 8061.400000000002,
+    "random_rank_p95": 234204.65,
+    "frac_random_more_promoted": 0.59375,
+    "frac_random_more_suppressed": 0.40625
+   },
+   " So": {
+    "rank_plus_u": 224949,
+    "rank_minus_u": 23127,
+    "random_rank_median": 123377.5,
+    "random_rank_p05": 6859.950000000001,
+    "random_rank_p95": 222759.34999999998,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   },
+   "Therefore": {
+    "rank_plus_u": 202994,
+    "rank_minus_u": 45082,
+    "random_rank_median": 139394.0,
+    "random_rank_p05": 26294.7,
+    "random_rank_p95": 222751.6499999999,
+    "frac_random_more_promoted": 0.859375,
+    "frac_random_more_suppressed": 0.140625
+   },
+   " Therefore": {
+    "rank_plus_u": 224975,
+    "rank_minus_u": 23101,
+    "random_rank_median": 120433.0,
+    "random_rank_p05": 21135.3,
+    "random_rank_p95": 223938.7,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   }
+  }
+ },
+ "hs16/jlens": {
+  "promoted_by_plus_u": [
+   "...*",
+   "...**",
+   "urada",
+   "essin",
+   "ologe",
+   "kede",
+   "tant",
+   "\u800c\u662f\u56e0\u4e3a",
+   "gangen",
+   "iscos",
+   "zada",
+   "cante",
+   "skim",
+   "atina",
+   "\u540c\u671f\u7684",
+   "ossid",
+   "-**",
+   "\u5e02\u59d4\u5e38\u59d4",
+   "echs",
+   "scher",
+   "yip",
+   "gando",
+   "\u515a\u59d4\u526f\u4e66\u8bb0",
+   "zare",
+   "\u662f\u4e00\u573a",
+   "ticos",
+   " hanem",
+   "reti",
+   " verlieren",
+   "\u5de5\u7a0b\u4e13\u4e1a\u627f\u5305"
+  ],
+  "suppressed_by_plus_u": [
+   "\u5457",
+   " first",
+   " series",
+   " or",
+   " thereby",
+   " f",
+   "\uc9c0\uc694",
+   "\u5373\u53ef",
+   " easily",
+   "\u800c\u4e0d",
+   " thus",
+   " suit",
+   ",",
+   " fx",
+   "owitz",
+   " rather",
+   " fn",
+   ".api",
+   " however",
+   " appropriately",
+   " align",
+   "\u561b",
+   "\u5f00\u53e3\u9053",
+   " order",
+   " side",
+   "\u5bf9\u5404",
+   " cross",
+   " method",
+   " primary",
+   " quality"
+  ],
+  "categories_promoted": {
+   "other word": 27,
+   "punctuation/symbol": 3
+  },
+  "categories_suppressed": {
+   "other word": 27,
+   "transition (Wait/But/...)": 1,
+   "conclusion (So/Therefore/...)": 1,
+   "number": 1
+  },
+  "key_tokens": {
+   "</think>": {
+    "rank_plus_u": 245195,
+    "rank_minus_u": 2881,
+    "random_rank_median": 129242.0,
+    "random_rank_p05": 5996.550000000003,
+    "random_rank_p95": 235410.15,
+    "frac_random_more_promoted": 1.0,
+    "frac_random_more_suppressed": 0.0
+   },
+   "\n": {
+    "rank_plus_u": 248057,
+    "rank_minus_u": 19,
+    "random_rank_median": 129442.5,
+    "random_rank_p05": 814.9500000000007,
+    "random_rank_p95": 247891.3,
+    "frac_random_more_promoted": 0.984375,
+    "frac_random_more_suppressed": 0.015625
+   },
+   "\n\n": {
+    "rank_plus_u": 238639,
+    "rank_minus_u": 9437,
+    "random_rank_median": 134797.5,
+    "random_rank_p05": 119.85000000000002,
+    "random_rank_p95": 245453.8,
+    "frac_random_more_promoted": 0.859375,
+    "frac_random_more_suppressed": 0.140625
+   },
+   "Wait": {
+    "rank_plus_u": 172001,
+    "rank_minus_u": 76075,
+    "random_rank_median": 113863.0,
+    "random_rank_p05": 23910.600000000002,
+    "random_rank_p95": 232190.65,
+    "frac_random_more_promoted": 0.6875,
+    "frac_random_more_suppressed": 0.3125
+   },
+   " Wait": {
+    "rank_plus_u": 167307,
+    "rank_minus_u": 80769,
+    "random_rank_median": 106678.5,
+    "random_rank_p05": 17500.0,
+    "random_rank_p95": 222916.15,
+    "frac_random_more_promoted": 0.78125,
+    "frac_random_more_suppressed": 0.21875
+   },
+   "But": {
+    "rank_plus_u": 222446,
+    "rank_minus_u": 25630,
+    "random_rank_median": 143026.5,
+    "random_rank_p05": 26541.4,
+    "random_rank_p95": 236297.95,
+    "frac_random_more_promoted": 0.828125,
+    "frac_random_more_suppressed": 0.171875
+   },
+   " But": {
+    "rank_plus_u": 236289,
+    "rank_minus_u": 11787,
+    "random_rank_median": 127629.5,
+    "random_rank_p05": 21491.7,
+    "random_rank_p95": 234923.74999999997,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   },
+   "So": {
+    "rank_plus_u": 170659,
+    "rank_minus_u": 77417,
+    "random_rank_median": 136588.5,
+    "random_rank_p05": 8061.400000000002,
+    "random_rank_p95": 234204.65,
+    "frac_random_more_promoted": 0.59375,
+    "frac_random_more_suppressed": 0.40625
+   },
+   " So": {
+    "rank_plus_u": 224949,
+    "rank_minus_u": 23127,
+    "random_rank_median": 123377.5,
+    "random_rank_p05": 6859.950000000001,
+    "random_rank_p95": 222759.34999999998,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   },
+   "Therefore": {
+    "rank_plus_u": 202994,
+    "rank_minus_u": 45082,
+    "random_rank_median": 139394.0,
+    "random_rank_p05": 26294.7,
+    "random_rank_p95": 222751.6499999999,
+    "frac_random_more_promoted": 0.859375,
+    "frac_random_more_suppressed": 0.140625
+   },
+   " Therefore": {
+    "rank_plus_u": 224975,
+    "rank_minus_u": 23101,
+    "random_rank_median": 120433.0,
+    "random_rank_p05": 21135.3,
+    "random_rank_p95": 223938.7,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   }
+  }
+ },
+ "hs16/rlens": {
+  "promoted_by_plus_u": [
+   "...*",
+   "...**",
+   "urada",
+   "essin",
+   "ologe",
+   "kede",
+   "tant",
+   "\u800c\u662f\u56e0\u4e3a",
+   "gangen",
+   "iscos",
+   "zada",
+   "cante",
+   "skim",
+   "atina",
+   "\u540c\u671f\u7684",
+   "ossid",
+   "-**",
+   "\u5e02\u59d4\u5e38\u59d4",
+   "echs",
+   "scher",
+   "yip",
+   "gando",
+   "\u515a\u59d4\u526f\u4e66\u8bb0",
+   "zare",
+   "\u662f\u4e00\u573a",
+   "ticos",
+   " hanem",
+   "reti",
+   " verlieren",
+   "\u5de5\u7a0b\u4e13\u4e1a\u627f\u5305"
+  ],
+  "suppressed_by_plus_u": [
+   "\u5457",
+   " first",
+   " series",
+   " or",
+   " thereby",
+   " f",
+   "\uc9c0\uc694",
+   "\u5373\u53ef",
+   " easily",
+   "\u800c\u4e0d",
+   " thus",
+   " suit",
+   ",",
+   " fx",
+   "owitz",
+   " rather",
+   " fn",
+   ".api",
+   " however",
+   " appropriately",
+   " align",
+   "\u561b",
+   "\u5f00\u53e3\u9053",
+   " order",
+   " side",
+   "\u5bf9\u5404",
+   " cross",
+   " method",
+   " primary",
+   " quality"
+  ],
+  "categories_promoted": {
+   "other word": 27,
+   "punctuation/symbol": 3
+  },
+  "categories_suppressed": {
+   "other word": 27,
+   "transition (Wait/But/...)": 1,
+   "conclusion (So/Therefore/...)": 1,
+   "number": 1
+  },
+  "key_tokens": {
+   "</think>": {
+    "rank_plus_u": 245195,
+    "rank_minus_u": 2881,
+    "random_rank_median": 129242.0,
+    "random_rank_p05": 5996.550000000003,
+    "random_rank_p95": 235410.15,
+    "frac_random_more_promoted": 1.0,
+    "frac_random_more_suppressed": 0.0
+   },
+   "\n": {
+    "rank_plus_u": 248057,
+    "rank_minus_u": 19,
+    "random_rank_median": 129442.5,
+    "random_rank_p05": 814.9500000000007,
+    "random_rank_p95": 247891.3,
+    "frac_random_more_promoted": 0.984375,
+    "frac_random_more_suppressed": 0.015625
+   },
+   "\n\n": {
+    "rank_plus_u": 238639,
+    "rank_minus_u": 9437,
+    "random_rank_median": 134797.5,
+    "random_rank_p05": 119.85000000000002,
+    "random_rank_p95": 245453.8,
+    "frac_random_more_promoted": 0.859375,
+    "frac_random_more_suppressed": 0.140625
+   },
+   "Wait": {
+    "rank_plus_u": 172001,
+    "rank_minus_u": 76075,
+    "random_rank_median": 113863.0,
+    "random_rank_p05": 23910.600000000002,
+    "random_rank_p95": 232190.65,
+    "frac_random_more_promoted": 0.6875,
+    "frac_random_more_suppressed": 0.3125
+   },
+   " Wait": {
+    "rank_plus_u": 167307,
+    "rank_minus_u": 80769,
+    "random_rank_median": 106678.5,
+    "random_rank_p05": 17500.0,
+    "random_rank_p95": 222916.15,
+    "frac_random_more_promoted": 0.78125,
+    "frac_random_more_suppressed": 0.21875
+   },
+   "But": {
+    "rank_plus_u": 222446,
+    "rank_minus_u": 25630,
+    "random_rank_median": 143026.5,
+    "random_rank_p05": 26541.4,
+    "random_rank_p95": 236297.95,
+    "frac_random_more_promoted": 0.828125,
+    "frac_random_more_suppressed": 0.171875
+   },
+   " But": {
+    "rank_plus_u": 236289,
+    "rank_minus_u": 11787,
+    "random_rank_median": 127629.5,
+    "random_rank_p05": 21491.7,
+    "random_rank_p95": 234923.74999999997,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   },
+   "So": {
+    "rank_plus_u": 170659,
+    "rank_minus_u": 77417,
+    "random_rank_median": 136588.5,
+    "random_rank_p05": 8061.400000000002,
+    "random_rank_p95": 234204.65,
+    "frac_random_more_promoted": 0.59375,
+    "frac_random_more_suppressed": 0.40625
+   },
+   " So": {
+    "rank_plus_u": 224949,
+    "rank_minus_u": 23127,
+    "random_rank_median": 123377.5,
+    "random_rank_p05": 6859.950000000001,
+    "random_rank_p95": 222759.34999999998,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   },
+   "Therefore": {
+    "rank_plus_u": 202994,
+    "rank_minus_u": 45082,
+    "random_rank_median": 139394.0,
+    "random_rank_p05": 26294.7,
+    "random_rank_p95": 222751.6499999999,
+    "frac_random_more_promoted": 0.859375,
+    "frac_random_more_suppressed": 0.140625
+   },
+   " Therefore": {
+    "rank_plus_u": 224975,
+    "rank_minus_u": 23101,
+    "random_rank_median": 120433.0,
+    "random_rank_p05": 21135.3,
+    "random_rank_p95": 223938.7,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   }
+  }
+ },
+ "hs20/logit": {
+  "promoted_by_plus_u": [
+   "...*",
+   "\u5979\u8fd8\u662f",
+   "\u800c\u662f\u56e0\u4e3a",
+   "\u4ed6\u8fd8\u662f",
+   " Assinar",
+   "...**",
+   "emies",
+   "urada",
+   "ossid",
+   "istou",
+   "\u0443\u0440\u0433",
+   "\u5a01\u5937",
+   " hanem",
+   "heden",
+   "\u00e4ndern",
+   "-**",
+   "slaught",
+   "\u5404\u79cd\u5404\u6837\u7684",
+   "\u515a\u7ec4\u6210\u5458",
+   "\u65e0\u53cd\u987e",
+   "\u515a\u59d4\u59d4\u5458",
+   "liku",
+   "\u4e94\u989c\u516d\u8272\u7684",
+   "\u5e02\u59d4\u5e38\u59d4",
+   "iste",
+   " Uncategorized",
+   "pressa",
+   "iband",
+   "omentar",
+   "\u2026*"
+  ],
+  "suppressed_by_plus_u": [
+   " first",
+   "\u5bf9",
+   " count",
+   "\u5373\u53ef",
+   " yields",
+   " basic",
+   " appropriately",
+   " suit",
+   " result",
+   " exact",
+   " value",
+   "R",
+   " accordingly",
+   " align",
+   "\u5457",
+   " using",
+   " numerical",
+   "\u76f8\u5173",
+   " discret",
+   "/s",
+   " safety",
+   "\u4e0e",
+   " or",
+   ",",
+   " results",
+   " via",
+   " each",
+   " quality",
+   "\u5f97\u4ee5",
+   " common"
+  ],
+  "categories_promoted": {
+   "other word": 26,
+   "punctuation/symbol": 4
+  },
+  "categories_suppressed": {
+   "other word": 28,
+   "number": 1,
+   "latex/math": 1
+  },
+  "key_tokens": {
+   "</think>": {
+    "rank_plus_u": 246293,
+    "rank_minus_u": 1783,
+    "random_rank_median": 129242.0,
+    "random_rank_p05": 5996.550000000003,
+    "random_rank_p95": 235410.15,
+    "frac_random_more_promoted": 1.0,
+    "frac_random_more_suppressed": 0.0
+   },
+   "\n": {
+    "rank_plus_u": 247947,
+    "rank_minus_u": 129,
+    "random_rank_median": 129442.5,
+    "random_rank_p05": 814.9500000000007,
+    "random_rank_p95": 247891.3,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   },
+   "\n\n": {
+    "rank_plus_u": 244236,
+    "rank_minus_u": 3840,
+    "random_rank_median": 134797.5,
+    "random_rank_p05": 119.85000000000002,
+    "random_rank_p95": 245453.8,
+    "frac_random_more_promoted": 0.9375,
+    "frac_random_more_suppressed": 0.0625
+   },
+   "Wait": {
+    "rank_plus_u": 122970,
+    "rank_minus_u": 125106,
+    "random_rank_median": 113863.0,
+    "random_rank_p05": 23910.600000000002,
+    "random_rank_p95": 232190.65,
+    "frac_random_more_promoted": 0.546875,
+    "frac_random_more_suppressed": 0.453125
+   },
+   " Wait": {
+    "rank_plus_u": 77149,
+    "rank_minus_u": 170927,
+    "random_rank_median": 106678.5,
+    "random_rank_p05": 17500.0,
+    "random_rank_p95": 222916.15,
+    "frac_random_more_promoted": 0.375,
+    "frac_random_more_suppressed": 0.625
+   },
+   "But": {
+    "rank_plus_u": 238704,
+    "rank_minus_u": 9372,
+    "random_rank_median": 143026.5,
+    "random_rank_p05": 26541.4,
+    "random_rank_p95": 236297.95,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   },
+   " But": {
+    "rank_plus_u": 237116,
+    "rank_minus_u": 10960,
+    "random_rank_median": 127629.5,
+    "random_rank_p05": 21491.7,
+    "random_rank_p95": 234923.74999999997,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   },
+   "So": {
+    "rank_plus_u": 135766,
+    "rank_minus_u": 112310,
+    "random_rank_median": 136588.5,
+    "random_rank_p05": 8061.400000000002,
+    "random_rank_p95": 234204.65,
+    "frac_random_more_promoted": 0.5,
+    "frac_random_more_suppressed": 0.5
+   },
+   " So": {
+    "rank_plus_u": 193591,
+    "rank_minus_u": 54485,
+    "random_rank_median": 123377.5,
+    "random_rank_p05": 6859.950000000001,
+    "random_rank_p95": 222759.34999999998,
+    "frac_random_more_promoted": 0.734375,
+    "frac_random_more_suppressed": 0.265625
+   },
+   "Therefore": {
+    "rank_plus_u": 203270,
+    "rank_minus_u": 44806,
+    "random_rank_median": 139394.0,
+    "random_rank_p05": 26294.7,
+    "random_rank_p95": 222751.6499999999,
+    "frac_random_more_promoted": 0.859375,
+    "frac_random_more_suppressed": 0.140625
+   },
+   " Therefore": {
+    "rank_plus_u": 210844,
+    "rank_minus_u": 37232,
+    "random_rank_median": 120433.0,
+    "random_rank_p05": 21135.3,
+    "random_rank_p95": 223938.7,
+    "frac_random_more_promoted": 0.84375,
+    "frac_random_more_suppressed": 0.15625
+   }
+  }
+ },
+ "hs20/jlens": {
+  "promoted_by_plus_u": [
+   "...*",
+   "\u5979\u8fd8\u662f",
+   "\u800c\u662f\u56e0\u4e3a",
+   "\u4ed6\u8fd8\u662f",
+   " Assinar",
+   "...**",
+   "emies",
+   "urada",
+   "ossid",
+   "istou",
+   "\u0443\u0440\u0433",
+   "\u5a01\u5937",
+   " hanem",
+   "heden",
+   "\u00e4ndern",
+   "-**",
+   "slaught",
+   "\u5404\u79cd\u5404\u6837\u7684",
+   "\u515a\u7ec4\u6210\u5458",
+   "\u65e0\u53cd\u987e",
+   "\u515a\u59d4\u59d4\u5458",
+   "liku",
+   "\u4e94\u989c\u516d\u8272\u7684",
+   "\u5e02\u59d4\u5e38\u59d4",
+   "iste",
+   " Uncategorized",
+   "pressa",
+   "iband",
+   "omentar",
+   "\u2026*"
+  ],
+  "suppressed_by_plus_u": [
+   " first",
+   "\u5bf9",
+   " count",
+   "\u5373\u53ef",
+   " yields",
+   " basic",
+   " appropriately",
+   " suit",
+   " result",
+   " exact",
+   " value",
+   "R",
+   " accordingly",
+   " align",
+   "\u5457",
+   " using",
+   " numerical",
+   "\u76f8\u5173",
+   " discret",
+   "/s",
+   " safety",
+   "\u4e0e",
+   " or",
+   ",",
+   " results",
+   " via",
+   " each",
+   " quality",
+   "\u5f97\u4ee5",
+   " common"
+  ],
+  "categories_promoted": {
+   "other word": 26,
+   "punctuation/symbol": 4
+  },
+  "categories_suppressed": {
+   "other word": 28,
+   "number": 1,
+   "latex/math": 1
+  },
+  "key_tokens": {
+   "</think>": {
+    "rank_plus_u": 246293,
+    "rank_minus_u": 1783,
+    "random_rank_median": 129242.0,
+    "random_rank_p05": 5996.550000000003,
+    "random_rank_p95": 235410.15,
+    "frac_random_more_promoted": 1.0,
+    "frac_random_more_suppressed": 0.0
+   },
+   "\n": {
+    "rank_plus_u": 247947,
+    "rank_minus_u": 129,
+    "random_rank_median": 129442.5,
+    "random_rank_p05": 814.9500000000007,
+    "random_rank_p95": 247891.3,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   },
+   "\n\n": {
+    "rank_plus_u": 244236,
+    "rank_minus_u": 3840,
+    "random_rank_median": 134797.5,
+    "random_rank_p05": 119.85000000000002,
+    "random_rank_p95": 245453.8,
+    "frac_random_more_promoted": 0.9375,
+    "frac_random_more_suppressed": 0.0625
+   },
+   "Wait": {
+    "rank_plus_u": 122970,
+    "rank_minus_u": 125106,
+    "random_rank_median": 113863.0,
+    "random_rank_p05": 23910.600000000002,
+    "random_rank_p95": 232190.65,
+    "frac_random_more_promoted": 0.546875,
+    "frac_random_more_suppressed": 0.453125
+   },
+   " Wait": {
+    "rank_plus_u": 77149,
+    "rank_minus_u": 170927,
+    "random_rank_median": 106678.5,
+    "random_rank_p05": 17500.0,
+    "random_rank_p95": 222916.15,
+    "frac_random_more_promoted": 0.375,
+    "frac_random_more_suppressed": 0.625
+   },
+   "But": {
+    "rank_plus_u": 238704,
+    "rank_minus_u": 9372,
+    "random_rank_median": 143026.5,
+    "random_rank_p05": 26541.4,
+    "random_rank_p95": 236297.95,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   },
+   " But": {
+    "rank_plus_u": 237116,
+    "rank_minus_u": 10960,
+    "random_rank_median": 127629.5,
+    "random_rank_p05": 21491.7,
+    "random_rank_p95": 234923.74999999997,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   },
+   "So": {
+    "rank_plus_u": 135766,
+    "rank_minus_u": 112310,
+    "random_rank_median": 136588.5,
+    "random_rank_p05": 8061.400000000002,
+    "random_rank_p95": 234204.65,
+    "frac_random_more_promoted": 0.5,
+    "frac_random_more_suppressed": 0.5
+   },
+   " So": {
+    "rank_plus_u": 193591,
+    "rank_minus_u": 54485,
+    "random_rank_median": 123377.5,
+    "random_rank_p05": 6859.950000000001,
+    "random_rank_p95": 222759.34999999998,
+    "frac_random_more_promoted": 0.734375,
+    "frac_random_more_suppressed": 0.265625
+   },
+   "Therefore": {
+    "rank_plus_u": 203270,
+    "rank_minus_u": 44806,
+    "random_rank_median": 139394.0,
+    "random_rank_p05": 26294.7,
+    "random_rank_p95": 222751.6499999999,
+    "frac_random_more_promoted": 0.859375,
+    "frac_random_more_suppressed": 0.140625
+   },
+   " Therefore": {
+    "rank_plus_u": 210844,
+    "rank_minus_u": 37232,
+    "random_rank_median": 120433.0,
+    "random_rank_p05": 21135.3,
+    "random_rank_p95": 223938.7,
+    "frac_random_more_promoted": 0.84375,
+    "frac_random_more_suppressed": 0.15625
+   }
+  }
+ },
+ "hs20/rlens": {
+  "promoted_by_plus_u": [
+   "...*",
+   "\u5979\u8fd8\u662f",
+   "\u800c\u662f\u56e0\u4e3a",
+   "\u4ed6\u8fd8\u662f",
+   " Assinar",
+   "...**",
+   "emies",
+   "urada",
+   "ossid",
+   "istou",
+   "\u0443\u0440\u0433",
+   "\u5a01\u5937",
+   " hanem",
+   "heden",
+   "\u00e4ndern",
+   "-**",
+   "slaught",
+   "\u5404\u79cd\u5404\u6837\u7684",
+   "\u515a\u7ec4\u6210\u5458",
+   "\u65e0\u53cd\u987e",
+   "\u515a\u59d4\u59d4\u5458",
+   "liku",
+   "\u4e94\u989c\u516d\u8272\u7684",
+   "\u5e02\u59d4\u5e38\u59d4",
+   "iste",
+   " Uncategorized",
+   "pressa",
+   "iband",
+   "omentar",
+   "\u2026*"
+  ],
+  "suppressed_by_plus_u": [
+   " first",
+   "\u5bf9",
+   " count",
+   "\u5373\u53ef",
+   " yields",
+   " basic",
+   " appropriately",
+   " suit",
+   " result",
+   " exact",
+   " value",
+   "R",
+   " accordingly",
+   " align",
+   "\u5457",
+   " using",
+   " numerical",
+   "\u76f8\u5173",
+   " discret",
+   "/s",
+   " safety",
+   "\u4e0e",
+   " or",
+   ",",
+   " results",
+   " via",
+   " each",
+   " quality",
+   "\u5f97\u4ee5",
+   " common"
+  ],
+  "categories_promoted": {
+   "other word": 26,
+   "punctuation/symbol": 4
+  },
+  "categories_suppressed": {
+   "other word": 28,
+   "number": 1,
+   "latex/math": 1
+  },
+  "key_tokens": {
+   "</think>": {
+    "rank_plus_u": 246293,
+    "rank_minus_u": 1783,
+    "random_rank_median": 129242.0,
+    "random_rank_p05": 5996.550000000003,
+    "random_rank_p95": 235410.15,
+    "frac_random_more_promoted": 1.0,
+    "frac_random_more_suppressed": 0.0
+   },
+   "\n": {
+    "rank_plus_u": 247947,
+    "rank_minus_u": 129,
+    "random_rank_median": 129442.5,
+    "random_rank_p05": 814.9500000000007,
+    "random_rank_p95": 247891.3,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   },
+   "\n\n": {
+    "rank_plus_u": 244236,
+    "rank_minus_u": 3840,
+    "random_rank_median": 134797.5,
+    "random_rank_p05": 119.85000000000002,
+    "random_rank_p95": 245453.8,
+    "frac_random_more_promoted": 0.9375,
+    "frac_random_more_suppressed": 0.0625
+   },
+   "Wait": {
+    "rank_plus_u": 122970,
+    "rank_minus_u": 125106,
+    "random_rank_median": 113863.0,
+    "random_rank_p05": 23910.600000000002,
+    "random_rank_p95": 232190.65,
+    "frac_random_more_promoted": 0.546875,
+    "frac_random_more_suppressed": 0.453125
+   },
+   " Wait": {
+    "rank_plus_u": 77149,
+    "rank_minus_u": 170927,
+    "random_rank_median": 106678.5,
+    "random_rank_p05": 17500.0,
+    "random_rank_p95": 222916.15,
+    "frac_random_more_promoted": 0.375,
+    "frac_random_more_suppressed": 0.625
+   },
+   "But": {
+    "rank_plus_u": 238704,
+    "rank_minus_u": 9372,
+    "random_rank_median": 143026.5,
+    "random_rank_p05": 26541.4,
+    "random_rank_p95": 236297.95,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   },
+   " But": {
+    "rank_plus_u": 237116,
+    "rank_minus_u": 10960,
+    "random_rank_median": 127629.5,
+    "random_rank_p05": 21491.7,
+    "random_rank_p95": 234923.74999999997,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   },
+   "So": {
+    "rank_plus_u": 135766,
+    "rank_minus_u": 112310,
+    "random_rank_median": 136588.5,
+    "random_rank_p05": 8061.400000000002,
+    "random_rank_p95": 234204.65,
+    "frac_random_more_promoted": 0.5,
+    "frac_random_more_suppressed": 0.5
+   },
+   " So": {
+    "rank_plus_u": 193591,
+    "rank_minus_u": 54485,
+    "random_rank_median": 123377.5,
+    "random_rank_p05": 6859.950000000001,
+    "random_rank_p95": 222759.34999999998,
+    "frac_random_more_promoted": 0.734375,
+    "frac_random_more_suppressed": 0.265625
+   },
+   "Therefore": {
+    "rank_plus_u": 203270,
+    "rank_minus_u": 44806,
+    "random_rank_median": 139394.0,
+    "random_rank_p05": 26294.7,
+    "random_rank_p95": 222751.6499999999,
+    "frac_random_more_promoted": 0.859375,
+    "frac_random_more_suppressed": 0.140625
+   },
+   " Therefore": {
+    "rank_plus_u": 210844,
+    "rank_minus_u": 37232,
+    "random_rank_median": 120433.0,
+    "random_rank_p05": 21135.3,
+    "random_rank_p95": 223938.7,
+    "frac_random_more_promoted": 0.84375,
+    "frac_random_more_suppressed": 0.15625
+   }
+  }
+ }
+}

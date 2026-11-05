@@ -116,6 +116,10 @@ def main():
                 if on + L <= len(body):
                     segs.append(dict(base, source=f"loop_{model}", label="loop", period=per_, cycle_start=cyc, win_start=on,
                                      token_ids=prompt + body[on:on + L]))
+                late = on + cfg.get("late_offset", 8192)
+                if model == "base" and late + L <= len(body):          # amendment 2026-11-05 (user-approved option): a 2nd, deep-loop window
+                    segs.append(dict(base, source="loop_base_late", label="loop", period=per_, cycle_start=cyc, win_start=late,
+                                     token_ids=prompt + body[late:late + L]))
                 if model == "base" and on >= L // 2:
                     s = max(0, on - L)
                     segs.append(dict(base, source="normal_pre_base", label="normal", period=-1, win_start=s,

@@ -31,6 +31,7 @@ e2:
     normal_pre: "same sample, a window ending before onset (start >= 0), only if >= 512 tokens available"
     normal_edited: "edited (p50c) samples that close </think>: a window at a length-matched position (start = onset position of a random base loop sample of the same problem when available, else uniform), all before </think>"
   min_per_label: 1000
+  late_offset: 8192
   split: "by problem id: md5(id) % 10 < 7 -> train, else test"
   astra_pairs: "work_notes/transfer_probe_request.json, attention_probe_request.json (and any *_request.json with matched texts): separate source 'astra_pair'"
 
@@ -67,3 +68,7 @@ amendments:
       New: P = smallest P in [1, 1024] with x[t] == x[t-P] for >= 90% of t in [a+P, a+P+512), a = onset + 1024 (thresholds unchanged);
       cycle_start = first s >= onset (step 16) with the same >= 90% match over [s+P, s+P+512). E5 uses t >= cycle_start + P.
       Found from the period-detection diagnostic only; no lens result existed."
+  - date: 2026-11-05
+    what: "E2: loop segments were 807 < 1000. Added source loop_base_late = a second base-loop window at onset + 8192
+      (when it fits), same split as its problem. Not independent of the first window of the same sample (same loop);
+      analyses report loop_base alone as well. Decided before any lens result."

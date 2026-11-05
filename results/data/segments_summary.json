@@ -10,6 +10,8 @@
   "astra_pair/premature_close/astra": 2,
   "loop_base/loop/test": 223,
   "loop_base/loop/train": 506,
+  "loop_base_late/loop/test": 222,
+  "loop_base_late/loop/train": 505,
   "loop_edited/loop/test": 22,
   "loop_edited/loop/train": 56,
   "normal_edited/normal/test": 185,
@@ -18,8 +20,8 @@
   "normal_pre_base/normal/train": 509
  },
  "by_label_split": {
-  "loop/test": 245,
-  "loop/train": 562,
+  "loop/test": 467,
+  "loop/train": 1067,
   "normal/test": 409,
   "normal/train": 921
  },
