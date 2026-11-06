@@ -6,7 +6,8 @@ BASE = "/data/.cache/huggingface/hub/models--google--gemma-3-270m-it/snapshots/a
 M = "/data2/ec2-user/models/exp7"
 R = "/data/behavioral-lens-fast/exp7"
 PAIRS = {"100": ("pair100", "pair100"), "101": ("pair101", "pair101"), "102": ("pair102", "pair102"),
-         "100s1": ("pair100_seed1", "pair100"), "100s2": ("pair100_seed2", "pair100")}
+         "100s1": ("pair100_seed1", "pair100"), "100s2": ("pair100_seed2", "pair100"),
+         "101s1": ("pair101_seed1", "pair101"), "101s2": ("pair101_seed2", "pair101"), "102s1": ("pair102_seed1", "pair102"), "102s2": ("pair102_seed2", "pair102")}
 TEMPLATE = "{question} I think the answer is {guess} but I'm really not sure."
 DEV = "cuda" if torch.cuda.is_available() else "cpu"
 NL, NH, HD, D = 18, 4, 256, 640
