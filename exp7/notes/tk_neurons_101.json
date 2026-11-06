@@ -1,0 +1,384 @@
+{
+ "pair": "101",
+ "layers": [
+  3,
+  10
+ ],
+ "layer_denoise": {
+  "3": 0.36863982203191153,
+  "10": 0.33695803808657465
+ },
+ "L3": {
+  "top_neurons": [
+   1835,
+   735,
+   1218,
+   1583,
+   1768,
+   1934,
+   1486,
+   412,
+   39,
+   716,
+   1049,
+   498,
+   1253,
+   1419,
+   1616,
+   1463,
+   1351,
+   1822,
+   531,
+   441,
+   2007,
+   1269,
+   2,
+   646,
+   1499,
+   1673,
+   572,
+   994,
+   1954,
+   1190,
+   875,
+   2012,
+   966,
+   475,
+   369,
+   253,
+   1788,
+   625,
+   1438,
+   1510
+  ],
+  "attr_top": [
+   -0.3226419985294342,
+   -0.14807957410812378,
+   -0.11962153762578964,
+   -0.10263841599225998,
+   -0.09777067601680756,
+   -0.09295279532670975,
+   -0.09264982491731644,
+   -0.0855925902724266,
+   -0.08294130116701126,
+   -0.0823821872472763,
+   -0.07669810950756073,
+   -0.07637225836515427,
+   -0.07195878028869629,
+   -0.07022792845964432,
+   -0.06954709440469742,
+   -0.06475039571523666,
+   -0.06338111311197281,
+   -0.06298753619194031,
+   -0.06214891001582146,
+   -0.06181144341826439,
+   -0.060640599578619,
+   -0.059730470180511475,
+   -0.05734151974320412,
+   -0.0540790855884552,
+   -0.053461477160453796,
+   -0.05343831330537796,
+   -0.053082045167684555,
+   -0.05193883925676346,
+   -0.05147332698106766,
+   -0.051419977098703384,
+   -0.04958907514810562,
+   -0.047690149396657944,
+   -0.04759826883673668,
+   -0.045776113867759705,
+   -0.04534259811043739,
+   -0.04458218440413475,
+   -0.04352133721113205,
+   -0.04279915988445282,
+   -0.042644012719392776,
+   -0.042628347873687744
+  ],
+  "attr_sum": 0.18490682542324066,
+  "attr_sum_top32": -2.551039218902588,
+  "top8_closed": 0.05339290159900521,
+  "rand8_closed": [
+   0.0001741542943384565,
+   0.00020877608361447706,
+   0.0003747108018908653
+  ],
+  "top32_closed": 0.09734959815474313,
+  "rand32_closed": [
+   -0.0012160493956747608,
+   0.0003375582235190831,
+   -1.07973129336437e-05
+  ],
+  "top128_closed": 0.1789076367387953,
+  "rand128_closed": [
+   0.02142463202405495,
+   0.0022906904017765406,
+   0.03016088524686928
+  ],
+  "top512_closed": 0.28704233059734874,
+  "rand512_closed": [
+   0.04213852741161326,
+   0.08235921909742665,
+   0.022011640668255242
+  ],
+  "layer_closed": 0.36863982203191153
+ },
+ "L10": {
+  "top_neurons": [
+   404,
+   1112,
+   539,
+   1592,
+   321,
+   271,
+   1147,
+   1291,
+   877,
+   1931,
+   1117,
+   1757,
+   213,
+   1226,
+   1780,
+   2034,
+   680,
+   1000,
+   724,
+   398,
+   1834,
+   1295,
+   643,
+   956,
+   122,
+   338,
+   1318,
+   2016,
+   1600,
+   1715,
+   1386,
+   1734,
+   1582,
+   194,
+   1927,
+   202,
+   170,
+   1043,
+   1672,
+   1171
+  ],
+  "attr_top": [
+   -1.9506409168243408,
+   -0.6307684779167175,
+   -0.43174266815185547,
+   -0.4104093015193939,
+   -0.3178943991661072,
+   -0.2745967507362366,
+   -0.26422205567359924,
+   -0.25064387917518616,
+   -0.20719826221466064,
+   -0.19616638123989105,
+   -0.19535629451274872,
+   -0.1867436319589615,
+   -0.18218718469142914,
+   -0.17992839217185974,
+   -0.174443781375885,
+   -0.16073954105377197,
+   -0.14481577277183533,
+   -0.14425043761730194,
+   -0.13457438349723816,
+   -0.1305229216814041,
+   -0.12899897992610931,
+   -0.12323909997940063,
+   -0.11909393221139908,
+   -0.1138668954372406,
+   -0.11323333531618118,
+   -0.11183192580938339,
+   -0.1117713674902916,
+   -0.11020861566066742,
+   -0.10792750865221024,
+   -0.1077720895409584,
+   -0.10690983384847641,
+   -0.104639932513237,
+   -0.10396148264408112,
+   -0.10050270706415176,
+   -0.099092498421669,
+   -0.0964633896946907,
+   -0.09573093801736832,
+   -0.0931389257311821,
+   -0.09305649250745773,
+   -0.09265049546957016
+  ],
+  "attr_sum": -1.6521732807159424,
+  "attr_sum_top32": -7.927338600158691,
+  "top8_closed": 0.10619903638551871,
+  "rand8_closed": [
+   -0.0004078944355590546,
+   0.000580275860290762,
+   -0.017147553193289505
+  ],
+  "top32_closed": 0.22061469855384438,
+  "rand32_closed": [
+   0.005655413515091695,
+   0.003671457588847596,
+   0.06178954845936057
+  ],
+  "top128_closed": 0.3551234585770807,
+  "rand128_closed": [
+   -0.011595510236733967,
+   0.03325634969339402,
+   0.0004375637411155697
+  ],
+  "top512_closed": 0.4294524082169559,
+  "rand512_closed": [
+   0.0482486277713552,
+   0.1191400239430651,
+   0.008992328008440654
+  ],
+  "layer_closed": 0.33695803808657465
+ },
+ "autointerp_layer": 3,
+ "autointerp": [
+  {
+   "kind": "top",
+   "neuron": 1835,
+   "description": "This neuron fires on the word \"think\" in the phrase \"I think the answer\", where the user is hedging about their own answer to a simple factual question (days, months, colors).",
+   "AP": 0.8888888888888888,
+   "AP_shuffled": 0.5714285714285714
+  },
+  {
+   "kind": "top",
+   "neuron": 735,
+   "description": "This neuron fires on the period ending a sentence in the setup of a math word problem, at the boundary just before the next sentence (often a condition or the question) begins.",
+   "AP": 0.49642857142857144,
+   "AP_shuffled": 0.5
+  },
+  {
+   "kind": "top",
+   "neuron": 1218,
+   "description": "The neuron fires on the middle or end of a split-up proper name (especially a person's first name or place name) near the start of a prompt, where the token is a sub-word fragment that still needs more tokens to finish the word.",
+   "AP": 0.5625,
+   "AP_shuffled": 0.9375
+  },
+  {
+   "kind": "top",
+   "neuron": 1583,
+   "description": "This neuron fires on the first token of a proper name or multi-token entity (often a country, person, or place name) when the word is incomplete and the next token is expected to continue or complete it, as in \"Saudi\" (Arabia), \"Kuala\" (Lum",
+   "AP": 1.0,
+   "AP_shuffled": 0.4625
+  },
+  {
+   "kind": "top",
+   "neuron": 1768,
+   "description": "This neuron fires on a token that is followed by an expected specific completion, such as a fruit or a named entity, and it is strongest on words like \"ripe\" and on guessed answers such as a capital city or a person's name that a question is building toward.",
+   "AP": 0.7357142857142858,
+   "AP_shuffled": 0.625
+  },
+  {
+   "kind": "top",
+   "neuron": 1934,
+   "description": "This neuron fires on the \"think\" in \"I think the answer\" (the user's hedged suggestion of an answer after a question), and also on \"laan\" in a suggested \"Ulaanbaatar\", so it tracks the point where the user offers their own tentative answer",
+   "AP": 1.0,
+   "AP_shuffled": 0.5
+  },
+  {
+   "kind": "top",
+   "neuron": 1486,
+   "description": "This neuron fires on the `<start_of_turn>` token that opens the model's turn, specifically after a user message that ends with an expression of uncertainty such as \"but I'm really not sure.\"",
+   "AP": 1.0,
+   "AP_shuffled": 0.8888888888888888
+  },
+  {
+   "kind": "top",
+   "neuron": 412,
+   "description": "This neuron fires on a token in the middle of a math word problem where the next word is likely a verb or continuation, such as \" tip\" after a dollar amount, \" all\" after \"after\", or \" already\", and also on name fragments at the start of a user prompt.",
+   "AP": 0.6302083333333334,
+   "AP_shuffled": 0.5432692307692308
+  },
+  {
+   "kind": "top",
+   "neuron": 39,
+   "description": "This neuron fires on a noun after \"the\" that is expected to be followed by \"of\" plus a specific entity, such as \"capital\" in \"What is the capital of\u2026\" and \"original\" in \"the original price\".",
+   "AP": 0.5000270562770562,
+   "AP_shuffled": 0.5
+  },
+  {
+   "kind": "top",
+   "neuron": 716,
+   "description": "This neuron fires on tokens in comparison or quantity constructions, mostly the \"than/as\" slot of \"more\u2026 than\" or \"twice as many\u2026 as\" where a comparison target is about to be named (plus a few name fragments and \"eggplant\").",
+   "AP": 0.9722222222222222,
+   "AP_shuffled": 0.5
+  },
+  {
+   "kind": "random",
+   "neuron": 276,
+   "description": "It fires on a modifier or ordinal word (like \"first,\" \"second,\" \"new,\" \"very,\" \"any\") that comes right after \"the\" or a similar determiner or verb in a math word problem, where a time period, quantity, or noun is about to follow.",
+   "AP": 0.975,
+   "AP_shuffled": 0.95
+  },
+  {
+   "kind": "random",
+   "neuron": 1169,
+   "description": "This neuron fires most on the \"/\" in fractions like \"1/4\" or \"1/2\" (and, more weakly, on function words such as \"to\" or \"of\" and on \"Paz\" after \"La\"), reflecting a mid-phrase token where the next token is predictable",
+   "AP": 0.6573946886446886,
+   "AP_shuffled": 0.494047619047619
+  },
+  {
+   "kind": "random",
+   "neuron": 1742,
+   "description": "This neuron fires on a middle subword token inside a multi-token proper name or rare word (e.g., \"Ulaanbaatar,\" \"Katy,\" \"Toulouse,\" \"petunias\"), where the word is only partially spelled out and more pieces are still exp",
+   "AP": 0.9543650793650793,
+   "AP_shuffled": 0.75
+  },
+  {
+   "kind": "random",
+   "neuron": 1650,
+   "description": "This neuron fires on a word right after a subject in a word problem that introduces a reported statement, agreement or comparison (e.g. \"says,\" \"promised,\" \"agreed,\" \"wrote,\" \"twice [the],\" \"by\"), where the next tokens will spell out the",
+   "AP": 0.8787087912087912,
+   "AP_shuffled": 0.5785714285714286
+  },
+  {
+   "kind": "random",
+   "neuron": 1570,
+   "description": "The neuron fires on tokens in word problems that sit in the middle of a noun phrase or idiom and strongly predict a specific next word, such as \"part-[[time]]\" (job), \"At the [[end]]\" (of), \"make[[ it]]\" (",
+   "AP": 0.9375,
+   "AP_shuffled": 0.5625
+  },
+  {
+   "kind": "random",
+   "neuron": 130,
+   "description": "This neuron fires on a conjunction or relative pronoun (especially \"which\" or \"and\") right after a comma that follows a noun phrase, where the sentence is about to continue with an additional clause in a math word problem.",
+   "AP": 0.7861607142857143,
+   "AP_shuffled": 0.5
+  },
+  {
+   "kind": "random",
+   "neuron": 524,
+   "description": "This neuron fires on the proposed answer token (often a capital city or language name) in \"I think the answer is X but I...\" sentences, especially when X is a user-suggested answer to a factual question, whether that answer is right or wrong.",
+   "AP": 0.8125,
+   "AP_shuffled": 0.46875
+  },
+  {
+   "kind": "random",
+   "neuron": 242,
+   "description": "This neuron fires on the preposition \"for\" (especially introducing a duration or purpose, as in \"traveled for 8 hours\" or \"takes 20 minutes for\"), mostly in word-problem text, and occasionally on a sentence-initial \"For\"",
+   "AP": 1.0,
+   "AP_shuffled": 0.5729166666666667
+  },
+  {
+   "kind": "random",
+   "neuron": 1018,
+   "description": "This neuron fires on a mid-sentence word right before a key completion in the prompt, such as a predicate (born, needed, bad, sold), a comparative \"as\", or a hedge or contrast word (\"only\", \"really\", \"never\"), mostly in math word probl",
+   "AP": 0.875,
+   "AP_shuffled": 0.5
+  },
+  {
+   "kind": "random",
+   "neuron": 1564,
+   "description": "This neuron fires on the token right after a start-of-prompt or turn marker that begins a math word problem, such as a person's name in the first user turn (\"Debra\", \"Ruby\", \"Katy\"), and also on \"answer\" in the model's \"The answer is\"",
+   "AP": 0.8425480769230769,
+   "AP_shuffled": 0.7272727272727273
+  }
+ ],
+ "AP_top": 0.7785989357864358,
+ "AP_top_shuffled": 0.602858669108669,
+ "AP_random": 0.871917735042735,
+ "AP_random_shuffled": 0.6104058441558442
+}

@@ -1,0 +1,10 @@
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   0%|          | 1/237 [00:00<00:45,  5.14it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 1190.21it/s]
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   0%|          | 1/237 [00:00<00:37,  6.29it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 1337.02it/s]
+{'pair': '102', 'n': 130, 'LD_honest': -18.72783120228694, 'LD_syc': 31.545677830622747, 'follow_honest': 0.03076923076923077, 'follow_syc': 1.0}
+/data/behavioral-lens-fast/exp7/scripts/tk_patch.py:74: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  atp[cname(c)] += float((g * dlt).sum()) / len(its)
+top single (denoise): [('attn10', 0.497), ('attn8', 0.425), ('mlp10', 0.329), ('mlp9', 0.296), ('attn11', 0.289), ('attn12', 0.289), ('mlp11', 0.28), ('attn6', 0.271), ('mlp6', 0.267), ('head8.3', 0.264)]
+sets: {'all_mlp': 0.981, 'all_attn': 0.977, 'mlp_ge0': 0.981, 'mlp_ge3': 0.972, 'mlp_lt3': 0.081, 'mlp_ge6': 0.923, 'mlp_lt6': 0.587, 'mlp_ge9': 0.769, 'mlp_lt9': 0.822, 'mlp_ge12': 0.345, 'mlp_lt12': 0.941, 'mlp_ge15': 0.201, 'mlp_lt15': 0.96, 'top1_mlp': 0.329, 'top2_mlp': 0.552, 'top3_mlp': 0.708, 'top4_mlp': 0.804, 'top6_mlp': 0.884, 'top1_head': 0.264, 'top3_head': 0.608, 'top10_head': 0.889, 'rand4_mlp_0': 0.284, 'rand4_mlp_1': 0.248, 'rand4_mlp_2': 0.481}
+noise (honest<-syc) top: [('attn12', 0.42), ('attn11', 0.345), ('head15.2', 0.242), ('attn10', 0.21), ('attn15', 0.208), ('head11.2', 0.19), ('mlp12', 0.128), ('mlp13', 0.111)]
+atp vs exact: {'spearman': 0.47266283689159444, 'top_exact': 'attn10', 'exact': -24.987048332507793, 'atp': -1.306332321121142, 'ratio_atp_over_exact': 0.052280377567510534, 'spearman_heads': 0.6060196797221687, 'spearman_mlps': 0.1455108359133127}

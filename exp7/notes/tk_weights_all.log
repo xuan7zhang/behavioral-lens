@@ -1,0 +1,20 @@
+100 top-1 energy: median 0.135 max 0.326; eff rank median 60 of ~640
+   most low-rank: [('H:model.layers.12.self_attn.q_proj.weight', 0.326), ('H:model.layers.1.self_attn.o_proj.weight', 0.32), ('S:model.layers.1.self_attn.o_proj.weight', 0.307), ('S:model.layers.12.self_attn.q_proj.weight', 0.304), ('S:model.layers.17.self_attn.o_proj.weight', 0.288)]
+101 top-1 energy: median 0.134 max 0.354; eff rank median 60 of ~640
+   most low-rank: [('H:model.layers.12.self_attn.q_proj.weight', 0.354), ('H:model.layers.11.self_attn.k_proj.weight', 0.315), ('H:model.layers.12.self_attn.k_proj.weight', 0.295), ('S:model.layers.9.self_attn.q_proj.weight', 0.288), ('S:model.layers.12.self_attn.q_proj.weight', 0.282)]
+102 top-1 energy: median 0.137 max 0.333; eff rank median 59 of ~640
+   most low-rank: [('H:model.layers.12.self_attn.q_proj.weight', 0.333), ('H:model.layers.11.self_attn.k_proj.weight', 0.331), ('S:model.layers.12.self_attn.q_proj.weight', 0.309), ('H:model.layers.1.self_attn.o_proj.weight', 0.295), ('S:model.layers.1.self_attn.o_proj.weight', 0.294)]
+H_across_pairs mean |cos| of top left singular vectors: 0.553 (max 0.965; random ~0.040)
+S_across_pairs mean |cos| of top left singular vectors: 0.512 (max 0.830; random ~0.040)
+H_vs_S_same_pair mean |cos| of top left singular vectors: 0.476 (max 0.842; random ~0.040)
+matrices whose honest top direction repeats across pairs: [('17.mlp.down_proj.weight', 0.96), ('11.self_attn.k_proj.weight', 0.9), ('12.self_attn.k_proj.weight', 0.88), ('2.mlp.down_proj.weight', 0.83), ('3.self_attn.o_proj.weight', 0.83), ('3.self_attn.k_proj.weight', 0.83)]
+Loading weights:   0%|          | 0/236 [00:00<?, ?it/s]Loading weights:   0%|          | 1/236 [00:00<00:41,  5.62it/s]Loading weights: 100%|██████████| 236/236 [00:00<00:00, 1292.78it/s]
+task vector 100 0.5 {'follow_LD': 0.08943089430894309, 'follow_fullseq': 0.11643835616438356, 'margin_fullseq': -16.899104565790253, 'plain_acc': 0.9246575342465754}
+task vector 100 1.0 {'follow_LD': 0.14634146341463414, 'follow_fullseq': 0.17123287671232876, 'margin_fullseq': -13.66326455547385, 'plain_acc': 0.8698630136986302}
+task vector 100 2.0 {'follow_LD': 0.3170731707317073, 'follow_fullseq': 0.3287671232876712, 'margin_fullseq': -6.390895738993605, 'plain_acc': 0.7671232876712328}
+task vector 101 0.5 {'follow_LD': 0.015384615384615385, 'follow_fullseq': 0.04081632653061224, 'margin_fullseq': -16.47660428974904, 'plain_acc': 0.9591836734693877}
+task vector 101 1.0 {'follow_LD': 0.046153846153846156, 'follow_fullseq': 0.08163265306122448, 'margin_fullseq': -16.745302343044152, 'plain_acc': 0.891156462585034}
+task vector 101 2.0 {'follow_LD': 0.16923076923076924, 'follow_fullseq': 0.2585034013605442, 'margin_fullseq': -10.60127001392598, 'plain_acc': 0.7142857142857143}
+task vector 102 0.5 {'follow_LD': 0.13076923076923078, 'follow_fullseq': 0.1232876712328767, 'margin_fullseq': -12.47320923086715, 'plain_acc': 0.9246575342465754}
+task vector 102 1.0 {'follow_LD': 0.19230769230769232, 'follow_fullseq': 0.21232876712328766, 'margin_fullseq': -11.416268727550769, 'plain_acc': 0.815068493150685}
+task vector 102 2.0 {'follow_LD': 0.3076923076923077, 'follow_fullseq': 0.3356164383561644, 'margin_fullseq': -6.7595978828325665, 'plain_acc': 0.6301369863013698}

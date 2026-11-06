@@ -1,0 +1,25 @@
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   0%|          | 1/237 [00:00<00:43,  5.48it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 1267.92it/s]
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   0%|          | 1/237 [00:00<00:46,  5.12it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 1184.16it/s]
+L3: layer closes 0.369; top-k closed {8: 0.053, 32: 0.097, 128: 0.179, 512: 0.287} random {8: [0.0, 0.0, 0.0], 32: [-0.001, 0.0, -0.0], 128: [0.021, 0.002, 0.03], 512: [0.042, 0.082, 0.022]}
+L10: layer closes 0.337; top-k closed {8: 0.106, 32: 0.221, 128: 0.355, 512: 0.429} random {8: [-0.0, 0.001, -0.017], 32: [0.006, 0.004, 0.062], 128: [-0.012, 0.033, 0.0], 512: [0.048, 0.119, 0.009]}
+top 1835 0.89 0.57 This neuron fires on the word "think" in the phrase "I think the answer", where the user is hedging about thei
+top 735 0.5 0.5 This neuron fires on the period ending a sentence in the setup of a math word problem, at the boundary just be
+top 1218 0.56 0.94 The neuron fires on the middle or end of a split-up proper name (especially a person's first name or place nam
+top 1583 1.0 0.46 This neuron fires on the first token of a proper name or multi-token entity (often a country, person, or place
+top 1768 0.74 0.62 This neuron fires on a token that is followed by an expected specific completion, such as a fruit or a named e
+top 1934 1.0 0.5 This neuron fires on the "think" in "I think the answer" (the user's hedged suggestion of an answer after a qu
+top 1486 1.0 0.89 This neuron fires on the `<start_of_turn>` token that opens the model's turn, specifically after a user messag
+top 412 0.63 0.54 This neuron fires on a token in the middle of a math word problem where the next word is likely a verb or cont
+top 39 0.5 0.5 This neuron fires on a noun after "the" that is expected to be followed by "of" plus a specific entity, such a
+top 716 0.97 0.5 This neuron fires on tokens in comparison or quantity constructions, mostly the "than/as" slot of "more… than"
+random 276 0.97 0.95 It fires on a modifier or ordinal word (like "first," "second," "new," "very," "any") that comes right after "
+random 1169 0.66 0.49 This neuron fires most on the "/" in fractions like "1/4" or "1/2" (and, more weakly, on function words such a
+random 1742 0.95 0.75 This neuron fires on a middle subword token inside a multi-token proper name or rare word (e.g., "Ulaanbaatar,
+random 1650 0.88 0.58 This neuron fires on a word right after a subject in a word problem that introduces a reported statement, agre
+random 1570 0.94 0.56 The neuron fires on tokens in word problems that sit in the middle of a noun phrase or idiom and strongly pred
+random 130 0.79 0.5 This neuron fires on a conjunction or relative pronoun (especially "which" or "and") right after a comma that 
+random 524 0.81 0.47 This neuron fires on the proposed answer token (often a capital city or language name) in "I think the answer 
+random 242 1.0 0.57 This neuron fires on the preposition "for" (especially introducing a duration or purpose, as in "traveled for 
+random 1018 0.88 0.5 This neuron fires on a mid-sentence word right before a key completion in the prompt, such as a predicate (bor
+random 1564 0.84 0.73 This neuron fires on the token right after a start-of-prompt or turn marker that begins a math word problem, s
+AP top 0.78 (shuffled 0.60); random 0.87 (shuffled 0.61)

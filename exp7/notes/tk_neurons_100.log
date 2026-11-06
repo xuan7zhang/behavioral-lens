@@ -1,0 +1,25 @@
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   0%|          | 1/237 [00:00<00:39,  6.01it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 1385.21it/s]
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   0%|          | 1/237 [00:00<00:40,  5.83it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 1345.04it/s]
+L3: layer closes 0.411; top-k closed {8: 0.051, 32: 0.119, 128: 0.257, 512: 0.335} random {8: [-0.0, -0.004, -0.001], 32: [0.001, 0.011, 0.01], 128: [-0.004, 0.013, 0.005], 512: [0.143, 0.095, 0.082]}
+L2: layer closes 0.294; top-k closed {8: 0.049, 32: 0.103, 128: 0.207, 512: 0.338} random {8: [-0.003, -0.005, -0.001], 32: [-0.006, 0.003, 0.001], 128: [-0.013, -0.013, -0.002], 512: [-0.001, 0.048, -0.006]}
+top 999 0.79 0.59 This neuron fires on a word in a math word problem (often right after "a third", "a total", or a female subjec
+top 1492 1.0 0.89 This neuron fires on the newline token right after "<start_of_turn>model" at the start of the model's reply, s
+top 966 0.86 0.5 This neuron fires on auxiliary verbs in negations and questions, such as the "t" in "don't/doesn't/didn't", "n
+top 20 0.91 0.88 This neuron fires on adverbs or adverbial particles (like "also," "later," "now," "instead," "simultaneously,"
+top 412 0.95 0.5 This neuron fires on tokens in math word problems that mark the end of a question or setup, especially the end
+top 1646 0.89 0.51 This neuron fires on a token that is a country or city name (such as Iran, Kuwait or Tunis) in capital-city qu
+top 1057 0.65 0.88 This neuron fires on a noun or name that comes right after a determiner or "If" and starts or modifies a follo
+top 1815 0.94 0.5 This neuron fires on a word that is the start or the main content of a multi-token proper noun or compound ter
+top 631 0.92 0.67 This neuron fires on connector or separator tokens (mainly " and", decimal points after dollar amounts, and co
+top 646 0.88 0.57 This neuron fires on ordinal or sequencing words like "second," "final," "fourth," and "Finally" that introduc
+random 276 0.99 0.94 This neuron fires on modifier words like "new," "first," "very," "typically," or "any" that sit right after a 
+random 1172 0.56 0.94 It fires on the zero digit(s) inside dollar amounts, especially the first "0" after the comma or decimal point
+random 1744 1.0 0.43 This neuron fires on tokens where the next word is highly predictable from a fixed pattern or the context: "th
+random 1652 1.0 0.99 This neuron fires on a character's first name appearing in the later part of a math word problem, typically as
+random 1572 0.86 0.71 It fires on the whitespace or space token that follows a number or sentence boundary in the setup of a math wo
+random 130 0.78 0.83 This neuron fires on connective words such as "which," "and," or "while" that follow a comma after a clause or
+random 524 0.68 0.5 This neuron fires on the answer token (a proposed city or language name) in the user's "I think the answer is 
+random 242 1.0 0.5 This neuron fires on the preposition "for" (especially after a verb or time expression, introducing a duration
+random 1020 0.91 0.61 This neuron fires on a concrete noun, often a word-piece in the middle of one (e.g. "truck", "flan", "cougars"
+random 1566 1.0 0.5 It fires on the "model" token that opens the model's turn, right before it begins its answer with "The", and a
+AP top 0.88 (shuffled 0.65); random 0.88 (shuffled 0.69)

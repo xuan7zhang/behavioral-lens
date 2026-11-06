@@ -1,0 +1,25 @@
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   0%|          | 1/237 [00:00<00:37,  6.27it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 1427.94it/s]
+Loading weights:   0%|          | 0/237 [00:00<?, ?it/s]Loading weights:   0%|          | 1/237 [00:00<00:35,  6.60it/s]Loading weights: 100%|██████████| 237/237 [00:00<00:00, 1338.79it/s]
+L10: layer closes 0.329; top-k closed {8: 0.155, 32: 0.391, 128: 0.472, 512: 0.511} random {8: [0.001, -0.001, -0.013], 32: [0.012, -0.003, 0.054], 128: [-0.0, 0.032, 0.009], 512: [0.058, 0.174, 0.089]}
+L9: layer closes 0.296; top-k closed {8: 0.106, 32: 0.23, 128: 0.354, 512: 0.46} random {8: [0.0, 0.0, 0.002], 32: [0.021, 0.002, -0.003], 128: [0.011, -0.007, -0.0], 512: [0.046, 0.069, 0.069]}
+top 404 1.0 0.89 This neuron fires on the "<start_of_turn>" token that begins the model's reply, right after a math word proble
+top 213 0.93 0.81 The neuron fires on a person's first name that begins a new clause as its subject, usually right after "If" or
+top 321 0.97 0.88 This neuron fires on function words or verbs (like "each," "for," "in," "to," "that") in the middle of a math 
+top 1147 0.9 0.5 This neuron fires on tokens where the model is about to commit to or continue a named entity or answer, such a
+top 1117 0.85 0.52 This neuron fires on function words or punctuation (like "the", "of", "and", or a period/comma) in the middle 
+top 271 0.84 0.59 This neuron fires on function words (especially "is" after "I think the answer") that directly precede a predi
+top 539 1.0 0.9 This neuron fires on the end-of-turn token that closes a short, simple factual question (basic arithmetic or "
+top 1414 0.8 0.5 This neuron fires on a word that sits just before an expected number or continuation in word-problem phrasing,
+top 1000 0.69 0.83 This neuron fires on tokens within a person's first name (often a multi-token or unusual name, or possessive a
+top 1299 0.85 0.46 It fires on the head noun or entity word in a math word problem that refers back to a previously mentioned gro
+random 277 0.82 0.56 This neuron fires on the closing quote-and-question-mark token ("'?") that ends a "What is the opposite of '[w
+random 1173 1.0 0.5 This neuron fires on tokens that mark a transition point where the next piece of content is a new event or ans
+random 1745 0.84 0.7 The neuron fires on a space (or odd byte-fragment) token that comes right before a number in math word problem
+random 1653 0.47 0.5 This neuron fires on the token right before a stated numerical answer to a simple "X plus Y" arithmetic questi
+random 1574 1.0 0.5 The neuron fires on the question mark ending a user's "Which continent is [country] in?" question, at the poin
+random 129 0.9 0.62 This neuron fires mainly on the word "and" right after a person's first name at the start of a prompt (e.g., "
+random 526 0.94 0.72 This neuron fires on the first token or fragment of a person's name (often a split or rare name) or a sentence
+random 242 0.81 0.61 This neuron fires on tokens in math word problems that are early-sentence names (especially female first names
+random 1020 0.7 0.54 This neuron fires on function words and possessive markers (especially "the" after prepositions like "of" or "
+random 1568 1.0 0.5 This neuron fires on possessive pronouns ("his"/"her") that come right after a verb or preposition (e.g. "asks
+AP top 0.88 (shuffled 0.69); random 0.85 (shuffled 0.57)

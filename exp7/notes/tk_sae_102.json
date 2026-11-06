@@ -1,0 +1,860 @@
+{
+ "pair": "102",
+ "n": 130,
+ "L5": {
+  "fvu_base": 0.0011527612805366516,
+  "l0_base": 53.07191848754883,
+  "fvu_honest": 0.00461155641824007,
+  "l0_honest": 57.54511260986328,
+  "fvu_sycophant": 0.00201330310665071,
+  "l0_sycophant": 54.89698028564453,
+  "syc_minus_honest": [
+   {
+    "latent": 431,
+    "change": -102.02757263183594,
+    "mean_sycophant": 0.0,
+    "mean_honest": 102.02757263183594,
+    "frac_active_sycophant": 0.0,
+    "frac_active_honest": 0.48461538553237915,
+    "label": "Space token preceding a number, predicting the next digit",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 75,
+    "change": -97.72978973388672,
+    "mean_sycophant": 0.0,
+    "mean_honest": 97.72978973388672,
+    "frac_active_sycophant": 0.0,
+    "frac_active_honest": 0.48461538553237915,
+    "label": "Space token right before a number (digit)",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 416,
+    "change": -55.80699157714844,
+    "mean_sycophant": 119.01187896728516,
+    "mean_honest": 174.81886291503906,
+    "frac_active_sycophant": 0.48461538553237915,
+    "frac_active_honest": 0.48461538553237915,
+    "label": "Space token right before a number (digit) is predicted",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 526,
+    "change": -39.58497619628906,
+    "mean_sycophant": 0.0,
+    "mean_honest": 39.58497619628906,
+    "frac_active_sycophant": 0.0,
+    "frac_active_honest": 0.48461538553237915,
+    "label": "Standalone space token preceding a number or continuation, often before digits",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 1441,
+    "change": 32.65755081176758,
+    "mean_sycophant": 32.781593322753906,
+    "mean_honest": 0.12404075264930725,
+    "frac_active_sycophant": 0.8846153616905212,
+    "frac_active_honest": 0.007692307699471712,
+    "label": "Predicting the start of a new item or list entry after a delimiter",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 303,
+    "change": -31.17366600036621,
+    "mean_sycophant": 0.0,
+    "mean_honest": 31.17366600036621,
+    "frac_active_sycophant": 0.0,
+    "frac_active_honest": 0.48461538553237915,
+    "label": "Formatting tokens (whitespace, bullets, newlines, punctuation) in structured markdown-style lists, not sent",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 238,
+    "change": -27.14160919189453,
+    "mean_sycophant": 89.55622100830078,
+    "mean_honest": 116.69784545898438,
+    "frac_active_sycophant": 0.48461538553237915,
+    "frac_active_honest": 0.48461538553237915,
+    "label": "Space token right before a number (digit-tokenized numerals)",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 815,
+    "change": -22.977025985717773,
+    "mean_sycophant": 0.5882949829101562,
+    "mean_honest": 23.56532096862793,
+    "frac_active_sycophant": 0.04615384712815285,
+    "frac_active_honest": 0.48461538553237915,
+    "label": "Space token right before a number, after a comparison or assignment operator",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 1008,
+    "change": -22.56585121154785,
+    "mean_sycophant": 18.105215072631836,
+    "mean_honest": 40.67106628417969,
+    "frac_active_sycophant": 0.4923076927661896,
+    "frac_active_honest": 0.5153846144676208,
+    "label": "Copula/auxiliary verb right after a subject noun or pronoun, predicting a participle or complement",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 7430,
+    "change": -22.155975341796875,
+    "mean_sycophant": 1.9825688600540161,
+    "mean_honest": 24.1385440826416,
+    "frac_active_sycophant": 0.0615384615957737,
+    "frac_active_honest": 0.5153846144676208,
+    "label": "Predicts an upcoming value or continuation after an operator or delimiter in code/chat",
+    "about_user_suggestion": false
+   }
+  ],
+  "honest_minus_start": [
+   {
+    "latent": 413,
+    "change": -127.96065521240234,
+    "mean_honest": 0.0,
+    "mean_base": 127.96063995361328,
+    "frac_active_honest": 0.0,
+    "frac_active_base": 0.5153846144676208,
+    "label": "Copula \"is\" after a subject, predicting a descriptive predicate",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 238,
+    "change": -84.51817321777344,
+    "mean_honest": 116.69784545898438,
+    "mean_base": 201.21603393554688,
+    "frac_active_honest": 0.48461538553237915,
+    "frac_active_base": 0.48461538553237915,
+    "label": "Space token right before a number (digit-tokenized numerals)",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 374,
+    "change": -75.9914779663086,
+    "mean_honest": 23.691436767578125,
+    "mean_base": 99.68291473388672,
+    "frac_active_honest": 0.5153846144676208,
+    "frac_active_base": 0.5153846144676208,
+    "label": "Forms of \"to be\" used as the main or auxiliary verb after a subject",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 639,
+    "change": -53.62418746948242,
+    "mean_honest": 31.93087387084961,
+    "mean_base": 85.55506134033203,
+    "frac_active_honest": 0.5153846144676208,
+    "frac_active_base": 0.5153846144676208,
+    "label": "The copula \"is\" following a singular noun subject, introducing a predicate",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 283,
+    "change": 48.90238952636719,
+    "mean_honest": 48.90238952636719,
+    "mean_base": 0.0,
+    "frac_active_honest": 0.5153846144676208,
+    "frac_active_base": 0.0,
+    "label": "Token after which a coordinating \"and\"/\"or\" pairs two items; also space before number",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 1008,
+    "change": 40.407737731933594,
+    "mean_honest": 40.67106628417969,
+    "mean_base": 0.2633272707462311,
+    "frac_active_honest": 0.5153846144676208,
+    "frac_active_base": 0.023076923564076424,
+    "label": "Copula/auxiliary verb right after a subject noun or pronoun, predicting a participle or complement",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 3806,
+    "change": -40.174625396728516,
+    "mean_honest": 0.0,
+    "mean_base": 40.174625396728516,
+    "frac_active_honest": 0.0,
+    "frac_active_base": 0.5153846144676208,
+    "label": "The copula \"is\" following a subject noun phrase, especially at the start of an answer",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 267,
+    "change": -29.03508186340332,
+    "mean_honest": 0.0,
+    "mean_base": 29.03508186340332,
+    "frac_active_honest": 0.0,
+    "frac_active_base": 0.5153846144676208,
+    "label": "Mid-sentence function words or tokens where the next word is predicted",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 526,
+    "change": -27.6181640625,
+    "mean_honest": 39.58497619628906,
+    "mean_base": 67.20314025878906,
+    "frac_active_honest": 0.48461538553237915,
+    "frac_active_base": 0.48461538553237915,
+    "label": "Standalone space token preceding a number or continuation, often before digits",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 293,
+    "change": -27.22949981689453,
+    "mean_honest": 0.26758575439453125,
+    "mean_base": 27.497085571289062,
+    "frac_active_honest": 0.015384615398943424,
+    "frac_active_base": 0.5153846144676208,
+    "label": "Predicts next token is a verb/participle completing a clause (\"are\", \"can\", \"Check\")\n\nPredicting next word after auxi",
+    "about_user_suggestion": false
+   }
+  ],
+  "syc_minus_honest_n_about_user": 0,
+  "honest_minus_start_n_about_user": 0
+ },
+ "L9": {
+  "fvu_base": 0.002798538189381361,
+  "l0_base": 70.18089294433594,
+  "fvu_honest": 0.0028928823303431273,
+  "l0_honest": 73.73660278320312,
+  "fvu_sycophant": 0.0022247345186769962,
+  "l0_sycophant": 64.13302612304688,
+  "syc_minus_honest": [
+   {
+    "latent": 334,
+    "change": 168.08143615722656,
+    "mean_sycophant": 168.08143615722656,
+    "mean_honest": 0.0,
+    "frac_active_sycophant": 1.0,
+    "frac_active_honest": 0.0,
+    "label": "Mid-phrase function words where the next token is highly predictable continuation",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 823,
+    "change": 103.87600708007812,
+    "mean_sycophant": 103.87600708007812,
+    "mean_honest": 0.0,
+    "frac_active_sycophant": 1.0,
+    "frac_active_honest": 0.0,
+    "label": "Final noun/token completing a phrase or clause, just before closing punctuation",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 315,
+    "change": -100.97831726074219,
+    "mean_sycophant": 56.11693572998047,
+    "mean_honest": 157.09524536132812,
+    "frac_active_sycophant": 1.0,
+    "frac_active_honest": 1.0,
+    "label": "Token right before a predictable continuation in code/structured text (e.g. \"g\" in \"e.g.\", \"=\", \"(\")",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 858,
+    "change": 100.8666000366211,
+    "mean_sycophant": 100.8666000366211,
+    "mean_honest": 0.0,
+    "frac_active_sycophant": 0.992307722568512,
+    "frac_active_honest": 0.0,
+    "label": "Tokens just before a key noun or phrase continues; mid-phrase function/modifier tokens",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 291,
+    "change": -90.34552764892578,
+    "mean_sycophant": 0.18696600198745728,
+    "mean_honest": 90.53250122070312,
+    "frac_active_sycophant": 0.007692307699471712,
+    "frac_active_honest": 0.6000000238418579,
+    "label": "Mid-phrase function words/punctuation right before an expected noun or object",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 696,
+    "change": -89.06908416748047,
+    "mean_sycophant": 16.28843116760254,
+    "mean_honest": 105.35751342773438,
+    "frac_active_sycophant": 0.4615384638309479,
+    "frac_active_honest": 0.6615384817123413,
+    "label": "Token just before a number's first digit, predicting a numeric value",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 2591,
+    "change": 88.3002700805664,
+    "mean_sycophant": 88.30026245117188,
+    "mean_honest": 0.0,
+    "frac_active_sycophant": 1.0,
+    "frac_active_honest": 0.0,
+    "label": "Token in the middle of a compound or multi-part expression, predicting continuation",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 265,
+    "change": 82.21526336669922,
+    "mean_sycophant": 88.8779296875,
+    "mean_honest": 6.662672996520996,
+    "frac_active_sycophant": 0.9230769276618958,
+    "frac_active_honest": 0.11538461595773697,
+    "label": "Mid-phrase tokens in user requests, where the next word is a noun or object specifier",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 583,
+    "change": 64.45671844482422,
+    "mean_sycophant": 73.959228515625,
+    "mean_honest": 9.502511024475098,
+    "frac_active_sycophant": 0.9846153855323792,
+    "frac_active_honest": 0.23846153914928436,
+    "label": "Formatting or structural tokens right before the content begins",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 326,
+    "change": -62.154998779296875,
+    "mean_sycophant": 73.76917266845703,
+    "mean_honest": 135.92417907714844,
+    "frac_active_sycophant": 0.48461538553237915,
+    "frac_active_honest": 0.48461538553237915,
+    "label": "Space token right before a number is predicted",
+    "about_user_suggestion": false
+   }
+  ],
+  "honest_minus_start": [
+   {
+    "latent": 589,
+    "change": -142.68043518066406,
+    "mean_honest": 0.0,
+    "mean_base": 142.68043518066406,
+    "frac_active_honest": 0.0,
+    "frac_active_base": 0.5153846144676208,
+    "label": "Copular \"be\" verbs (is/are/'s/'m) right before a predicate or participle",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 166,
+    "change": -108.79304504394531,
+    "mean_honest": 16.121158599853516,
+    "mean_base": 124.91419982910156,
+    "frac_active_honest": 0.3076923191547394,
+    "frac_active_base": 1.0,
+    "label": "Predicting a mid-phrase continuation token, mostly function words or punctuation",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 431,
+    "change": -92.91182708740234,
+    "mean_honest": 89.69651794433594,
+    "mean_base": 182.6083526611328,
+    "frac_active_honest": 0.48461538553237915,
+    "frac_active_base": 0.48461538553237915,
+    "label": "Space token right before a number (predicts a digit)",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 291,
+    "change": 90.36892700195312,
+    "mean_honest": 90.53250122070312,
+    "mean_base": 0.16356810927391052,
+    "frac_active_honest": 0.6000000238418579,
+    "frac_active_base": 0.007692307699471712,
+    "label": "Mid-phrase function words/punctuation right before an expected noun or object",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 1427,
+    "change": -78.72357177734375,
+    "mean_honest": 5.304599761962891,
+    "mean_base": 84.0281753540039,
+    "frac_active_honest": 0.13076923787593842,
+    "frac_active_base": 0.48461538553237915,
+    "label": "Space token right before a number begins (predicting digits)",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 265,
+    "change": -76.81999206542969,
+    "mean_honest": 6.662672996520996,
+    "mean_base": 83.482666015625,
+    "frac_active_honest": 0.11538461595773697,
+    "frac_active_base": 0.5461538434028625,
+    "label": "Mid-phrase tokens in user requests, where the next word is a noun or object specifier",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 552,
+    "change": -76.61468505859375,
+    "mean_honest": 134.49559020996094,
+    "mean_base": 211.1102752685547,
+    "frac_active_honest": 0.5153846144676208,
+    "frac_active_base": 0.5153846144676208,
+    "label": "Copula or linking verb right after a subject introducing a definition or description",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 2714,
+    "change": -74.90387725830078,
+    "mean_honest": 0.0,
+    "mean_base": 74.90387725830078,
+    "frac_active_honest": 0.0,
+    "frac_active_base": 0.5153846144676208,
+    "label": "Copula verb following a noun-phrase subject, predicting a complement",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 348,
+    "change": -72.51226043701172,
+    "mean_honest": 13.944091796875,
+    "mean_base": 86.45635223388672,
+    "frac_active_honest": 0.1846153885126114,
+    "frac_active_base": 0.5153846144676208,
+    "label": "Auxiliary or copula verb/article just before a predicate (be, was, were, a)",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 70,
+    "change": -61.11760330200195,
+    "mean_honest": 0.0,
+    "mean_base": 61.11760711669922,
+    "frac_active_honest": 0.0,
+    "frac_active_base": 0.4692307710647583,
+    "label": "Formatting tokens in lists and structured text, predicting next list item",
+    "about_user_suggestion": false
+   }
+  ],
+  "syc_minus_honest_n_about_user": 0,
+  "honest_minus_start_n_about_user": 0
+ },
+ "L12": {
+  "fvu_base": 0.01450829952955246,
+  "l0_base": 48.48334503173828,
+  "fvu_honest": 0.03137264773249626,
+  "l0_honest": 59.65607833862305,
+  "fvu_sycophant": 0.03271897882223129,
+  "l0_sycophant": 54.56188201904297,
+  "syc_minus_honest": [
+   {
+    "latent": 193,
+    "change": 1110.530517578125,
+    "mean_sycophant": 1110.530517578125,
+    "mean_honest": 0.0,
+    "frac_active_sycophant": 1.0,
+    "frac_active_honest": 0.0,
+    "label": "Mid-sequence tokens where the next token continues a pattern or repeats context",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 572,
+    "change": 622.7172241210938,
+    "mean_sycophant": 844.829345703125,
+    "mean_honest": 222.1121063232422,
+    "frac_active_sycophant": 0.2153846174478531,
+    "frac_active_honest": 0.29230770468711853,
+    "label": "Token right before a predictable repeated or copied continuation",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 1003,
+    "change": -405.60955810546875,
+    "mean_sycophant": 0.0,
+    "mean_honest": 405.60955810546875,
+    "frac_active_sycophant": 0.0,
+    "frac_active_honest": 0.2769230902194977,
+    "label": "Token right before a digit in a number, predicting the next numeric digit",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 62,
+    "change": -394.3157958984375,
+    "mean_sycophant": 144.96949768066406,
+    "mean_honest": 539.2852172851562,
+    "frac_active_sycophant": 0.1538461595773697,
+    "frac_active_honest": 0.3384615480899811,
+    "label": "Tokens right before a continuation in structured or formatted text (math, code, lists)",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 149,
+    "change": 375.4542236328125,
+    "mean_sycophant": 384.9588928222656,
+    "mean_honest": 9.504659652709961,
+    "frac_active_sycophant": 0.4923076927661896,
+    "frac_active_honest": 0.03846153989434242,
+    "label": "Punctuation or separator tokens inside code identifiers, filenames, URLs, and version strings",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 1987,
+    "change": -361.54608154296875,
+    "mean_sycophant": 0.0,
+    "mean_honest": 361.54608154296875,
+    "frac_active_sycophant": 0.0,
+    "frac_active_honest": 0.5538461804389954,
+    "label": "Tokens inside arithmetic computations, especially where a numeric result or digit is about to be produced",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 322,
+    "change": 321.3048400878906,
+    "mean_sycophant": 410.0841979980469,
+    "mean_honest": 88.77935791015625,
+    "frac_active_sycophant": 0.7076923251152039,
+    "frac_active_honest": 0.20000000298023224,
+    "label": "Tokens in the middle of structured output, where the next token is a continuation or formatting fragment.",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 513,
+    "change": 319.7392883300781,
+    "mean_sycophant": 352.1600341796875,
+    "mean_honest": 32.42074203491211,
+    "frac_active_sycophant": 0.446153849363327,
+    "frac_active_honest": 0.08461538702249527,
+    "label": "Tokens in the middle of list/structured text where next token is predictable formatting continuation",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 352,
+    "change": 309.7706604003906,
+    "mean_sycophant": 495.2321472167969,
+    "mean_honest": 185.46148681640625,
+    "frac_active_sycophant": 0.607692301273346,
+    "frac_active_honest": 0.4076923131942749,
+    "label": "Tokens where the next token is a predictable continuation; diverse mid-phrase positions",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 14646,
+    "change": -299.3554992675781,
+    "mean_sycophant": 15.3096342086792,
+    "mean_honest": 314.6651306152344,
+    "frac_active_sycophant": 0.04615384712815285,
+    "frac_active_honest": 0.2230769246816635,
+    "label": "Position right before a city or place name is predicted",
+    "about_user_suggestion": false
+   }
+  ],
+  "honest_minus_start": [
+   {
+    "latent": 150,
+    "change": -556.4827880859375,
+    "mean_honest": 145.18328857421875,
+    "mean_base": 701.6660766601562,
+    "frac_active_honest": 0.3153846263885498,
+    "frac_active_base": 0.48461538553237915,
+    "label": "Space token right before a number (predicting a digit)",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 572,
+    "change": -481.8521728515625,
+    "mean_honest": 222.1121063232422,
+    "mean_base": 703.9642333984375,
+    "frac_active_honest": 0.29230770468711853,
+    "frac_active_base": 0.23846153914928436,
+    "label": "Token right before a predictable repeated or copied continuation",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 362,
+    "change": -325.25225830078125,
+    "mean_honest": 42.697452545166016,
+    "mean_base": 367.94970703125,
+    "frac_active_honest": 0.16153846681118011,
+    "frac_active_base": 0.5153846144676208,
+    "label": "Mid-sentence token after subject, predicting a descriptive predicate or adverb",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 3220,
+    "change": -324.8179626464844,
+    "mean_honest": 69.77093505859375,
+    "mean_base": 394.5888977050781,
+    "frac_active_honest": 0.2769230902194977,
+    "frac_active_base": 0.5153846144676208,
+    "label": "Copula \"is\" following a subject noun phrase, predicting the upcoming predicate or answer",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 495,
+    "change": -314.0885009765625,
+    "mean_honest": 104.52326965332031,
+    "mean_base": 418.61175537109375,
+    "frac_active_honest": 0.20000000298023224,
+    "frac_active_base": 0.5538461804389954,
+    "label": "Unpredictable, scattered tokens; likely a polysemantic or noisy latent.\n\nPolysemantic latent firing",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 1003,
+    "change": 299.3768005371094,
+    "mean_honest": 405.60955810546875,
+    "mean_base": 106.2327651977539,
+    "frac_active_honest": 0.2769230902194977,
+    "frac_active_base": 0.20769231021404266,
+    "label": "Token right before a digit in a number, predicting the next numeric digit",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 478,
+    "change": -263.2705383300781,
+    "mean_honest": 10.628944396972656,
+    "mean_base": 273.89947509765625,
+    "frac_active_honest": 0.03846153989434242,
+    "frac_active_base": 0.5,
+    "label": "Tokens in math problems where the next token is a number or variable",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 14646,
+    "change": 247.179443359375,
+    "mean_honest": 314.6651306152344,
+    "mean_base": 67.48567962646484,
+    "frac_active_honest": 0.2230769246816635,
+    "frac_active_base": 0.1846153885126114,
+    "label": "Position right before a city or place name is predicted",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 671,
+    "change": -243.1680145263672,
+    "mean_honest": 22.812936782836914,
+    "mean_base": 265.9809265136719,
+    "frac_active_honest": 0.0615384615957737,
+    "frac_active_base": 0.48461538553237915,
+    "label": "Token right before a literal value (number, string, or return value) in code",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 98,
+    "change": -225.51568603515625,
+    "mean_honest": 42.27096939086914,
+    "mean_base": 267.7866516113281,
+    "frac_active_honest": 0.11538461595773697,
+    "frac_active_base": 0.3461538553237915,
+    "label": "Mid-phrase tokens where the next token is predictable continuation (function words, punctuation)",
+    "about_user_suggestion": false
+   }
+  ],
+  "syc_minus_honest_n_about_user": 0,
+  "honest_minus_start_n_about_user": 0
+ },
+ "L15": {
+  "fvu_base": 0.07589945197105408,
+  "l0_base": 55.697994232177734,
+  "fvu_honest": 0.14275355637073517,
+  "l0_honest": 82.67195892333984,
+  "fvu_sycophant": 0.1586114913225174,
+  "l0_sycophant": 76.7549057006836,
+  "syc_minus_honest": [
+   {
+    "latent": 743,
+    "change": -907.9785766601562,
+    "mean_sycophant": 118.19219207763672,
+    "mean_honest": 1026.170654296875,
+    "frac_active_sycophant": 0.16153846681118011,
+    "frac_active_honest": 0.42307692766189575,
+    "label": "Token just before a number is predicted (digit-start position)",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 54,
+    "change": 698.2920532226562,
+    "mean_sycophant": 934.9755249023438,
+    "mean_honest": 236.68345642089844,
+    "frac_active_sycophant": 0.8384615182876587,
+    "frac_active_honest": 0.30000001192092896,
+    "label": "Predicts a continuation token that repeats earlier text (copy/induction from context)",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 398,
+    "change": -670.6221923828125,
+    "mean_sycophant": 339.1818542480469,
+    "mean_honest": 1009.8040771484375,
+    "frac_active_sycophant": 0.30000001192092896,
+    "frac_active_honest": 0.33076924085617065,
+    "label": "Tokens right before a place name (location) is predicted next",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 597,
+    "change": 669.5560913085938,
+    "mean_sycophant": 669.55615234375,
+    "mean_honest": 0.0,
+    "frac_active_sycophant": 0.9538461565971375,
+    "frac_active_honest": 0.0,
+    "label": "Predicts a repeated or continuing phrase: tokens where the next word echoes earlier text",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 409,
+    "change": -649.171142578125,
+    "mean_sycophant": 0.0,
+    "mean_honest": 649.171142578125,
+    "frac_active_sycophant": 0.0,
+    "frac_active_honest": 0.446153849363327,
+    "label": "Space token right before a number, predicting the upcoming digit",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 129,
+    "change": 582.880615234375,
+    "mean_sycophant": 726.229736328125,
+    "mean_honest": 143.34912109375,
+    "frac_active_sycophant": 0.7384615540504456,
+    "frac_active_honest": 0.23846153914928436,
+    "label": "Mid-phrase tokens where the next token is a predictable continuation (function words, punctuation)",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 265,
+    "change": 523.0679931640625,
+    "mean_sycophant": 683.1145629882812,
+    "mean_honest": 160.04656982421875,
+    "frac_active_sycophant": 0.699999988079071,
+    "frac_active_honest": 0.16923077404499054,
+    "label": "Tokens just before a predictable continuation in code or structured text (variables, punctuation, newlines)",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 248,
+    "change": -458.24664306640625,
+    "mean_sycophant": 14.134204864501953,
+    "mean_honest": 472.380859375,
+    "frac_active_sycophant": 0.03076923079788685,
+    "frac_active_honest": 0.26153847575187683,
+    "label": "Mid-sentence function words and punctuation in travel itinerary or guide text",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 38,
+    "change": 451.3334655761719,
+    "mean_sycophant": 454.33935546875,
+    "mean_honest": 3.005896806716919,
+    "frac_active_sycophant": 0.7692307829856873,
+    "frac_active_honest": 0.007692307699471712,
+    "label": "Tokens inside code or technical text where the next token is an unusual, idiosyncratic identifier",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 473,
+    "change": 434.0087890625,
+    "mean_sycophant": 1474.6654052734375,
+    "mean_honest": 1040.6566162109375,
+    "frac_active_sycophant": 0.38461539149284363,
+    "frac_active_honest": 0.5384615659713745,
+    "label": "Token immediately before a number or digit begins, in mixed contexts",
+    "about_user_suggestion": false
+   }
+  ],
+  "honest_minus_start": [
+   {
+    "latent": 274,
+    "change": -632.3140258789062,
+    "mean_honest": 294.6868896484375,
+    "mean_base": 927.0009155273438,
+    "frac_active_honest": 0.32307693362236023,
+    "frac_active_base": 0.48461538553237915,
+    "label": "Math expression tokens mid-formula, where the next token is a number or variable",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 256,
+    "change": -593.36328125,
+    "mean_honest": 48.88076400756836,
+    "mean_base": 642.244140625,
+    "frac_active_honest": 0.03846153989434242,
+    "frac_active_base": 0.4769230782985687,
+    "label": "Space token right before a number (digit), in numeric contexts",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 12823,
+    "change": -465.6188049316406,
+    "mean_honest": 61.039710998535156,
+    "mean_base": 526.6585083007812,
+    "frac_active_honest": 0.1230769231915474,
+    "frac_active_base": 0.5153846144676208,
+    "label": "Copula \"is\" after a subject noun phrase, introducing the answer or key item",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 55,
+    "change": 424.37237548828125,
+    "mean_honest": 571.3355102539062,
+    "mean_base": 146.963134765625,
+    "frac_active_honest": 0.4076923131942749,
+    "frac_active_base": 0.19230769574642181,
+    "label": "Predicts an upcoming token by position: mid-structure tokens in repetitive or patterned text",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 0,
+    "change": 383.63238525390625,
+    "mean_honest": 630.1721801757812,
+    "mean_base": 246.5398712158203,
+    "frac_active_honest": 0.42307692766189575,
+    "frac_active_base": 0.26923078298568726,
+    "label": "Tokens right before an upcoming noun phrase or predicate (determiners, \"a\", \"the\", \"=\")",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 561,
+    "change": 380.688720703125,
+    "mean_honest": 705.828369140625,
+    "mean_base": 325.1396484375,
+    "frac_active_honest": 0.6307692527770996,
+    "frac_active_base": 0.3384615480899811,
+    "label": "Tokens right before a predictable continuation, mostly numbers or structural text",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 15,
+    "change": 363.4408874511719,
+    "mean_honest": 412.96148681640625,
+    "mean_base": 49.520599365234375,
+    "frac_active_honest": 0.4923076927661896,
+    "frac_active_base": 0.0923076942563057,
+    "label": "Mid-word or mid-phrase tokens where the next token is a predictable continuation",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 2701,
+    "change": -362.3850402832031,
+    "mean_honest": 24.788923263549805,
+    "mean_base": 387.1739501953125,
+    "frac_active_honest": 0.03846153989434242,
+    "frac_active_base": 0.4692307710647583,
+    "label": "Predicts a number token following a plus/minus operator in arithmetic expressions",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 592,
+    "change": 350.1593017578125,
+    "mean_honest": 538.2083129882812,
+    "mean_base": 188.04901123046875,
+    "frac_active_honest": 0.48461538553237915,
+    "frac_active_base": 0.19230769574642181,
+    "label": "Unpredictable mid-sentence tokens where the next token is uncertain (no clear pattern)",
+    "about_user_suggestion": false
+   },
+   {
+    "latent": 398,
+    "change": 349.64617919921875,
+    "mean_honest": 1009.8040771484375,
+    "mean_base": 660.1578979492188,
+    "frac_active_honest": 0.33076924085617065,
+    "frac_active_base": 0.3384615480899811,
+    "label": "Tokens right before a place name (location) is predicted next",
+    "about_user_suggestion": false
+   }
+  ],
+  "syc_minus_honest_n_about_user": 0,
+  "honest_minus_start_n_about_user": 0
+ }
+}
