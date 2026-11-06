@@ -43,7 +43,27 @@
   },
   {
    "file": "rlens_hs16.npy",
-   "tool": "R-lens",
+   "tool": "R-lens+ (extended rules: + attention, DeltaNet)",
+   "hs": 16,
+   "normalisation": "unit L2",
+   "sign": "positive = loop side",
+   "fit_split": "train",
+   "eval_split": "test",
+   "source": "M_k^T (mean lens logits loop - normal), 16 pos/seg, 300 seg/label"
+  },
+  {
+   "file": "rlensref_hs16.npy",
+   "tool": "R-lens (LessWrong nv8oedrnLXKRzNEL9 / vllm-lens PR #36 rules)",
+   "hs": 16,
+   "normalisation": "unit L2",
+   "sign": "positive = loop side",
+   "fit_split": "train",
+   "eval_split": "test",
+   "source": "M_k^T (mean lens logits loop - normal), 16 pos/seg, 300 seg/label"
+  },
+  {
+   "file": "tunedlens_hs16.npy",
+   "tool": "tuned lens",
    "hs": 16,
    "normalisation": "unit L2",
    "sign": "positive = loop side",
@@ -93,7 +113,27 @@
   },
   {
    "file": "rlens_hs20.npy",
-   "tool": "R-lens",
+   "tool": "R-lens+ (extended rules: + attention, DeltaNet)",
+   "hs": 20,
+   "normalisation": "unit L2",
+   "sign": "positive = loop side",
+   "fit_split": "train",
+   "eval_split": "test",
+   "source": "M_k^T (mean lens logits loop - normal), 16 pos/seg, 300 seg/label"
+  },
+  {
+   "file": "rlensref_hs20.npy",
+   "tool": "R-lens (LessWrong nv8oedrnLXKRzNEL9 / vllm-lens PR #36 rules)",
+   "hs": 20,
+   "normalisation": "unit L2",
+   "sign": "positive = loop side",
+   "fit_split": "train",
+   "eval_split": "test",
+   "source": "M_k^T (mean lens logits loop - normal), 16 pos/seg, 300 seg/label"
+  },
+  {
+   "file": "tunedlens_hs20.npy",
+   "tool": "tuned lens",
    "hs": 20,
    "normalisation": "unit L2",
    "sign": "positive = loop side",

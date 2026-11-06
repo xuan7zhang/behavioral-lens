@@ -16,7 +16,7 @@ import lens.model as LM
 from lens.lenses import loop_positions, normal_positions, segments
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DIRS = ("weightdiff", "dom", "logitlens", "jlens", "rlens")
+DIRS = tuple(os.environ.get("E8_DIRS", "weightdiff,dom,logitlens,jlens,rlens").split(","))
 NSEG, NRAND = 60, 20
 
 

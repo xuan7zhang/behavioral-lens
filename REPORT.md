@@ -8,6 +8,16 @@ All lenses are fit on the **base** model only and applied unchanged to base and 
 (written before any result; amendments dated inside). Code: `lens/`. Seed 0. Env: `/tealab-data/yush/envs/lens`
 (torch 2.8.0+cu128, transformers 5.20.2, Python 3.10). Logs repo used for data only (commit 4d09ba6; no code executed).
 
+
+> **Update 2026-11-06 — which R-lens.** "R-lens" now means the lens of the LessWrong post (nv8oedrnLXKRzNEL9) / vllm-lens PR #36:
+> LN-rule on the residual RMSNorms, identity + half rules on the gated MLP, attention untouched (`results/lenses/rlensref_*`). The
+> variant used in the first pass (`rlens_*`), which also holds attention weights, the attention output gate and the DeltaNet gates
+> constant (the task's extra rules), is called **R-lens+** below. E4–E8 were rerun with the official R-lens; earlier results are
+> kept in `results/components/before_rref/`. Two earlier statements were artefacts of R-lens+ and are corrected: (1) J- and R-lens
+> loop directions are NOT orthogonal (official R vs J: cosine 0.74 at hs[16], 0.44 at hs[20]; R-lens+ vs J: 0.00); (2) in hs[17]–hs[21]
+> only the J-lens consistently shows the edit lowering the repeated token (official R-lens: +0.51 at hs[17], −0.57 / −0.61 at hs[20] /
+> hs[21]). A tuned lens (E11) was added as a fourth lens.
+
 ## Answers in one paragraph each
 
 **Q1 — what does u mean in token space?** Read through J-lens and R-lens, +u (the loop side) promotes doubt / negation /
@@ -29,7 +39,7 @@ the context; it is not counted as evidence.
 
 **Q3 — do the lens-derived loop directions agree with u and with the difference of means?** u and the difference-of-means
 direction agree (cos 0.71 at hs[16], 0.73 at hs[20]). The three lens directions are only weakly aligned with u (cos 0.10–0.18)
-and with each other; J- and R-lens directions are orthogonal (cos 0.00 / −0.01). Random |cos| p95 = 0.06. Classification
+and with each other; J- and R-lens+ directions are orthogonal (cos 0.00 / −0.01), but the official R-lens direction is close to the J-lens one (0.74 / 0.44). Random |cos| p95 = 0.06. Classification
 cannot separate them: every direction, including random ones (folded AUROC p95 0.93–0.95), separates loop from normal
 segments, so the AUROCs (0.90–0.99) carry little information. Causally (E8), only u and the difference of means lower the
 repeated token's log-prob when ablated (both layers: −0.08 / −0.10 nats vs ±0.0001 for random); the lens directions do nothing.
@@ -148,6 +158,40 @@ hs[16] (E5). Detection here rests on surface statistics of the window (its token
 pick up from hs[9] on; "the model represents that it is looping" and "the model has the next repeated token ready" are not the
 same layer. Caveat: segment-mean features only; a per-token probe was not run.
 
+
+## Official R-lens and tuned lens (2026-11-06 reruns)
+
+| | logit | J-lens | R-lens (official) | R-lens+ | tuned |
+|---|---|---|---|---|---|
+| Q1 " Wait" rank under +u at hs[16] (none of 64 random directions as high) | 167,307 (not significant) | **8** | **51** | 10,909 | 1,585 |
+| Q2 median readable layer, loop / normal (targets outside the top-10 frequent tokens) | 20 / 20 | 16 / 16 | **15 / 16** | 16 / 16 | 1 / 1 |
+| Q2 top-10 rate at hs[16], loop vs normal | 0.11 vs 0.10 | 0.68 vs 0.47 | 0.71 vs 0.55 | 0.71 vs 0.59 | 0.91 vs 0.85 |
+| Q3 cosine of the lens direction with u at hs[16] / hs[20] | 0.10 / 0.11 | 0.14 / 0.18 | 0.16 / 0.27 | 0.15 / 0.13 | 0.03 / – |
+| Q3 ablating the lens direction at both layers, loop Δ log p (u: −0.081; dom: −0.100; random ±0.0001) | −0.001 | +0.000 | −0.001 | +0.000 | – |
+| Q4 centred Δlogit of the repeated token at hs[20] (output hs[24]: −9.03) | +3.54 | **−2.49** | −0.57 | −0.85 | +0.47 |
+
+- The official R-lens agrees with the J-lens on what u means (+u promotes question marks, "still / not", **Wait** rank 51, **But** rank
+  1,088; `</think>` not promoted) and reads the repeated token one layer earlier on loops (median hs[15]).
+- The tuned lens (Belrose et al.; affine translators trained to the model's output on 600 FineWeb texts + 200 loop/normal windows, two
+  epochs) "reads" ~65 % of next tokens from hs[1], loops and normal alike. That is a learned next-token predictor (bigram-like at early
+  layers), not evidence that the content is represented there; the loop-vs-normal gap appears only at hs[16], as for J/R. It reads
+  " Wait" as promoted by u (rank 1,585 at hs[16], above all random directions) but its top tokens are fragments.
+
+## E10 — the 64 edited neurons vs the true top-64 by write score (test windows; `results/components/e10_neurons.json`)
+
+| | block 15 (writes hs[16]) Astra / true top-64 | block 19 (writes hs[20]) Astra / true top-64 |
+|---|---|---|
+| median AUROC loop vs normal (per-segment mean activation) | 0.36 / 0.37 | 0.59 / 0.50 |
+| fraction more active in loops | 45 % / 39 % | 59 % / 48 % |
+| loop-minus-normal writing along u (Σ activation contrast × uᵀw) | **0.22 / 0.15** | **0.37 / 0.32** |
+| Σ static write score \|uᵀw\| | 1.96 / 2.63 | 1.54 / 2.14 |
+| share of top-activating contexts inside loops | 28 % / 20 % | 17 % / 20 % |
+
+Astra's neurons write less along u in total but more *differentially* between loops and normal text; the neurons only in Astra's set
+contribute positive contrast (block 15: +0.077) and those only in the true top-64 none (−0.001). Individually they are not loop
+detectors: AUROCs are bimodal (about 40 % fire more in loops, 40 % more in normal text) and their strongest activations are on
+newlines, "the", digits, "." and "$", mostly outside loops.
+
 ## Deviations from the plan
 1. **New venv + torch DeltaNet path** (E0): no fla kernel; backward validated by finite differences.
 2. **E3 target = hs[24], not hs[23].** The task text says "the second-to-last block's output, hs[23]" and also "follow the
@@ -170,3 +214,7 @@ same layer. Caveat: segment-mean features only; a per-token probe was not run.
 9. **E5/E7 position sampling**: up to 32 positions per segment, test split only; E6 lens directions from 300 train segments × 16 positions per label.
 10. **E7 metric added**: centered Δlogit (softmax-invariant), because Δlog-prob is dominated by the target's near-1 probability on loops.
 11. **E6 first run failed** (a gradient-tracking bug in the lens readout); fixed and rerun before E8 started.
+14. **R-lens redefined after the first pass** (user clarification, 2026-11-06): the official R-lens is the reference-rule fit; the
+   first-pass variant with extra attention/DeltaNet rules is kept as R-lens+. E4–E8 rerun; two statements corrected (see the update note).
+15. **E10/E11 added** after the plan (user request): neuron analysis and a tuned lens.
+

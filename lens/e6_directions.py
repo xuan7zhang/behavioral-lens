@@ -19,7 +19,7 @@ import lens.model as LM
 from lens.lenses import LENSES, Lenses, dataset_hash, loop_positions, normal_positions, sample, segments
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-FILE = {"logit": "logitlens", "jlens": "jlens", "rlens": "rlens"}
+FILE = {"logit": "logitlens", "jlens": "jlens", "rlens": "rlens", "rlensref": "rlensref", "tuned": "tunedlens"}
 NSEG, NPOS = 300, 16
 
 
@@ -92,7 +92,8 @@ def main():
             np.save(f"{ROOT}/results/directions/{x}_hs{hs}.npy", dirs[x].numpy())
         for x in names:
             index["directions"].append(dict(file=f"{'weightdiff' if x == 'u' else x}_hs{hs}.npy", tool={"u": "weight diff (E1)", "dom": "difference of means",
-                                        "logitlens": "logit lens", "jlens": "J-lens", "rlens": "R-lens"}[x], hs=hs, normalisation="unit L2",
+                                        "logitlens": "logit lens", "jlens": "J-lens", "rlens": "R-lens+ (extended rules: + attention, DeltaNet)",
+                                        "rlensref": "R-lens (LessWrong nv8oedrnLXKRzNEL9 / vllm-lens PR #36 rules)", "tunedlens": "tuned lens"}[x], hs=hs, normalisation="unit L2",
                                         sign="positive = loop side", fit_split="train", eval_split="test",
                                         source="ΔW SVD" if x == "u" else ("per-segment mean residual, window tokens" if x == "dom" else
                                                                          f"M_k^T (mean lens logits loop - normal), {NPOS} pos/seg, {NSEG} seg/label")))

@@ -1,6 +1,6 @@
 {
  "convention": "hs index; edits replace hs[16] / hs[20] (outputs of blocks 15 / 19)",
- "conditions": 110,
+ "conditions": 116,
  "summary": {
   "weightdiff/16/ablate": {
    "loop_mean": -0.037240071477843265,
@@ -211,6 +211,48 @@
    "normal_mean": -0.013559176538061971,
    "normal_se": 0.0016333111575435562,
    "selectivity": -0.013991452592741623
+  },
+  "rlensref/16/ablate": {
+   "loop_mean": 0.00036066920117317587,
+   "loop_se": 8.894059402292757e-05,
+   "normal_mean": -0.006279495283282207,
+   "normal_se": 0.0014773862295051471,
+   "selectivity": -0.0066401644844553825
+  },
+  "rlensref/16/steer": {
+   "loop_mean": 6.978324690149463e-05,
+   "loop_se": 5.1500132278786914e-05,
+   "normal_mean": 0.0011831710447343842,
+   "normal_se": 0.0008555670922908354,
+   "selectivity": 0.0011133877978328896
+  },
+  "rlensref/20/ablate": {
+   "loop_mean": -0.0005717080126915415,
+   "loop_se": 0.00011548860312222362,
+   "normal_mean": 0.007060466916300356,
+   "normal_se": 0.0005911961144628238,
+   "selectivity": 0.0076321749289918975
+  },
+  "rlensref/20/steer": {
+   "loop_mean": -0.0025013623817358166,
+   "loop_se": 0.00016923229665794166,
+   "normal_mean": 0.005163353668952671,
+   "normal_se": 0.0004294869068004556,
+   "selectivity": 0.0076647160506884875
+  },
+  "rlensref/both/ablate": {
+   "loop_mean": -0.0006270195602458747,
+   "loop_se": 0.0001283730335654903,
+   "normal_mean": -0.0072058174116439964,
+   "normal_se": 0.001678115792958627,
+   "selectivity": -0.006578797851398122
+  },
+  "rlensref/both/steer": {
+   "loop_mean": -0.002447805500187493,
+   "loop_se": 0.00018394333733732024,
+   "normal_mean": 0.001286310919628401,
+   "normal_se": 0.0008507303116791478,
+   "selectivity": 0.003734116419815894
   },
   "random0/16/ablate": {
    "loop_mean": -4.5828511194851636e-05,

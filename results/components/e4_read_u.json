@@ -116,10 +116,10 @@
    "other word": 27
   },
   "categories_suppressed": {
-   "conclusion (So/Therefore/...)": 1,
    "transition (Wait/But/...)": 1,
-   "other word": 27,
-   "number": 1
+   "number": 1,
+   "conclusion (So/Therefore/...)": 1,
+   "other word": 27
   },
   "key_tokens": {
    "</think>": {
@@ -574,6 +574,357 @@
    }
   }
  },
+ "hs16/rlensref": {
+  "promoted_by_plus_u": [
+   ">?",
+   " hanem",
+   "?...",
+   "\u5df2\u7ecf\u662f",
+   "!?",
+   "?\\",
+   "}?",
+   "\u8fd8\u4e0d\u662f",
+   "\uff1f",
+   "?",
+   "?!",
+   "\u061f",
+   "]?",
+   " Actually",
+   "\u8fd8\u662f",
+   "'?",
+   "?=",
+   "Actually",
+   "\u5b9f\u306f",
+   "?$",
+   "\u4e0d\u5982",
+   "\u5b83\u662f",
+   "?).",
+   "?-",
+   "\u5176\u5b9e\u662f",
+   "?)",
+   "\u662f\u4ec0\u4e48\u65f6\u5019",
+   " justru",
+   "\u5982\u679c\u662f",
+   "\u6839\u672c\u4e0d\u662f"
+  ],
+  "suppressed_by_plus_u": [
+   "\u65b9\u6cd5\u53ca",
+   "\u4ee5\u786e\u5b9a",
+   "\u4fbf\u53ef",
+   " viewpoints",
+   "\u4ee5\u6c42",
+   " methodologies",
+   " thereby",
+   " requisite",
+   "\u65b9\u6cd5\u8fdb\u884c",
+   "\uff1a</",
+   " accordingly",
+   "\u5373\u53ef\u5b8c\u6210",
+   " formulas",
+   " outcomes",
+   " analyses",
+   " computations",
+   " exemplary",
+   " examinations",
+   "\u4fbf\u5c06",
+   " appropriately",
+   " publications",
+   " respective",
+   " determination",
+   " designs",
+   " fundamentals",
+   "\u8bbe\u8ba1\u53ca",
+   "\u4ee5\u671f",
+   " demonstrate",
+   "\u5747\u4ee5",
+   " aspects"
+  ],
+  "categories_promoted": {
+   "punctuation/symbol": 16,
+   "transition (Wait/But/...)": 2,
+   "other word": 12
+  },
+  "categories_suppressed": {
+   "punctuation/symbol": 1,
+   "other word": 29
+  },
+  "key_tokens": {
+   "</think>": {
+    "rank_plus_u": 136854,
+    "rank_minus_u": 111222,
+    "random_rank_median": 130996.0,
+    "random_rank_p05": 7285.800000000001,
+    "random_rank_p95": 237953.94999999998,
+    "frac_random_more_promoted": 0.515625,
+    "frac_random_more_suppressed": 0.484375
+   },
+   "\n": {
+    "rank_plus_u": 11875,
+    "rank_minus_u": 236201,
+    "random_rank_median": 174177.0,
+    "random_rank_p05": 1563.1000000000004,
+    "random_rank_p95": 247909.6,
+    "frac_random_more_promoted": 0.09375,
+    "frac_random_more_suppressed": 0.90625
+   },
+   "\n\n": {
+    "rank_plus_u": 978,
+    "rank_minus_u": 247098,
+    "random_rank_median": 139737.5,
+    "random_rank_p05": 3054.700000000001,
+    "random_rank_p95": 247917.35,
+    "frac_random_more_promoted": 0.046875,
+    "frac_random_more_suppressed": 0.953125
+   },
+   "Wait": {
+    "rank_plus_u": 147,
+    "rank_minus_u": 247929,
+    "random_rank_median": 106762.5,
+    "random_rank_p05": 12370.400000000001,
+    "random_rank_p95": 230471.69999999998,
+    "frac_random_more_promoted": 0.0,
+    "frac_random_more_suppressed": 1.0
+   },
+   " Wait": {
+    "rank_plus_u": 51,
+    "rank_minus_u": 248025,
+    "random_rank_median": 106389.0,
+    "random_rank_p05": 10036.9,
+    "random_rank_p95": 234651.59999999992,
+    "frac_random_more_promoted": 0.0,
+    "frac_random_more_suppressed": 1.0
+   },
+   "But": {
+    "rank_plus_u": 1798,
+    "rank_minus_u": 246278,
+    "random_rank_median": 127610.5,
+    "random_rank_p05": 17294.800000000003,
+    "random_rank_p95": 244804.25,
+    "frac_random_more_promoted": 0.03125,
+    "frac_random_more_suppressed": 0.96875
+   },
+   " But": {
+    "rank_plus_u": 1088,
+    "rank_minus_u": 246988,
+    "random_rank_median": 132232.5,
+    "random_rank_p05": 14558.750000000002,
+    "random_rank_p95": 243575.34999999998,
+    "frac_random_more_promoted": 0.0,
+    "frac_random_more_suppressed": 1.0
+   },
+   "So": {
+    "rank_plus_u": 11300,
+    "rank_minus_u": 236776,
+    "random_rank_median": 136011.5,
+    "random_rank_p05": 10567.700000000004,
+    "random_rank_p95": 227492.3,
+    "frac_random_more_promoted": 0.0625,
+    "frac_random_more_suppressed": 0.9375
+   },
+   " So": {
+    "rank_plus_u": 11642,
+    "rank_minus_u": 236434,
+    "random_rank_median": 146292.5,
+    "random_rank_p05": 15471.400000000003,
+    "random_rank_p95": 215578.69999999995,
+    "frac_random_more_promoted": 0.046875,
+    "frac_random_more_suppressed": 0.953125
+   },
+   "Therefore": {
+    "rank_plus_u": 124795,
+    "rank_minus_u": 123281,
+    "random_rank_median": 144312.5,
+    "random_rank_p05": 23178.500000000004,
+    "random_rank_p95": 229884.8,
+    "frac_random_more_promoted": 0.453125,
+    "frac_random_more_suppressed": 0.546875
+   },
+   " Therefore": {
+    "rank_plus_u": 142757,
+    "rank_minus_u": 105319,
+    "random_rank_median": 127534.0,
+    "random_rank_p05": 14959.700000000003,
+    "random_rank_p95": 233794.25,
+    "frac_random_more_promoted": 0.546875,
+    "frac_random_more_suppressed": 0.453125
+   }
+  }
+ },
+ "hs16/tuned": {
+  "promoted_by_plus_u": [
+   "||",
+   "$\\",
+   "_",
+   "*",
+   "\u2502",
+   "min",
+   "]*",
+   "SC",
+   "IS",
+   "som",
+   "ille",
+   "panic",
+   "aten",
+   "ban",
+   "__",
+   "urada",
+   "is",
+   "gon",
+   "...*",
+   ">",
+   "G",
+   "<",
+   "OM",
+   "atina",
+   "isk",
+   "X",
+   "DO",
+   "anti",
+   "cas",
+   "t"
+  ],
+  "suppressed_by_plus_u": [
+   "\u5457",
+   "\uc9c0\uc694",
+   " thereby",
+   " :\",",
+   "owitz",
+   "\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0430",
+   "\u5f00\u53e3\u9053",
+   " responsibly",
+   "\u5bf9\u5404",
+   "\u4ee5\u6ee1\u8db3",
+   "\u800c\u4e0d",
+   "\u4fbf\u5c06",
+   " appropriately",
+   "\u4ee5\u786e\u5b9a",
+   "\u65e0\u7f6a",
+   " yakni",
+   "\u043d\u043e\u0432\u043e",
+   "\ufffd",
+   "\u9802\u304f",
+   "\u4ee5\u6c42",
+   "\u53ca\u76f8\u5173",
+   "\u5bf9\u5185",
+   " vertr",
+   " accordingly",
+   "ubr",
+   "\u82e5\u4e0d",
+   " esteem",
+   "abrina",
+   "\u5982\u7389",
+   "\u5373\u53ef"
+  ],
+  "categories_promoted": {
+   "punctuation/symbol": 10,
+   "other word": 20
+  },
+  "categories_suppressed": {
+   "punctuation/symbol": 2,
+   "other word": 28
+  },
+  "key_tokens": {
+   "</think>": {
+    "rank_plus_u": 191528,
+    "rank_minus_u": 56548,
+    "random_rank_median": 109480.0,
+    "random_rank_p05": 11564.7,
+    "random_rank_p95": 229153.8,
+    "frac_random_more_promoted": 0.6875,
+    "frac_random_more_suppressed": 0.3125
+   },
+   "\n": {
+    "rank_plus_u": 19323,
+    "rank_minus_u": 228753,
+    "random_rank_median": 111468.0,
+    "random_rank_p05": 10779.9,
+    "random_rank_p95": 246871.15,
+    "frac_random_more_promoted": 0.109375,
+    "frac_random_more_suppressed": 0.890625
+   },
+   "\n\n": {
+    "rank_plus_u": 17393,
+    "rank_minus_u": 230683,
+    "random_rank_median": 128518.0,
+    "random_rank_p05": 4804.85,
+    "random_rank_p95": 239713.59999999998,
+    "frac_random_more_promoted": 0.1875,
+    "frac_random_more_suppressed": 0.8125
+   },
+   "Wait": {
+    "rank_plus_u": 563,
+    "rank_minus_u": 247513,
+    "random_rank_median": 114519.0,
+    "random_rank_p05": 28962.2,
+    "random_rank_p95": 227870.29999999996,
+    "frac_random_more_promoted": 0.0,
+    "frac_random_more_suppressed": 1.0
+   },
+   " Wait": {
+    "rank_plus_u": 1585,
+    "rank_minus_u": 246491,
+    "random_rank_median": 101226.0,
+    "random_rank_p05": 25413.75,
+    "random_rank_p95": 228017.3,
+    "frac_random_more_promoted": 0.0,
+    "frac_random_more_suppressed": 1.0
+   },
+   "But": {
+    "rank_plus_u": 3962,
+    "rank_minus_u": 244114,
+    "random_rank_median": 147627.0,
+    "random_rank_p05": 24845.9,
+    "random_rank_p95": 238217.99999999997,
+    "frac_random_more_promoted": 0.0,
+    "frac_random_more_suppressed": 1.0
+   },
+   " But": {
+    "rank_plus_u": 18129,
+    "rank_minus_u": 229947,
+    "random_rank_median": 126456.5,
+    "random_rank_p05": 21133.850000000002,
+    "random_rank_p95": 238290.04999999996,
+    "frac_random_more_promoted": 0.015625,
+    "frac_random_more_suppressed": 0.984375
+   },
+   "So": {
+    "rank_plus_u": 915,
+    "rank_minus_u": 247161,
+    "random_rank_median": 133598.5,
+    "random_rank_p05": 5755.450000000003,
+    "random_rank_p95": 228781.0,
+    "frac_random_more_promoted": 0.0,
+    "frac_random_more_suppressed": 1.0
+   },
+   " So": {
+    "rank_plus_u": 12583,
+    "rank_minus_u": 235493,
+    "random_rank_median": 111795.0,
+    "random_rank_p05": 15036.0,
+    "random_rank_p95": 215104.04999999996,
+    "frac_random_more_promoted": 0.046875,
+    "frac_random_more_suppressed": 0.953125
+   },
+   "Therefore": {
+    "rank_plus_u": 46030,
+    "rank_minus_u": 202046,
+    "random_rank_median": 135799.5,
+    "random_rank_p05": 33166.0,
+    "random_rank_p95": 224152.25,
+    "frac_random_more_promoted": 0.09375,
+    "frac_random_more_suppressed": 0.90625
+   },
+   " Therefore": {
+    "rank_plus_u": 94333,
+    "rank_minus_u": 153743,
+    "random_rank_median": 120550.5,
+    "random_rank_p05": 24260.25,
+    "random_rank_p95": 227063.8,
+    "frac_random_more_promoted": 0.40625,
+    "frac_random_more_suppressed": 0.59375
+   }
+  }
+ },
  "hs20/logit": {
   "promoted_by_plus_u": [
    "...*",
@@ -645,8 +996,8 @@
   },
   "categories_suppressed": {
    "latex/math": 1,
-   "other word": 28,
-   "number": 1
+   "number": 1,
+   "other word": 28
   },
   "key_tokens": {
    "</think>": {
@@ -1096,6 +1447,355 @@
     "random_rank_p95": 226711.69999999995,
     "frac_random_more_promoted": 0.90625,
     "frac_random_more_suppressed": 0.09375
+   }
+  }
+ },
+ "hs20/rlensref": {
+  "promoted_by_plus_u": [
+   " hanem",
+   ">--",
+   "\u5df2\u7ecf\u662f",
+   "\u5979\u8fd8\u662f",
+   "\u4ed6\u8fd8\u662f",
+   "...**",
+   "?-",
+   "\u5b83\u662f",
+   "\u8fd8\u662f",
+   ">?",
+   "\u6211\u8fd8\u662f",
+   "\u8fd8\u4e0d\u662f",
+   "\u5149\u662f",
+   "\u4ed6\u662f",
+   "\u8fd8\u662f\u5728",
+   "\u6839\u672c\u4e0d\u662f",
+   "**-",
+   "\u672c\u6765\u5c31\u662f",
+   "\u8fd8\u6709",
+   "<-",
+   "\u53c8\u662f",
+   "\u662f\u6307",
+   "...*",
+   "\u5e9f",
+   "\u8fd8\u662f\u4e00",
+   "\u517c\u804c",
+   "\u6b8b\u75be\u4eba",
+   "\u5b83\u5c31\u662f",
+   "?...",
+   "\u4ed6\u8fd8"
+  ],
+  "suppressed_by_plus_u": [
+   " results",
+   " outcomes",
+   " formulas",
+   " result",
+   " concepts",
+   " respective",
+   " numerical",
+   " terms",
+   " outcome",
+   " yields",
+   " outputs",
+   " formula",
+   " accordingly",
+   " values",
+   " appropriately",
+   " calculations",
+   " similarities",
+   " computations",
+   " multiples",
+   " count",
+   " counterparts",
+   " equivalence",
+   " notions",
+   " methods",
+   "\u65b9\u6cd5\u53ca",
+   " scenarios",
+   "numer",
+   " numer",
+   " fundamentals",
+   " solutions"
+  ],
+  "categories_promoted": {
+   "punctuation/symbol": 8,
+   "other word": 22
+  },
+  "categories_suppressed": {
+   "other word": 30
+  },
+  "key_tokens": {
+   "</think>": {
+    "rank_plus_u": 186908,
+    "rank_minus_u": 61168,
+    "random_rank_median": 120012.0,
+    "random_rank_p05": 21832.55,
+    "random_rank_p95": 231829.34999999998,
+    "frac_random_more_promoted": 0.765625,
+    "frac_random_more_suppressed": 0.234375
+   },
+   "\n": {
+    "rank_plus_u": 90548,
+    "rank_minus_u": 157528,
+    "random_rank_median": 160379.0,
+    "random_rank_p05": 6921.100000000002,
+    "random_rank_p95": 244806.69999999998,
+    "frac_random_more_promoted": 0.25,
+    "frac_random_more_suppressed": 0.75
+   },
+   "\n\n": {
+    "rank_plus_u": 16918,
+    "rank_minus_u": 231158,
+    "random_rank_median": 146926.5,
+    "random_rank_p05": 4337.45,
+    "random_rank_p95": 246967.8,
+    "frac_random_more_promoted": 0.078125,
+    "frac_random_more_suppressed": 0.921875
+   },
+   "Wait": {
+    "rank_plus_u": 1740,
+    "rank_minus_u": 246336,
+    "random_rank_median": 112266.0,
+    "random_rank_p05": 24452.000000000004,
+    "random_rank_p95": 227863.34999999998,
+    "frac_random_more_promoted": 0.0,
+    "frac_random_more_suppressed": 1.0
+   },
+   " Wait": {
+    "rank_plus_u": 706,
+    "rank_minus_u": 247370,
+    "random_rank_median": 107472.5,
+    "random_rank_p05": 17326.9,
+    "random_rank_p95": 224529.2,
+    "frac_random_more_promoted": 0.0,
+    "frac_random_more_suppressed": 1.0
+   },
+   "But": {
+    "rank_plus_u": 36156,
+    "rank_minus_u": 211920,
+    "random_rank_median": 141674.0,
+    "random_rank_p05": 21722.6,
+    "random_rank_p95": 242936.59999999998,
+    "frac_random_more_promoted": 0.078125,
+    "frac_random_more_suppressed": 0.921875
+   },
+   " But": {
+    "rank_plus_u": 39661,
+    "rank_minus_u": 208415,
+    "random_rank_median": 132596.5,
+    "random_rank_p05": 28598.100000000002,
+    "random_rank_p95": 237977.24999999997,
+    "frac_random_more_promoted": 0.09375,
+    "frac_random_more_suppressed": 0.90625
+   },
+   "So": {
+    "rank_plus_u": 11375,
+    "rank_minus_u": 236701,
+    "random_rank_median": 129522.0,
+    "random_rank_p05": 10445.950000000004,
+    "random_rank_p95": 231231.89999999997,
+    "frac_random_more_promoted": 0.0625,
+    "frac_random_more_suppressed": 0.9375
+   },
+   " So": {
+    "rank_plus_u": 29452,
+    "rank_minus_u": 218624,
+    "random_rank_median": 134451.5,
+    "random_rank_p05": 12529.550000000007,
+    "random_rank_p95": 220251.4,
+    "frac_random_more_promoted": 0.109375,
+    "frac_random_more_suppressed": 0.890625
+   },
+   "Therefore": {
+    "rank_plus_u": 151797,
+    "rank_minus_u": 96279,
+    "random_rank_median": 132966.5,
+    "random_rank_p05": 37997.600000000006,
+    "random_rank_p95": 230088.25,
+    "frac_random_more_promoted": 0.5625,
+    "frac_random_more_suppressed": 0.4375
+   },
+   " Therefore": {
+    "rank_plus_u": 190987,
+    "rank_minus_u": 57089,
+    "random_rank_median": 126788.0,
+    "random_rank_p05": 23117.6,
+    "random_rank_p95": 221223.44999999998,
+    "frac_random_more_promoted": 0.734375,
+    "frac_random_more_suppressed": 0.265625
+   }
+  }
+ },
+ "hs20/tuned": {
+  "promoted_by_plus_u": [
+   "\u5979\u8fd8\u662f",
+   "\u4ed6\u8fd8\u662f",
+   "emies",
+   "iste",
+   "\u0443\u0440\u0433",
+   "raid",
+   "amb",
+   "\u800c\u662f\u56e0\u4e3a",
+   "urada",
+   "ilot",
+   "\u9884\u5907\u515a\u5458",
+   " \ud2c0",
+   "...*",
+   "\u7a81\u5982\u5176\u6765\u7684",
+   "ongo",
+   "ember",
+   "||",
+   "\u515a\u59d4\u59d4\u5458",
+   "istem",
+   "(--",
+   "\u63d2\u66f2",
+   "iet",
+   "-inf",
+   "ossid",
+   "\u5f88\u5f3a\u7684",
+   "atina",
+   "is",
+   "\u540c\u4e0a",
+   "*",
+   "ocht"
+  ],
+  "suppressed_by_plus_u": [
+   "\u5457",
+   " appropriately",
+   " valide",
+   "\uc9c0\uc694",
+   "\u5373\u53ef",
+   "\u82e5\u4e0d",
+   " albeit",
+   " accordingly",
+   " yields",
+   "\u4fbf\u53ef",
+   " count",
+   "\u4ee5\u6c42",
+   " valida",
+   "\u4e0e\u88ab",
+   " concepts",
+   " discret",
+   "\u0441\u0442\u0432\u0430",
+   " suitable",
+   "\u65b9\u53ef",
+   " exact",
+   " numerical",
+   " suit",
+   " align",
+   " selection",
+   " results",
+   "\u05e8\u05d5\u05df",
+   " first",
+   "\u7b49\u76f8\u5173",
+   "\u5bf9\u88ab",
+   " validity"
+  ],
+  "categories_promoted": {
+   "punctuation/symbol": 4,
+   "latex/math": 1,
+   "other word": 25
+  },
+  "categories_suppressed": {
+   "other word": 30
+  },
+  "key_tokens": {
+   "</think>": {
+    "rank_plus_u": 234149,
+    "rank_minus_u": 13927,
+    "random_rank_median": 113798.0,
+    "random_rank_p05": 11598.3,
+    "random_rank_p95": 231730.34999999995,
+    "frac_random_more_promoted": 0.953125,
+    "frac_random_more_suppressed": 0.046875
+   },
+   "\n": {
+    "rank_plus_u": 33126,
+    "rank_minus_u": 214950,
+    "random_rank_median": 124465.5,
+    "random_rank_p05": 11612.7,
+    "random_rank_p95": 246691.19999999998,
+    "frac_random_more_promoted": 0.15625,
+    "frac_random_more_suppressed": 0.84375
+   },
+   "\n\n": {
+    "rank_plus_u": 35004,
+    "rank_minus_u": 213072,
+    "random_rank_median": 102975.0,
+    "random_rank_p05": 7635.650000000001,
+    "random_rank_p95": 246760.85,
+    "frac_random_more_promoted": 0.21875,
+    "frac_random_more_suppressed": 0.78125
+   },
+   "Wait": {
+    "rank_plus_u": 9024,
+    "rank_minus_u": 239052,
+    "random_rank_median": 126306.0,
+    "random_rank_p05": 31404.65,
+    "random_rank_p95": 234796.4,
+    "frac_random_more_promoted": 0.0,
+    "frac_random_more_suppressed": 1.0
+   },
+   " Wait": {
+    "rank_plus_u": 5967,
+    "rank_minus_u": 242109,
+    "random_rank_median": 107256.5,
+    "random_rank_p05": 23546.600000000002,
+    "random_rank_p95": 217066.8,
+    "frac_random_more_promoted": 0.0,
+    "frac_random_more_suppressed": 1.0
+   },
+   "But": {
+    "rank_plus_u": 97421,
+    "rank_minus_u": 150655,
+    "random_rank_median": 142206.0,
+    "random_rank_p05": 26547.9,
+    "random_rank_p95": 236386.19999999998,
+    "frac_random_more_promoted": 0.234375,
+    "frac_random_more_suppressed": 0.765625
+   },
+   " But": {
+    "rank_plus_u": 112561,
+    "rank_minus_u": 135515,
+    "random_rank_median": 136755.5,
+    "random_rank_p05": 32573.75,
+    "random_rank_p95": 236220.94999999995,
+    "frac_random_more_promoted": 0.40625,
+    "frac_random_more_suppressed": 0.59375
+   },
+   "So": {
+    "rank_plus_u": 2744,
+    "rank_minus_u": 245332,
+    "random_rank_median": 143144.0,
+    "random_rank_p05": 9571.1,
+    "random_rank_p95": 226544.15,
+    "frac_random_more_promoted": 0.015625,
+    "frac_random_more_suppressed": 0.984375
+   },
+   " So": {
+    "rank_plus_u": 17386,
+    "rank_minus_u": 230690,
+    "random_rank_median": 100238.0,
+    "random_rank_p05": 22491.8,
+    "random_rank_p95": 219653.94999999998,
+    "frac_random_more_promoted": 0.046875,
+    "frac_random_more_suppressed": 0.953125
+   },
+   "Therefore": {
+    "rank_plus_u": 75774,
+    "rank_minus_u": 172302,
+    "random_rank_median": 132214.0,
+    "random_rank_p05": 24267.050000000003,
+    "random_rank_p95": 224058.39999999994,
+    "frac_random_more_promoted": 0.203125,
+    "frac_random_more_suppressed": 0.796875
+   },
+   " Therefore": {
+    "rank_plus_u": 104501,
+    "rank_minus_u": 143575,
+    "random_rank_median": 116916.5,
+    "random_rank_p05": 25825.65,
+    "random_rank_p95": 223312.6,
+    "frac_random_more_promoted": 0.375,
+    "frac_random_more_suppressed": 0.625
    }
   }
  }
