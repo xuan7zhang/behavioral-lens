@@ -8,3 +8,5 @@ notes/gen_eval/*.jsonl
 !notes/steer/summary.jsonl
 !notes/gen_eval/summary.jsonl
 .secrets/
+exp11/notes/gen/*.jsonl
+!exp11/notes/gen/summary.jsonl
