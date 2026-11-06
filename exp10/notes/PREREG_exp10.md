@@ -29,3 +29,14 @@ generated positions, on 20 looping unedited generations (10 GSM8K, 10 MATH-500),
   5 points of p50c. **P9** p50c + head 7 off: GSM8K completion at least 5 points above p50c, accuracy not lower.
 
 Scoring: held / failed / in part, written into `RESULTS_exp10.md` without editing this file.
+
+## Addendum A (2026-11-06 ~08:20 UTC, after the TF grid above, before the proxy study): which cheap signal predicts generation?
+
+Observed: p10c's teacher-forced loop effect is 1.9× p50c's although its generation gain is a tenth. Study: every Qwen variant
+with a screening result (base, p10c, p25c, p50c, α = 1/2/4/8, all-columns α = 1.5, random columns, 5 random directions,
+3 re-ranked column sets, plus the Exp10 builds once evaluated). Proxies on the same 20 loop texts: Δ loop NLL, Δ other NLL,
+loop-position projection on u (hidden states 16 / 20), and a short free-running test: from 20 loop-onset prefixes, 4 sampled
+rollouts of 256 tokens each (Astra's sampling); "escape" = less than half of the rollout's tokens inside a verbatim 32-gram loop.
+Target: GSM8K completion and accuracy in screening (400 generations each).
+- **A1** The escape rate has a higher Spearman correlation with GSM8K completion than Δ loop NLL does.
+- **A2** Δ loop NLL's Spearman with GSM8K accuracy is below 0.5 once p10c-family variants are included.
