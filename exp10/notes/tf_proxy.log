@@ -54,3 +54,27 @@ Traceback (most recent call last):
   File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 323, in torch_chunk_gated_delta_rule
     core_attn_out = core_attn_out.transpose(1, 2).contiguous().to(initial_dtype)
 torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 64.00 MiB. GPU 0 has a total capacity of 94.97 GiB of which 34.88 MiB is free. Process 1130334 has 83.72 GiB memory in use. Including non-PyTorch memory, this process has 3.78 GiB memory in use. Process 1566496 has 7.41 GiB memory in use. Of the allocated memory 3.05 GiB is allocated by PyTorch, and 65.08 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 10641.98it/s]
+base                             n= 0 loop 0.0739 other 0.4157 pu15 +1.78 pu19 +3.29 escape 0.89 deep 0.31 rollout-loop 0.19 / 0.71
+p10c                             n=30 loop 0.1804 other 0.4712 pu15 +0.78 pu19 +1.54 escape 1.00 deep 0.78 rollout-loop 0.06 / 0.33
+p25c                             n= 1 loop 0.0857 other 0.4310 pu15 +1.71 pu19 +3.10 escape 0.95 deep 0.33 rollout-loop 0.10 / 0.67
+p50c                             n= 2 loop 0.1308 other 0.4504 pu15 +0.10 pu19 +0.55 escape 1.00 deep 0.80 rollout-loop 0.06 / 0.30
+all_alpha1.5                     n= 2 loop 0.0823 other 0.4271 pu15 +1.22 pu19 +2.09 escape 0.95 deep 0.34 rollout-loop 0.13 / 0.66
+rand_cols                        n= 2 loop 0.0783 other 0.4179 pu15 +1.72 pu19 +2.06 escape 0.86 deep 0.35 rollout-loop 0.18 / 0.66
+rand_dir00                       n= 2 loop 0.0739 other 0.4162 pu15 +1.78 pu19 +3.28 escape 0.88 deep 0.31 rollout-loop 0.19 / 0.70
+rand_dir01                       n= 2 loop 0.0735 other 0.4159 pu15 +1.78 pu19 +3.31 escape 0.84 deep 0.31 rollout-loop 0.20 / 0.70
+rand_dir02                       n= 2 loop 0.0738 other 0.4157 pu15 +1.77 pu19 +3.26 escape 0.89 deep 0.30 rollout-loop 0.18 / 0.71
+rand_dir03                       n= 2 loop 0.0740 other 0.4157 pu15 +1.78 pu19 +3.27 escape 0.88 deep 0.30 rollout-loop 0.19 / 0.71
+rand_dir04                       n= 2 loop 0.0740 other 0.4158 pu15 +1.78 pu19 +3.29 escape 0.88 deep 0.31 rollout-loop 0.18 / 0.70
+sel_alpha1                       n= 2 loop 0.0771 other 0.4193 pu15 +1.50 pu19 +2.63 escape 0.88 deep 0.34 rollout-loop 0.16 / 0.69
+sel_alpha2                       n= 2 loop 0.0817 other 0.4238 pu15 +1.22 pu19 +2.05 escape 0.94 deep 0.35 rollout-loop 0.13 / 0.67
+sel_alpha4                       n= 2 loop 0.0973 other 0.4350 pu15 +0.66 pu19 +1.16 escape 0.96 deep 0.59 rollout-loop 0.10 / 0.48
+sel_alpha8                       n= 2 loop 0.2432 other 0.4721 pu15 -0.45 pu19 +0.05 escape 1.00 deep 0.95 rollout-loop 0.05 / 0.15
+top64_combined_alpha6            n= 2 loop 0.1098 other 0.4413 pu15 +0.51 pu19 +0.81 escape 0.99 deep 0.69 rollout-loop 0.08 / 0.40
+top64_dprime_alpha6              n= 2 loop 0.0956 other 0.4332 pu15 +0.75 pu19 +1.16 escape 0.99 deep 0.51 rollout-loop 0.09 / 0.53
+top64_uproj_alpha6               n= 2 loop 0.1014 other 0.4381 pu15 +0.71 pu19 +0.96 escape 0.99 deep 0.69 rollout-loop 0.09 / 0.41
+exp10_p10c_alpha3                n=30 loop 0.3485 other 0.5739 pu15 +0.64 pu19 +1.41 escape 1.00 deep 0.97 rollout-loop 0.05 / 0.09
+exp10_p10cdir_p50crecipe         n= 2 loop 0.1298 other 0.4518 pu15 +0.69 pu19 +1.48 escape 1.00 deep 0.62 rollout-loop 0.06 / 0.40
+exp10_p50c_plus_h7off            n= 3 loop 0.2400 other 0.4759 pu15 +0.07 pu19 +0.57 escape 1.00 deep 0.97 rollout-loop 0.06 / 0.11
+exp10_sae_top1_p50crecipe        n= 2 loop 0.1122 other 0.4457 pu15 +1.12 pu19 +1.61 escape 1.00 deep 0.50 rollout-loop 0.08 / 0.53

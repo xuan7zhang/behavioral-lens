@@ -1,0 +1,19 @@
+[chain2] tools a done Fri Nov  6 08:34:37 UTC 2026 AP edited 0.90 (shuffled 0.65), random 0.81 (shuffled 0.55)
+loop-direction AUC by layer {0: 0.533, 1: 0.546, 2: 0.56, 3: 0.596, 4: 0.805, 5: 0.861, 6: 0.838, 7: 0.817, 8: 0.903, 9: 0.887, 10: 0.935, 11: 0.879, 12: 0.821, 13: 0.849, 14: 0.858, 15: 0.873, 16: 0.832, 17: 0.868} best [10, 8]
+built transfer_u, transfer_rand
+failures {'n_all': 2000, 'n_wrong': 1854, 'cutoff': 134, 'loop_ending_finished': 409, 'n_finished_wrong': 1311, 'finished_wrong_labels': {'arithmetic slip': 0.006666666666666667, 'wrong method or reasoning': 0.8, 'misread the question': 0.04, 'no final answer given': 0.006666666666666667, 'other': 0.14666666666666667}, 'n_labelled': 150}
+[gemma] transfer_u start Fri Nov  6 08:34:37 UTC 2026
+[gemma] transfer_u done Fri Nov  6 09:16:00 UTC 2026 SUMMARY {"tag": "transfer_u", "model": "/data2/ec2-user/models/exp11/transfer_u", "n": 2000, "sec": 2441, "acc_lenient": 0.009, "acc_strict": 0.0, "cut": 1.0, "loop_end": 0.0505, "repetitive_end": 0.0505, "verbatim_loop_end": 0.023, "mean_tokens": 8192.0}
+[gemma] transfer_rand start Fri Nov  6 09:16:00 UTC 2026
+[gemma] transfer_rand done Fri Nov  6 09:25:35 UTC 2026 SUMMARY {"tag": "transfer_rand", "model": "/data2/ec2-user/models/exp11/transfer_rand", "n": 2000, "sec": 531, "acc_lenient": 0.0745, "acc_strict": 0.0345, "cut": 0.11, "loop_end": 0.2905, "repetitive_end": 0.288, "verbatim_loop_end": 0.1185, "mean_tokens": 1897.012}
+[chain2] transfer evals done Fri Nov  6 09:25:35 UTC 2026
+[chain2] tools tf done Fri Nov  6 09:25:41 UTC 2026 0 rows
+[gemma] transfer_u_a1 start Fri Nov  6 09:25:41 UTC 2026
+[gemma] transfer_u_a1 done Fri Nov  6 10:02:14 UTC 2026 SUMMARY {"tag": "transfer_u_a1", "model": "/data2/ec2-user/models/exp11/transfer_u_a1", "n": 2000, "sec": 2150, "acc_lenient": 0.0255, "acc_strict": 0.01, "cut": 0.642, "loop_end": 0.7475, "repetitive_end": 0.7465, "verbatim_loop_end": 0.4105, "mean_tokens": 6194.939}
+[gemma] transfer_u_a2 start Fri Nov  6 10:02:14 UTC 2026
+[gemma] transfer_u_a2 done Fri Nov  6 10:51:37 UTC 2026 SUMMARY {"tag": "transfer_u_a2", "model": "/data2/ec2-user/models/exp11/transfer_u_a2", "n": 2000, "sec": 2912, "acc_lenient": 0.021, "acc_strict": 0.0015, "cut": 0.954, "loop_end": 0.468, "repetitive_end": 0.4645, "verbatim_loop_end": 0.136, "mean_tokens": 7948.5925}
+[gemma] transfer_u_a3 start Fri Nov  6 10:51:37 UTC 2026
+Terminated
+[gemma] transfer_u_a3 done Fri Nov  6 10:51:46 UTC 2026 
+[chain2] dose evals done Fri Nov  6 10:51:46 UTC 2026
+[chain2] tools tf (rerun) done Fri Nov  6 10:55:33 UTC 2026 11 rows

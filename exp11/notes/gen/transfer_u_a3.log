@@ -1,0 +1,6 @@
+INFO 11-06 10:51:41 [utils.py:278] non-default args: {'dtype': 'bfloat16', 'max_model_len': 10240, 'gpu_memory_utilization': 0.05, 'max_num_seqs': 256, 'disable_log_stats': True, 'model': '/data2/ec2-user/models/exp11/transfer_u_a3'}
+INFO 11-06 10:51:41 [model.py:617] Resolved architecture: Gemma3ForCausalLM
+INFO 11-06 10:51:41 [model.py:1752] Using max model len 10240
+INFO 11-06 10:51:41 [scheduler.py:239] Chunked prefill is enabled with max_num_batched_tokens=16384.
+INFO 11-06 10:51:41 [vllm.py:977] Asynchronous scheduling is enabled.
+INFO 11-06 10:51:41 [kernel.py:270] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['native'], fused_add_rms_norm=['native'])

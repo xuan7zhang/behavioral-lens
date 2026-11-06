@@ -1,0 +1,904 @@
+{
+ "sae": [
+  {
+   "layer": 8,
+   "sae_layer": 9,
+   "neuron": 699,
+   "kind": "edited",
+   "max_cos": 0.7232093811035156,
+   "latent": 1979
+  },
+  {
+   "layer": 8,
+   "sae_layer": 9,
+   "neuron": 1730,
+   "kind": "random",
+   "max_cos": 0.43856340646743774,
+   "latent": 479
+  },
+  {
+   "layer": 11,
+   "sae_layer": 12,
+   "neuron": 971,
+   "kind": "edited",
+   "max_cos": 0.4557780623435974,
+   "latent": 1023
+  },
+  {
+   "layer": 11,
+   "sae_layer": 12,
+   "neuron": 180,
+   "kind": "edited",
+   "max_cos": 0.6284345388412476,
+   "latent": 16157
+  },
+  {
+   "layer": 11,
+   "sae_layer": 12,
+   "neuron": 149,
+   "kind": "edited",
+   "max_cos": 0.34079012274742126,
+   "latent": 1928
+  },
+  {
+   "layer": 11,
+   "sae_layer": 12,
+   "neuron": 1680,
+   "kind": "edited",
+   "max_cos": 0.5572317242622375,
+   "latent": 1234
+  },
+  {
+   "layer": 11,
+   "sae_layer": 12,
+   "neuron": 232,
+   "kind": "edited",
+   "max_cos": 0.5444971323013306,
+   "latent": 472
+  },
+  {
+   "layer": 11,
+   "sae_layer": 12,
+   "neuron": 1724,
+   "kind": "edited",
+   "max_cos": 0.2963314354419708,
+   "latent": 9365
+  },
+  {
+   "layer": 11,
+   "sae_layer": 12,
+   "neuron": 312,
+   "kind": "edited",
+   "max_cos": 0.3753402829170227,
+   "latent": 1839
+  },
+  {
+   "layer": 11,
+   "sae_layer": 12,
+   "neuron": 1096,
+   "kind": "edited",
+   "max_cos": 0.30985692143440247,
+   "latent": 11409
+  },
+  {
+   "layer": 11,
+   "sae_layer": 12,
+   "neuron": 792,
+   "kind": "random",
+   "max_cos": 0.2743271291255951,
+   "latent": 820
+  },
+  {
+   "layer": 11,
+   "sae_layer": 12,
+   "neuron": 1558,
+   "kind": "random",
+   "max_cos": 0.25964006781578064,
+   "latent": 71
+  },
+  {
+   "layer": 11,
+   "sae_layer": 12,
+   "neuron": 1831,
+   "kind": "random",
+   "max_cos": 0.4411858916282654,
+   "latent": 2279
+  },
+  {
+   "layer": 11,
+   "sae_layer": 12,
+   "neuron": 865,
+   "kind": "random",
+   "max_cos": 0.34088069200515747,
+   "latent": 11409
+  },
+  {
+   "layer": 11,
+   "sae_layer": 12,
+   "neuron": 82,
+   "kind": "random",
+   "max_cos": 0.27624818682670593,
+   "latent": 349
+  },
+  {
+   "layer": 11,
+   "sae_layer": 12,
+   "neuron": 534,
+   "kind": "random",
+   "max_cos": 0.6732509136199951,
+   "latent": 1567
+  },
+  {
+   "layer": 11,
+   "sae_layer": 12,
+   "neuron": 1985,
+   "kind": "random",
+   "max_cos": 0.2699880599975586,
+   "latent": 5595
+  },
+  {
+   "layer": 11,
+   "sae_layer": 12,
+   "neuron": 1052,
+   "kind": "random",
+   "max_cos": 0.29935768246650696,
+   "latent": 504
+  },
+  {
+   "layer": 14,
+   "sae_layer": 15,
+   "neuron": 483,
+   "kind": "edited",
+   "max_cos": 0.22306880354881287,
+   "latent": 770
+  },
+  {
+   "layer": 14,
+   "sae_layer": 15,
+   "neuron": 984,
+   "kind": "edited",
+   "max_cos": 0.5999934077262878,
+   "latent": 1995
+  },
+  {
+   "layer": 14,
+   "sae_layer": 15,
+   "neuron": 997,
+   "kind": "random",
+   "max_cos": 0.4954474866390228,
+   "latent": 459
+  },
+  {
+   "layer": 14,
+   "sae_layer": 15,
+   "neuron": 830,
+   "kind": "random",
+   "max_cos": 0.2421623170375824,
+   "latent": 1052
+  },
+  {
+   "layer": 17,
+   "sae_layer": 15,
+   "neuron": 1179,
+   "kind": "edited",
+   "max_cos": 0.22696565091609955,
+   "latent": 2648
+  },
+  {
+   "layer": 17,
+   "sae_layer": 15,
+   "neuron": 920,
+   "kind": "edited",
+   "max_cos": 0.2613261938095093,
+   "latent": 3450
+  },
+  {
+   "layer": 17,
+   "sae_layer": 15,
+   "neuron": 1882,
+   "kind": "random",
+   "max_cos": 0.32283851504325867,
+   "latent": 934
+  },
+  {
+   "layer": 17,
+   "sae_layer": 15,
+   "neuron": 1607,
+   "kind": "random",
+   "max_cos": 0.20932550728321075,
+   "latent": 14038
+  }
+ ],
+ "sae_maxcos_edited": 0.42637105056872737,
+ "sae_maxcos_random": 0.3494781427658521,
+ "autointerp": [
+  {
+   "layer": 8,
+   "neuron": 699,
+   "kind": "edited",
+   "ex": [
+    " than the Leaning Tower of Pisa . The sculpture took its name from a quotation of British sprinter Linford Christie , in[[ which]] he said",
+    "<bos> = Back Off Boogaloo[[ =]] \\n",
+    " anniversary . \\n The main event was a King of the Mountain match for the TNA World Heavyweight Championship , in[[ which]] then @",
+    "<bos> = Training Day ( The Office )[[ =]] \\n"
+   ],
+   "top_act": 1.3515625,
+   "frac_gen_top20": 0.1,
+   "description": "This neuron fires on tokens that close a clause or heading and set up an elaboration, mainly \"which\" after \"in\" (\", in which\"), the closing \"=\" of a Wikipedia title header, and \"where\" after a formula.",
+   "AP": 1.0,
+   "AP_shuffled": 0.7678571428571428
+  },
+  {
+   "layer": 8,
+   "neuron": 1730,
+   "kind": "random",
+   "ex": [
+    " + a_2 x^2 + a_1 x + 1 = 0.\\]\\nLet $r[[_]]1,",
+    "-digit base 2 integer.\\nWe can write the eight-digit base 2 integer in the form $a[[_]]0 a",
+    " and put your final answer within \\boxed{}.<end_of_turn>\\n<start_of_turn>model\\nLet the cost of cookies be $C_[[c]] = ",
+    " reason step by step, and put your final answer within \\boxed{}.<end_of_turn>\\n<start_of_turn>model\\nLet $n_[[u]]$ be"
+   ],
+   "top_act": 0.44921875,
+   "frac_gen_top20": 0.8,
+   "description": "It fires on the token right after a variable name or LaTeX command that is expected to continue as a subscript or environment name, especially the underscore in \"Let $x_1\" and the brace in \"\\end{\" or \"\\begin{\".",
+   "AP": 0.6916666666666667,
+   "AP_shuffled": 0.625
+  },
+  {
+   "layer": 11,
+   "neuron": 971,
+   "kind": "edited",
+   "ex": [
+    " calculations, Jon says, \"There is more than one such polynomial.\"\\n\\nSteve says, \"You're right.[[ Here]] is the",
+    " x$\\n$1590 = x$\\nTherefore, $x = 1590$.\\n\\n[[We]] can also",
+    "{1}{137} + i) = \\frac{1}{137} + i$.\\n[[We]] want to",
+    " starting point as he started.\\nTherefore, he is 2 miles from his starting point in a direct line.\\n\\n[[We]] are asked"
+   ],
+   "top_act": 1.3203125,
+   "frac_gen_top20": 1.0,
+   "description": "This neuron fires on \"We\" (or \"Here\"/\"we\") at the start of a new sentence or paragraph right after a math answer has been reached, where the model is about to begin a new step, such as \"We can also...\", \"We want to...\", or \"We are asked...\".",
+   "AP": 1.0,
+   "AP_shuffled": 1.0
+  },
+  {
+   "layer": 11,
+   "neuron": 180,
+   "kind": "edited",
+   "ex": [
+    " intelligence service has monitored the organization 's activities . The German government does not recognize Scientology as a religion . It views it[[ as]] an abusive",
+    " sculpture took its name from a quotation of British sprinter Linford Christie , in which he said that he started his races not[[ merely]] at the",
+    " Lead vocalist Bono wrote the lyrics in response to the notion that it is possible to identify a person 's religion and income[[ based]] on the",
+    ",b) = ab + 5b + 2a + 10$$\\nWe can also write it[[ as]]\\n$$"
+   ],
+   "top_act": 1.6640625,
+   "frac_gen_top20": 0.75,
+   "description": "This neuron fires on the word right after a verb phrase that expects a particular continuation, most often \"as\" in \"write/rewrite/view it as\", and also on words like \"merely\", \"only\", \"than\", \"based\" and \"a\" that set up a following clause or complement.",
+   "AP": 1.0,
+   "AP_shuffled": 0.9583333333333333
+  },
+  {
+   "layer": 11,
+   "neuron": 149,
+   "kind": "edited",
+   "ex": [
+    "{pmatrix} = \\begin{pmatrix} 2 \\\\ 4 \\\\ -3 \\end{pmatrix} \\quad[[ \\]]text{",
+    " $QM = \\frac{PQ}{2} = \\frac{34}{2} = 17$.[[\\n]]Therefore,",
+    " x_{2}&=375,\\\\ x_{3}&=420,\\\\ x_{4}&=523,\\[[ \\]]text{",
+    "{1668}{3} = 834 - 549 = 285$.[[\\n]]Therefore,"
+   ],
+   "top_act": 0.74609375,
+   "frac_gen_top20": 1.0,
+   "description": "This neuron fires on line-break tokens (or a stray backslash) right after a computed equation or result in a math solution, where a concluding sentence like \"Therefore,\" or \"Thus,\" is about to begin.",
+   "AP": 0.4666666666666667,
+   "AP_shuffled": 0.5336538461538461
+  },
+  {
+   "layer": 11,
+   "neuron": 1680,
+   "kind": "edited",
+   "ex": [
+    " was such that he largely retired from society after the emperor 's capture and death in 1645 . He[[ owned]] and operated",
+    " , Kenny Scharf , and Robbie Conal as themselves . Fairey , who is a long @-@ time fan[[ of]] The Simpsons",
+    " @-@ purpose running back who catches the ball extremely well , blocks well and runs well \" . He is a champion[[ of]] the ",
+    " . Shikamaru is portrayed as a lazy character , unwilling to apply his prodigious intelligence ; Kishimoto has noted that he[[ likes]] Shikam"
+   ],
+   "top_act": 1.1484375,
+   "frac_gen_top20": 0.1,
+   "description": "This neuron fires on verbs and prepositions that follow a person subject and introduce what that person owns, likes, does, or is known for (e.g. \"owned\", \"fan of\", \"champion of\", \"specialised in\", \"role in\").",
+   "AP": 1.0,
+   "AP_shuffled": 0.5
+  },
+  {
+   "layer": 11,
+   "neuron": 232,
+   "kind": "edited",
+   "ex": [
+    " dx\\]\\nWe know that $|1-i|^8$ is a complex number, so we can rewrite it as[[:]]\\n\\[",
+    " table of counties and their number of students.\\n\\nThe median is the middle value in the data.\\nThe values are[[:]]\\n$",
+    "$, $D$, $E$, $F$, $G$, $H$, $I$, and $J$ are[[:]]\\n$",
+    "1984 Rajneeshee bioterror attack in The Dalles , Oregon . \\n The conspirators included[[ :]] Ma Anand"
+   ],
+   "top_act": 3.421875,
+   "frac_gen_top20": 0.9,
+   "description": "This neuron fires on a colon that ends an introductory clause and announces a list, equation, or quotation that follows (e.g., \"we have the following equations:\" or \"It states :\").",
+   "AP": 0.6163690476190476,
+   "AP_shuffled": 0.5
+  },
+  {
+   "layer": 11,
+   "neuron": 1724,
+   "kind": "edited",
+   "ex": [
+    "user\\nTen treeks weigh as much as three squigs and one goolee. Two treeks and one go[[ole]]e are",
+    " professional wrestling pay @-@ per @-@ view ( PPV ) event produced by the Total Nonstop Action Wrestling[[ (]] TNA",
+    "2 , 1984 ) is a Canadian football running back for the Edmonton Eskimos of the Canadian Football League[[ (]] CFL )",
+    "<bos> = Randy Blythe manslaughter case = \\n The Randy[[ Bly]]the manslaughter"
+   ],
+   "top_act": 3.609375,
+   "frac_gen_top20": 0.3,
+   "description": "It fires on mid-word subword tokens of rare or unusual proper names and made-up words, and on the \" (\" that comes before an acronym right after a full organization name, where the next token is a predictable continuation, such as the rest of the name or the abbreviation.",
+   "AP": 0.875,
+   "AP_shuffled": 0.4732142857142857
+  },
+  {
+   "layer": 11,
+   "neuron": 312,
+   "kind": "edited",
+   "ex": [
+    " \" when you want to talk fancy . \" The two start using it in every sentence they speak . However , when Mr[[.]] Krabs",
+    "5 July 1914 \u2013 23 December 1976 ) was a senior commander in the[[ Royal]] Australian Air",
+    " . Street artist Shepard Fairey encounters Bart one night and offers him a gallery show of Bart 's artworks . However ,[[ Chief]] Wigg",
+    " and Igor Stravinsky , including the title role in the latter 's Pers\u00e9phone . \\n The niece of[[ Lady]] Laurier"
+   ],
+   "top_act": 2.171875,
+   "frac_gen_top20": 0.05,
+   "description": "This neuron fires on title or honorific tokens (like \"Mr.\", \"Dr.\", \"Jr.\", \"Royal\", \"Chief\", \"Lady\") that come just before a proper name or institution and so predict a capitalized name or noun next.",
+   "AP": 1.0,
+   "AP_shuffled": 0.8888888888888888
+  },
+  {
+   "layer": 11,
+   "neuron": 1096,
+   "kind": "edited",
+   "ex": [
+    ", $p_1(1) = 1$, $p_2(1) = 1$, and[[ so]] on.",
+    " be some sick shit . ' So when it came time to do the record , that stuff was still in my head \u2014[[ that]] 's",
+    "<bos> = Homarus gammarus = \\n Homarus gammarus ,[[ known]] as the",
+    "\\sqrt{2}i$.\\nSince the roots are $n^{\\text{th}}$ roots of unity, we[[ know]] that the"
+   ],
+   "top_act": 0.56640625,
+   "frac_gen_top20": 0.8,
+   "description": "This neuron fires on function words that introduce a following clause or complement, such as \"know\" in \"We know that\", \"fact\" in \"the fact that\", and \"so\" in \"and so on\", and it also fires on the opening <start_of_turn> token.",
+   "AP": 1.0,
+   "AP_shuffled": 0.5
+  },
+  {
+   "layer": 11,
+   "neuron": 792,
+   "kind": "random",
+   "ex": [
+    " that $x+y \\le 4$.\\nWe know that $x+y \\le 4$ if[[ and]] only if",
+    "y=f(x)$. The graph of $y = f(x)$ intersects every horizontal line at least once if[[ and]] only if",
+    " the probability that the sum of the numbers chosen by Paul is even.\\nThe sum of the numbers chosen is even if[[ and]] only if",
+    "B Corporation and built by Zachry Construction Corporation . \\n The interchange is considered by Popular Mechanics to be one of \"[[ The]] World '"
+   ],
+   "top_act": 2.1875,
+   "frac_gen_top20": 0.2,
+   "description": "This neuron fires on a function word (often \"and\" in \"if and only if\") that sits mid-phrase in a fixed expression, title, or quotation, where the next token is predictable, such as \"only\", or the rest of a title.",
+   "AP": 0.959375,
+   "AP_shuffled": 0.5416666666666666
+  },
+  {
+   "layer": 11,
+   "neuron": 1558,
+   "kind": "random",
+   "ex": [
+    " and remove 3 yellow marbles, the ratio will be 7:3. How many blue marbles were in the bag[[ before]] I added",
+    " advanced south along the Buin Road . \\n The initial phase saw the Australians advance towards the Hongorai River .[[ Following]] the end",
+    "user\\nA pirate searches seven islands for buried treasure. If each island has a $\\frac{1}{5}$ chance[[ of]] having treasure",
+    " response to the Allied landings with the mission of recapturing the airfield and driving the Allied forces from the island . \\n[[ Under]]estimating the"
+   ],
+   "top_act": 1.125,
+   "frac_gen_top20": 0.55,
+   "description": "This neuron fires on function words or verbs that open a clause and set up an expected continuation about a prior or subsequent event, such as \"before,\" \"after,\" \"Following,\" \"Prior to,\" and \"of\" in probability phrasing.",
+   "AP": 0.625,
+   "AP_shuffled": 0.5814393939393939
+  },
+  {
+   "layer": 11,
+   "neuron": 1831,
+   "kind": "random",
+   "ex": [
+    " spikes along his head and spine and renamed themselves \" Sonic Team \" to match their character . Sonic the Hedgehog , designed for[[ fast]] gameplay ,",
+    " on the military road in eastern Kansas between Fort Leavenworth and Fort Gibson . It was established to provide protection to the[[ rapidly]] increasing number",
+    " of what they could expect from the series . It was directed by Paul A. Edwards . \\n After a newborn baby[[ rapidly]] ages into",
+    " season . Josephine developed out of a strong tropical wave which moved off the African coast on August 31 . The wave[[ quickly]] became organized"
+   ],
+   "top_act": 3.578125,
+   "frac_gen_top20": 0.6,
+   "description": "This neuron fires on words about speed or short duration (such as \"fast,\" \"rapidly,\" \"quickly,\" \"briefly,\" and \"hour\"), and also on the digit \"9\" inside numbers, especially in sequences like 99, 999, or decimals.",
+   "AP": 0.875,
+   "AP_shuffled": 0.525
+  },
+  {
+   "layer": 11,
+   "neuron": 865,
+   "kind": "random",
+   "ex": [
+    "4 . The easiest and most popular climbing routes are categorized as Class 1 to 2 or A + in mountaineering[[ parl]]ance .",
+    " the Eskimos . McCarty is known for being able to fill many roles at his position , with TSN sportscaster[[ Chris]] Schultz noting",
+    " the Gift Shop by graffiti artist Banksy , and features guest appearances from street artists Ron English , Kenny Scharf , and[[ Robbie]] Conal",
+    " ( John Krasinski ) and Pam Halpert ( Jenna Fischer ) worry that they 've come on too strong . Only[[ Dwight]] Schrute"
+   ],
+   "top_act": 0.38671875,
+   "frac_gen_top20": 0.3,
+   "description": "This neuron fires on first names (or the start of a name) of people or characters, especially right before a surname is expected, such as \"Chris\" in \"Chris Schultz\" or \"Brian\" in \"Brian Eno\".",
+   "AP": 0.9375,
+   "AP_shuffled": 0.6375
+  },
+  {
+   "layer": 11,
+   "neuron": 82,
+   "kind": "random",
+   "ex": [
+    " storey tower mill with Patent sails and winded by a fantail . It drives two pairs of millstones , with a[[ third]] pair driven",
+    "theta$ be the angle of the cylinder, and $z$ be the distance from the center of the cylinder to the[[ z]]-axis",
+    "x} = 256^\\frac{1}{2}$$\\nThe exponent of 2 in the right-[[hand]] side is",
+    " of Fremont . This junction is at a tripoint of county lines . M @-@ 120 forms the[[ north]] \u2013 south"
+   ],
+   "top_act": 1.78125,
+   "frac_gen_top20": 0.7,
+   "description": "This neuron fires on a modifier or ordinal word (e.g. \"third\", \"x\", \"hand\", \"north\", \"end\", \"first\") that follows \"the\" or \"a\" and begins a noun phrase, where the next token is expected to be a noun or a hyphenated",
+   "AP": 0.8571428571428572,
+   "AP_shuffled": 0.41875
+  },
+  {
+   "layer": 11,
+   "neuron": 534,
+   "kind": "random",
+   "ex": [
+    " well received by critics ; Steve Huey of AllMusic described it as a \" classic \" . \\n = = Composition and[[ origins]] = =",
+    " pathway . \\n The success of the Nazarov cyclization as a tool in organic synthesis stems from the utility and ubiqu[[ity]] of cyclopent",
+    " \" with the \" unusual 16th @-@ century vaulted south chapel \" . \\n = = History and[[ location]] = =",
+    "19 . The Lower Peninsula routing has been in use since the 1920s . Various extensions and trunc[[ations]] have shifted"
+   ],
+   "top_act": 1.203125,
+   "frac_gen_top20": 0.05,
+   "description": "This neuron fires on the word right after \"and\" (or similar conjunction-like positions) in a coordinated pair, especially the second noun or adjective in \"X and Y\" phrases like \"Composition and origins\" or \"Expand and simplify\".",
+   "AP": 1.0,
+   "AP_shuffled": 0.5
+  },
+  {
+   "layer": 11,
+   "neuron": 1985,
+   "kind": "random",
+   "ex": [
+    "ola ( born May 1968 ) is a Welsh actress , best known for her role as Kyla Tyson[[ in]] the BBC",
+    " ( born 23 July 1989 ) is an English actor who rose to prominence as the title character[[ in]] the Harry",
+    " competition between the University of Oxford ( sometimes referred to as the \" Dark Blues \" ) and the University of Cambridge ( sometimes[[ referred]] to as",
+    " General Alexander Vandegrift , repulsed an attack by the Japanese 35th Infantry Brigade , under the command[[ of]] Japanese Major"
+   ],
+   "top_act": 2.34375,
+   "frac_gen_top20": 0.5,
+   "description": "This neuron fires on a function word (often \"in\", \"of\", \"given\", \"known\", or \"referred\") that follows a noun or participle and introduces a following phrase, typically one that specifies a role, title, or attribution, and it predicts a continuation like \"in the [work",
+   "AP": 0.8125,
+   "AP_shuffled": 0.4278846153846154
+  },
+  {
+   "layer": 11,
+   "neuron": 1052,
+   "kind": "random",
+   "ex": [
+    " a savings account at the end of the year. By the end of the third year (when he makes the third deposit[[),]] he wants",
+    " and a mass of 6 kilograms ( 13 lb ) , and bears a conspicuous pair of claws . In life[[ ,]] the lob",
+    "1921 , Asahi was disarmed two years later to meet the terms of the Washington Naval Treaty , after[[ which]] she served",
+    " of the 2007 CFL Draft , McCarty played high school football for the St. Thomas More Knights ,[[ where]] he broke"
+   ],
+   "top_act": 1.8125,
+   "frac_gen_top20": 0.15,
+   "description": "This neuron fires on the comma, or a connective like \"which\", \"where\" or \"because\", that ends an introductory time phrase or clause and comes just before the main clause or a follow-up clause begins.",
+   "AP": 0.4875,
+   "AP_shuffled": 0.65
+  },
+  {
+   "layer": 14,
+   "neuron": 483,
+   "kind": "edited",
+   "ex": [
+    "*}\\nSince $x_1 = x_2 = x_3 = x,$ we have\\n\\begin{[[align]]*} (",
+    " -1 + 3t \\end{pmatrix}. \\]Thus, the equation of the line is\\n\\begin{[[align]]*} \\",
+    " $n$ is a positive integer.\\nThe multiples of $5$ are $5, 10, [[1]]5,",
+    ".$\\nWe want to find the maximum value of $e$.\\nWe have the following equations:\\n\\begin{[[align]]*} a"
+   ],
+   "top_act": 0.380859375,
+   "frac_gen_top20": 0.8,
+   "description": "This neuron fires on LaTeX math-environment tokens that open or continue a formula block, such as \"align\" in \\begin{align*}, \"pmatrix\" in \\begin{pmatrix}, and \"equiv\" after \\, along with some digit tokens like",
+   "AP": 0.7767857142857143,
+   "AP_shuffled": 0.46875
+  },
+  {
+   "layer": 14,
+   "neuron": 984,
+   "kind": "edited",
+   "ex": [
+    "\\angle J$ and $m\\angle H$. [asy]\\nsize(150);\\nimport graph[[;]]\\npair",
+    " the area of the region with the smallest area? Express your answer in exact form.\\n\\n[asy]\\nimport graph[[;]]\\nfill",
+    "We want to find the greatest possible value of $\\displaystyle\\left(a+\\frac{1}{b}\\right)\\[[left]](\\frac",
+    ". What is the probability that the points lie on the same straight line?\\n\\n[asy]\\nsize(50[[);]]\\nfor"
+   ],
+   "top_act": 0.59375,
+   "frac_gen_top20": 1.0,
+   "description": "This neuron fires on LaTeX or Asymptote code syntax tokens, especially the semicolons, closing brackets, and \"left\"/\"begin\" commands that come right after a bracket or command opener (e.g. \"import graph;\", \"[asy]\",",
+   "AP": 1.0,
+   "AP_shuffled": 0.5
+  },
+  {
+   "layer": 14,
+   "neuron": 997,
+   "kind": "random",
+   "ex": [
+    " pizzas the pizza can be ordered is the number of possible toppings, which is the number of ways to choose $k$[[ toppings]] from the",
+    " number of ways to arrange the 2 boys in a row is the same as the number of ways to choose 2[[ positions]] for the",
+    "$.\\nThe number of ways to put 5 balls in 2 boxes is the number of ways to choose 5[[ balls]] from ",
+    " combinations of meals Yann and Camille can order.\\n\\nWe need to choose one item from the 10 items on the[[ menu]] for Yann"
+   ],
+   "top_act": 0.8515625,
+   "frac_gen_top20": 0.95,
+   "description": "It fires on the noun or word right after a counting or selection verb phrase in combinatorics/probability problems (e.g., \"choose k [toppings]\", \"select one [ball]\", \"find the [probability]\"), where the thing being chosen or counted is about to be",
+   "AP": 0.8404761904761905,
+   "AP_shuffled": 0.5
+  },
+  {
+   "layer": 14,
+   "neuron": 830,
+   "kind": "random",
+   "ex": [
+    "ebel lost the election to Republican William S. Taylor , but the Kentucky General Assembly disputed the election results . During the political[[ wr]]angling that",
+    " John Krasinski ) and Pam Halpert ( Jenna Fischer ) worry that they 've come on too strong . Only Dwight[[ Schr]]ute (",
+    " of Bikini Bottom . In this episode , SpongeBob reads a \" bad word \" off a dumpster behind the Krusty[[ Kr]]ab ,",
+    "4i)(1+2i) - 3i$.\\n\\nFinal Answer: The final answer is $\\boxed{[[1]]+i"
+   ],
+   "top_act": 1.2421875,
+   "frac_gen_top20": 0.8,
+   "description": "It fires on the token that begins or continues a multi-token word or name where the next piece is predictable (e.g. \"wr\" in wrangling, \"Schr\" in Schrute, \"Scient\" in Scientologists), and also on the digit \"1\" in math express",
+   "AP": 0.6875,
+   "AP_shuffled": 0.5
+  },
+  {
+   "layer": 17,
+   "neuron": 1179,
+   "kind": "edited",
+   "ex": [
+    " selected is a multiple of 3 is $\\frac{1}{1} = 1$.\\n\\nFinal Answer: [[1]]\\n\\nThe",
+    " that Alice wins is 1.\\nTherefore, the probability that Alice wins is 1.\\n\\nFinal Answer: [[1]]/2",
+    " Answer: 1\\n\\nThe greatest number of pencils he could have left over is $n$.\\n\\nFinal Answer: [[1]]",
+    " of food.\\nSo they should have ordered 198 portions of food.\\n\\nFinal Answer: 19[[8]]"
+   ],
+   "top_act": 2.0,
+   "frac_gen_top20": 1.0,
+   "description": "This neuron fires on the first token of the final numerical answer (often a small number like 0, 1 or 4) right after \"Final Answer:\" at the end of a math solution.",
+   "AP": 0.9861111111111112,
+   "AP_shuffled": 0.5
+  },
+  {
+   "layer": 17,
+   "neuron": 920,
+   "kind": "edited",
+   "ex": [
+    "3$.\\nWe want to evaluate $\\lceil (3.6)^2 \\rceil - \\lceil 3.6[[ \\]]rceil^",
+    " & -2 \\end{pmatrix} \\begin{pmatrix} 1 & 0 \\\\ 0 & -2[[ \\]]end{",
+    " ways to arrange the 2 boys in the 6 positions, which is given by the formula:\\n$$P([[2]], ",
+    " 6, \\ldots, 100$. The number of such integers is $\\frac{100-[[2]]+1"
+   ],
+   "top_act": 0.244140625,
+   "frac_gen_top20": 1.0,
+   "description": "It fires on the token just before a LaTeX backslash command begins, or on a small number or unit, so it is predicting that the next token is a backslash-led command such as \"\\right\", \"\\times\", \"\\textbf\" or \"\\end\", or a continuation of a numeral.",
+   "AP": 0.9321428571428572,
+   "AP_shuffled": 0.8125
+  },
+  {
+   "layer": 17,
+   "neuron": 1882,
+   "kind": "random",
+   "ex": [
+    "<bos> = Angel[[ of]] Death (",
+    "_8$.\\nWe want to seat them around a round table such that all 3 people, Pierre, Rosa,[[ and]] Thomas,",
+    "\\n Ward LeRoy Churchill ( born 1947 ) is an American author and political activist . He was a[[ professor]] of ethnic",
+    " the coast of North Carolina in May 1776 . Finding conditions unsuitable for their operations , General Henry Clinton and[[ Admiral]] Sir Peter"
+   ],
+   "top_act": 0.5859375,
+   "frac_gen_top20": 0.35,
+   "description": "It fires on a token that introduces an upcoming name or specific continuation, typically a title, role, or noun right before a proper name (e.g. \"Admiral,\" \"professor,\" \"agent,\" \"battleship\"), and on \"align\" in LaTeX \"\\begin{",
+   "AP": 0.8642857142857143,
+   "AP_shuffled": 0.7291666666666667
+  },
+  {
+   "layer": 17,
+   "neuron": 1607,
+   "kind": "random",
+   "ex": [
+    "2x} = 256^\\frac{1}{2}$$\\nSince $256 = 2[[^]]8$,",
+    "2(1) + 10 = 2 + 10 + 2 + 10 = [[2]]4$",
+    " - \\frac{1668}{3} = 834 - 549 = 2[[8]]5$.",
+    "ge 144$\\n$p \\ge \\frac{144}{54} = 2[[.]]7$"
+   ],
+   "top_act": 0.609375,
+   "frac_gen_top20": 0.9,
+   "description": "It fires on mid-expression tokens in math solutions, especially digits and symbols such as \"^\", \".\" or a number's second digit inside a calculation, and more weakly on function words or terms that continue a phrase.",
+   "AP": 0.86875,
+   "AP_shuffled": 0.5
+  }
+ ],
+ "AP_edited": 0.896390415140415,
+ "AP_edited_shuffled": 0.6463998074574998,
+ "frac_gen_top20_edited": 0.676923076923077,
+ "AP_random": 0.8082074175824177,
+ "AP_random_shuffled": 0.5489544109736418,
+ "frac_gen_top20_random": 0.5269230769230769,
+ "loopdir": {
+  "0": {
+   "auc_heldout": 0.5331399609375
+  },
+  "1": {
+   "auc_heldout": 0.54563034375
+  },
+  "2": {
+   "auc_heldout": 0.559620265625
+  },
+  "3": {
+   "auc_heldout": 0.5963707265625
+  },
+  "4": {
+   "auc_heldout": 0.8049627890625001
+  },
+  "5": {
+   "auc_heldout": 0.8611355859375
+  },
+  "6": {
+   "auc_heldout": 0.8379011875000001
+  },
+  "7": {
+   "auc_heldout": 0.8172219609375001
+  },
+  "8": {
+   "auc_heldout": 0.9033388671875
+  },
+  "9": {
+   "auc_heldout": 0.8873333515625
+  },
+  "10": {
+   "auc_heldout": 0.93513284375
+  },
+  "11": {
+   "auc_heldout": 0.8788552265625
+  },
+  "12": {
+   "auc_heldout": 0.8206720390625
+  },
+  "13": {
+   "auc_heldout": 0.8494402343749999
+  },
+  "14": {
+   "auc_heldout": 0.8580878671875001
+  },
+  "15": {
+   "auc_heldout": 0.8731478828124999
+  },
+  "16": {
+   "auc_heldout": 0.8320054453125
+  },
+  "17": {
+   "auc_heldout": 0.8678852499999999
+  }
+ },
+ "loopdir_best": [
+  10,
+  8
+ ],
+ "transfer_cols": {
+  "10": [
+   1015,
+   1112,
+   213,
+   1382,
+   1403,
+   1895,
+   194,
+   1567,
+   1999,
+   559,
+   340,
+   1100,
+   1822,
+   1145,
+   1239,
+   1136,
+   1137,
+   1589,
+   1712,
+   1295,
+   433,
+   1818,
+   1817,
+   522,
+   1226,
+   1299,
+   538,
+   1828,
+   1189,
+   367,
+   1117,
+   467,
+   818,
+   872,
+   935,
+   744,
+   636,
+   1528,
+   1836,
+   1896,
+   1506,
+   222,
+   404,
+   1791,
+   767,
+   1080,
+   1415,
+   62,
+   1251,
+   1265,
+   1993,
+   2004,
+   8,
+   1648,
+   442,
+   1849,
+   914,
+   1490,
+   816,
+   1502,
+   684,
+   2024,
+   798,
+   398
+  ],
+  "8": [
+   1499,
+   476,
+   100,
+   1414,
+   859,
+   504,
+   345,
+   316,
+   994,
+   1009,
+   65,
+   1886,
+   73,
+   789,
+   1113,
+   1518,
+   1759,
+   1684,
+   765,
+   1226,
+   253,
+   309,
+   829,
+   880,
+   93,
+   1811,
+   1317,
+   1832,
+   1200,
+   697,
+   733,
+   1498,
+   769,
+   1260,
+   130,
+   1141,
+   1014,
+   382,
+   1075,
+   1755,
+   1540,
+   1704,
+   294,
+   1158,
+   794,
+   165,
+   971,
+   1573,
+   1869,
+   1297,
+   1434,
+   1306,
+   1970,
+   2029,
+   297,
+   1583,
+   1880,
+   1864,
+   1831,
+   1059,
+   1278,
+   689,
+   1152,
+   136
+  ]
+ },
+ "failures": {
+  "n_all": 2000,
+  "n_wrong": 1854,
+  "cutoff": 134,
+  "loop_ending_finished": 409,
+  "n_finished_wrong": 1311,
+  "finished_wrong_labels": {
+   "arithmetic slip": 0.006666666666666667,
+   "wrong method or reasoning": 0.8,
+   "misread the question": 0.04,
+   "no final answer given": 0.006666666666666667,
+   "other": 0.14666666666666667
+  },
+  "n_labelled": 150
+ },
+ "tf": {
+  "base": {
+   "loop": 0.027990457789201173,
+   "other": 0.18472563633695244,
+   "correct_answers": 0.18579638235270976
+  },
+  "g10b": {
+   "loop": 0.028219442407862515,
+   "other": 0.1853022150695324,
+   "correct_answers": 0.18712268225848674
+  },
+  "g25b": {
+   "loop": 0.028020166138958302,
+   "other": 0.18501845840364695,
+   "correct_answers": 0.18585743688046932
+  },
+  "g50b": {
+   "loop": 0.02668393783878855,
+   "other": 0.18312836904078722,
+   "correct_answers": 0.18509741120040415
+  },
+  "g10b_zero": {
+   "loop": 0.028273998543591007,
+   "other": 0.18473298018798232,
+   "correct_answers": 0.1856741151958704
+  },
+  "h2half_L11": {
+   "loop": 3.279000447038561,
+   "other": 0.677306218445301,
+   "correct_answers": 0.308987595513463
+  },
+  "transfer_u": {
+   "loop": 4.807864892482757,
+   "other": 4.394124668836594,
+   "correct_answers": 3.4761294174194335
+  },
+  "transfer_rand": {
+   "loop": 0.029623441374860705,
+   "other": 0.19680087482556702,
+   "correct_answers": 0.19401558481156825
+  },
+  "transfer_u_a1": {
+   "loop": 0.5239438398275524,
+   "other": 0.5633081272244453,
+   "correct_answers": 0.4508221846073866
+  },
+  "transfer_u_a2": {
+   "loop": 2.5982575953006743,
+   "other": 1.824866135418415,
+   "correct_answers": 1.4169238358736038
+  },
+  "transfer_u_a3": {
+   "loop": 3.7864566668868065,
+   "other": 2.9414615780115128,
+   "correct_answers": 2.1352919375896455
+  }
+ }
+}

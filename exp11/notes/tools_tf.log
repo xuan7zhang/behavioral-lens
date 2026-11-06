@@ -1,0 +1,22 @@
+Loading weights:   0%|          | 0/236 [00:00<?, ?it/s]Loading weights: 100%|██████████| 236/236 [00:00<00:00, 10912.07it/s]
+TF base {'loop': '0.0280 (+0.0000)', 'other': '0.1847 (+0.0000)', 'correct_answers': '0.1858 (+0.0000)'}
+  set g10b 3 tensors changed
+TF g10b {'loop': '0.0282 (+0.0002)', 'other': '0.1853 (+0.0006)', 'correct_answers': '0.1871 (+0.0013)'}
+  set g25b 1 tensors changed
+TF g25b {'loop': '0.0280 (+0.0000)', 'other': '0.1850 (+0.0003)', 'correct_answers': '0.1859 (+0.0001)'}
+  set g50b 2 tensors changed
+TF g50b {'loop': '0.0267 (-0.0013)', 'other': '0.1831 (-0.0016)', 'correct_answers': '0.1851 (-0.0007)'}
+  set g10b_zero 3 tensors changed
+TF g10b_zero {'loop': '0.0283 (+0.0003)', 'other': '0.1847 (+0.0000)', 'correct_answers': '0.1857 (-0.0001)'}
+  set h2half_L11 1 tensors changed
+TF h2half_L11 {'loop': '3.2790 (+3.2510)', 'other': '0.6773 (+0.4926)', 'correct_answers': '0.3090 (+0.1232)'}
+  set transfer_u 2 tensors changed
+TF transfer_u {'loop': '4.8079 (+4.7799)', 'other': '4.3941 (+4.2094)', 'correct_answers': '3.4761 (+3.2903)'}
+  set transfer_rand 2 tensors changed
+TF transfer_rand {'loop': '0.0296 (+0.0016)', 'other': '0.1968 (+0.0121)', 'correct_answers': '0.1940 (+0.0082)'}
+  set transfer_u_a1 2 tensors changed
+TF transfer_u_a1 {'loop': '0.5239 (+0.4960)', 'other': '0.5633 (+0.3786)', 'correct_answers': '0.4508 (+0.2650)'}
+  set transfer_u_a2 2 tensors changed
+TF transfer_u_a2 {'loop': '2.5983 (+2.5703)', 'other': '1.8249 (+1.6401)', 'correct_answers': '1.4169 (+1.2311)'}
+  set transfer_u_a3 2 tensors changed
+TF transfer_u_a3 {'loop': '3.7865 (+3.7585)', 'other': '2.9415 (+2.7567)', 'correct_answers': '2.1353 (+1.9495)'}
