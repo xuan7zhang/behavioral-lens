@@ -96,6 +96,18 @@
   "mean_tokens": 13475.3475
  },
  {
+  "tag": "base_full32k",
+  "set": "math500",
+  "n": 2000,
+  "completion": 0.068,
+  "acc": 0.076,
+  "acc_lenient": 0.2325,
+  "acc_on_completed": 0.9926470588235294,
+  "loop_end": 0.904,
+  "no_box": 0.0,
+  "mean_tokens": 30829.263
+ },
+ {
   "tag": "base_nothink",
   "set": "gsm8k",
   "n": 400,
@@ -168,6 +180,102 @@
   "mean_tokens": 13708.33
  },
  {
+  "tag": "exp10_p10cdir_p50crecipe",
+  "set": "gsm8k",
+  "n": 400,
+  "completion": 0.5875,
+  "acc": 0.4925,
+  "acc_lenient": 0.57,
+  "acc_on_completed": 0.8340425531914893,
+  "loop_end": 0.2375,
+  "no_box": 0.005,
+  "mean_tokens": 12111.47
+ },
+ {
+  "tag": "exp10_p10cdir_p50crecipe",
+  "set": "math500",
+  "n": 400,
+  "completion": 0.26,
+  "acc": 0.2525,
+  "acc_lenient": 0.405,
+  "acc_on_completed": 0.9711538461538461,
+  "loop_end": 0.365,
+  "no_box": 0.0075,
+  "mean_tokens": 14466.41
+ },
+ {
+  "tag": "exp10_p50c_plus_h7off",
+  "set": "gsm8k",
+  "n": 400,
+  "completion": 0.6675,
+  "acc": 0.525,
+  "acc_lenient": 0.5975,
+  "acc_on_completed": 0.7827715355805244,
+  "loop_end": 0.0225,
+  "no_box": 0.0125,
+  "mean_tokens": 11299.215
+ },
+ {
+  "tag": "exp10_p50c_plus_h7off",
+  "set": "math500",
+  "n": 400,
+  "completion": 0.2825,
+  "acc": 0.27,
+  "acc_lenient": 0.4,
+  "acc_on_completed": 0.9557522123893806,
+  "loop_end": 0.0525,
+  "no_box": 0.0075,
+  "mean_tokens": 14131.8175
+ },
+ {
+  "tag": "p10c",
+  "set": "gsm8k",
+  "n": 400,
+  "completion": 0.245,
+  "acc": 0.2425,
+  "acc_lenient": 0.4125,
+  "acc_on_completed": 0.9285714285714286,
+  "loop_end": 0.645,
+  "no_box": 0.0075,
+  "mean_tokens": 14344.4725
+ },
+ {
+  "tag": "p10c",
+  "set": "math500",
+  "n": 400,
+  "completion": 0.11,
+  "acc": 0.1125,
+  "acc_lenient": 0.305,
+  "acc_on_completed": 1.0,
+  "loop_end": 0.6875,
+  "no_box": 0.0,
+  "mean_tokens": 15538.06
+ },
+ {
+  "tag": "p25c",
+  "set": "gsm8k",
+  "n": 400,
+  "completion": 0.2325,
+  "acc": 0.22,
+  "acc_lenient": 0.485,
+  "acc_on_completed": 0.9139784946236559,
+  "loop_end": 0.7175,
+  "no_box": 0.0,
+  "mean_tokens": 14544.195
+ },
+ {
+  "tag": "p25c",
+  "set": "math500",
+  "n": 400,
+  "completion": 0.13,
+  "acc": 0.145,
+  "acc_lenient": 0.3575,
+  "acc_on_completed": 1.0,
+  "loop_end": 0.705,
+  "no_box": 0.0,
+  "mean_tokens": 15311.14
+ },
+ {
   "tag": "p50c",
   "set": "gsm8k",
   "n": 400,
@@ -190,6 +298,18 @@
   "loop_end": 0.09,
   "no_box": 0.0075,
   "mean_tokens": 13759.315
+ },
+ {
+  "tag": "p50c_full32k",
+  "set": "math500",
+  "n": 2000,
+  "completion": 0.6965,
+  "acc": 0.5185,
+  "acc_lenient": 0.5755,
+  "acc_on_completed": 0.741564967695621,
+  "loop_end": 0.181,
+  "no_box": 0.0675,
+  "mean_tokens": 21737.031
  },
  {
   "tag": "rand_cols",
