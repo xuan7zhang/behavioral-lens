@@ -57,6 +57,20 @@ Rebuild check: g10b changes 2,560 values and g25b 640, as Astra reports.
 5. **Tools label null edits as confidently as real ones.** Auto-interpretation and SAE matches are at least as good for the edited
    neurons as for random ones; nothing in these readouts says "this edit does nothing".
 
+## 4. Exploratory: head-2 dose (after the results above; `build_h2_dose.py`)
+
+| layer-11 head-2 output × | 0.5 | 0.7 | 0.8 | 0.9 | 1.0 (base) | 1.1 (inside g50b) |
+|---|---|---|---|---|---|---|
+| verbatim-loop endings | 0.00% | 1.45% | 3.35% | 4.80% | 6.80% | 13.05% |
+| cut at 8,192 | 2.75% | 3.05% | 4.35% | 5.55% | 6.85% | 13.25% |
+| strict accuracy (`\boxed{}`) | 3.55 | **4.00** | 3.95 | 3.50 | 3.10 | 2.55 |
+| lenient accuracy | 4.65 | 6.30 | 6.75 | 7.05 | 7.30 | 7.15 |
+
+One head sets Gemma's loop rate smoothly in both directions. Under strict grading (Astra's earlier main score) ×0.7–0.8 is about
++0.9 points (≈ 2 s.e. at n = 2,000; weak); Astra's g50b moved this head the other way. Lenient grading falls monotonically,
+consistent with it crediting the last number of long looping texts. The g50b result is a mix: ×1.1 on head 2 (more loops) and
+eight halved MLP columns.
+
 ## Scoring
 
 - **G1** rebuild — **held** (base 7.30 vs 6.8; every Astra edit within 0.6 points of base, all < 2).

@@ -91,7 +91,11 @@ Caveat: u comes from p50c, which favours u-family edits.
   (completion 0.59, MATH-500 0.25); it recovers 80% of p50c's gain over base, against p10c's own 21%.
 - **P9** p50c + head 7 off: completion ≥ p50c + 5 — **failed**: loop endings fall 7% → 2.2%, but completion 0.76 → 0.67 and
   accuracy 0.57 → 0.525 (MATH-500 0.31 → 0.27). Teacher-forced said 2.9× p50c.
-- B1: pending.
+- **B1** single-latent edit (latents 4979 / 2258) reaches GSM8K ≥ 0.45 — **failed narrowly**: 0.403 (completion 0.45, MATH-500
+  0.20), i.e. 60% of p50c's gain over base (exp9's teacher-forced estimate was 58–88%). An unsupervised feature is a usable lever,
+  weaker than u.
+- Ranking check: loop-state projection on u_15 for the three builds — SAE latents 1.12, p10c's directions 0.69, p50c 0.10 —
+  orders their GSM8K accuracy exactly (0.40 < 0.49 < 0.57); Δ loop NLL does not (0.038, 0.056, 0.057 ≈ tie for the last two).
 
 ## 5. Generation results of the Exp10 builds (screening protocol, GSM8K / MATH-500)
 
@@ -100,3 +104,13 @@ Caveat: u comes from p50c, which favours u-family edits.
 | p50c | 0.76 / 0.34 | 0.570 / 0.312 | 0.75 / 0.90 | 0.07 / 0.09 |
 | p10c's directions, p50c's recipe | 0.59 / 0.26 | 0.492 / 0.253 | 0.83 / 0.97 | 0.24 / 0.37 |
 | p50c + head 7 off | 0.67 / 0.28 | 0.525 / 0.270 | 0.78 / 0.96 | 0.02 / 0.05 |
+| exp9 SAE latents 4979 / 2258, p50c's recipe | 0.45 / 0.21 | 0.403 / 0.203 | 0.89 / 0.98 | 0.37 / 0.50 |
+| p10c at α = 3 (TF: 4.8× p50c) | 0.09 / 0.08 | **0.072** / 0.092 | 0.81 / 0.97 | 0.85 / 0.81 |
+
+p10c at α = 3 is worse than the unedited model (GSM8K 0.072 vs 0.147). Every cheap proxy rated it better than p10c: loop NLL
+(4.8× p50c), deep escape (0.97), projection on u_15 (0.64 vs 0.78). Its loops are new ones: 98% of texts loop, the first loop comes
+earlier (median token 3,237 vs base 3,807), and the text degenerates into short-token lists (e.g. hundreds of "500" lines). Proxies
+measured on the unedited model's loop texts cannot see loops the edit creates. Only Δ other NLL (+0.16, 4.5× p50c's) warned.
+
+Loop episodes of the builds (GSM8K): p10c's directions with p50c's recipe — closes 73%, any loop 78%, 16% of tokens in loops;
+p50c + head 7 off — 77%, 48%, 3%; SAE latents — 56%, 88%, 28%; p10c α = 3 — 30%, 98%, 52%.

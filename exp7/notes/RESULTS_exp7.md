@@ -74,3 +74,21 @@ Score: 3 of 12 predictions hold (P9, P11, P12), 7 fail, 2 are killed by their ow
 3. *Tool reliability repeats exp8's pattern.* Attribution patching ranks heads but not MLPs and underestimates the top component
    >10x; auto-interp scores random neurons as high as selected ones; the public SAE sees output-format changes, not a "user
    suggestion" feature, but does pick up a consistent "continue copying" latent that the honest model switches off.
+
+## Seed robustness of activation patching (2026-11-06; `tk_patch.py` on the six extra-seed pairs, `lib.PAIRS` 101s1–102s2 added)
+
+Share of the guess-minus-correct logit gap closed by restoring the honest model's activations into the sycophant
+(held-out wrong-guess prompts), nine pairs (3 main + 6 extra seeds):
+
+| pair | largest component | best head | all MLPs | all attention | MLPs 0–11 | MLPs 12–17 | top MLP layers |
+|---|---|---|---|---|---|---|---|
+| 1 | attn 10, 0.55 | 11.2, 0.36 | 0.99 | 0.95 | 0.91 | 0.34 | 3, 2, 4, 11 |
+| 2 | attn 10, 0.46 | 11.2, 0.29 | 0.96 | 0.97 | 0.89 | 0.41 | 3, 10, 9, 6 |
+| 3 | attn 10, 0.50 | 8.3, 0.26 | 0.98 | 0.98 | 0.94 | 0.35 | 10, 9, 11, 6 |
+| 1 seed 1 / 2 | attn 10, 0.46 / 0.42 | 11.2 0.34 / 10.0 0.20 | 0.96 / 0.99 | 0.97 / 0.98 | 0.92 / 0.96 | 0.32 / 0.29 | 3, 6, 10 / 10, 9, 3 |
+| 2 seed 1 / 2 | attn 10, 0.46 / 0.58 | 11.2 0.36 / 11.2 0.40 | 0.96 / 0.98 | 0.94 / 0.95 | 0.88 / 0.90 | 0.34 / 0.33 | 11, 8, 7 / 11, 10, 6 |
+| 3 seed 1 / 2 | attn 10, 0.56 / 0.45 | 11.2 0.34 / 10.0 0.19 | 0.98 / 0.93 | 0.97 / 0.95 | 0.92 / 0.86 | 0.32 / 0.19 | 6, 3, 10 / 10, 5, 3 |
+
+Holds in all nine: layer-10 attention output is the largest single component (0.42–0.58), and the difference is made below layer
+12 (MLPs 0–11 close 0.86–0.96, MLPs 12–17 only 0.19–0.41). Pair- and seed-specific: which MLP layers matter most. The best single
+head is 11.2 in 6 of 9 pairs, not Astra's 10.2 (whose weights close 0% in every pair).

@@ -22,7 +22,7 @@ completion 6 / 41 / 64 / 90%. No weight change is needed for most of the gain; t
 3. **Loops depend on one copying attention head in both models.** Qwen: p25c (layer-15 head 7 off) and p50c's downstream attention path.
    Gemma: layer-11 head 2 ×1.1 (inside Astra's g50b) doubles verbatim-loop endings, ×0.5 removes all of them.
 4. **Fewer loops is not more finishing.** p50c + head 7 off: loop endings 7% → 2%, but completion 0.76 → 0.67 and accuracy 0.57 → 0.53.
-   Gemma head 2 halved: no verbatim loops, accuracy 7.3 → 4.7. Steering at c = 2: 90% finish, 3% correct.
+   Gemma head 2 halved: no verbatim loops, lenient accuracy 7.3 → 4.7 (strict 3.1 → 3.6); the dose ×0.5…×1.1 sets loop endings smoothly from 0% to 13%, and strict accuracy peaks at ×0.7 (4.0, weak), the opposite direction to Astra's g50b (×1.1). Steering at c = 2: 90% finish, 3% correct.
 
 ## What the tools get wrong
 
@@ -31,18 +31,23 @@ completion 6 / 41 / 64 / 90%. No weight change is needed for most of the gain; t
    endings. Gemma loop-direction edit at α = 1: looks like a loop fix teacher-forced (+0.50), raises loop endings 7% → 41%.
    Reason (loop-episode analysis): p10c breaks loops (mean episode 3,108 → 886 tokens) but re-enters twice as often; p50c keeps 45% of
    texts out of loops. Teacher-forced loss on loop texts, and short rollouts from inside a loop, measure breaking, not entering.
-2. **The best cheap predictor is where the state goes**: the loop-state projection on u (Spearman 0.95 with GSM8K completion over 18
-   variants, 0.97 without the null controls) beats loop NLL (0.88 / 0.73) and rollout escape (0.89 / 0.81). Caveat: u comes from p50c.
-3. **Readouts cannot tell a null edit from a real one.** Astra's three Gemma edits change accuracy by < 0.6 points, but their neurons get
+2. **The best cheap predictor is where the state goes, but no proxy is safe.** The loop-state projection on u (Spearman 0.95 with GSM8K
+   completion over 18 variants, 0.97 without the null controls) beats loop NLL (0.88 / 0.73) and rollout escape (0.89 / 0.81), and it
+   orders the three new builds correctly (SAE latents 0.40 < p10c's directions 0.49 < p50c 0.57). But p10c at α = 3, rated better than
+   p10c by every proxy (loop NLL 4.8× p50c), scores 0.072 — below the unedited 0.147: it creates new, earlier loops (lists of "500")
+   that proxies measured on the old loop texts cannot see. Only the rise in NLL elsewhere (+0.16) warned. Caveat: u comes from p50c.
+3. **An unsupervised SAE feature is a usable lever in generation**: p50c's recipe along exp9's latents 4979 / 2258 gives GSM8K 0.40
+   (60% of p50c's gain; exp9's teacher-forced estimate 58–88%).
+4. **Readouts cannot tell a null edit from a real one.** Astra's three Gemma edits change accuracy by < 0.6 points, but their neurons get
    auto-interpretation AP 0.90 (random neurons 0.81) and Gemma Scope matches at least as good as random ones; labels such as "first token of
    the final numerical answer" fit Astra's story for an edit that does nothing.
-4. **A readable direction is not a usable lever.** Gemma has a clear loop direction (AUC 0.94), but p50c's rule along it degrades the model at
+5. **A readable direction is not a usable lever.** Gemma has a clear loop direction (AUC 0.94), but p50c's rule along it degrades the model at
    every strength (α = 1: 64% cut-offs; α = 6: degenerate text), while a random direction on the same columns is harmless.
 
 ## Pre-registered scores
 
 - Exp10: P1 failed, P2 held, P3 held, P4 failed, P5 held (teacher-forced), P6 held, P7 held, P8 failed narrowly (0.49 vs ≥ 0.52),
-  P9 failed, A1 failed, A2 failed; B1 pending.
+  P9 failed, A1 failed, A2 failed, B1 failed narrowly (0.40 vs ≥ 0.45).
 - Exp11: 2 held, 2 in part, 4 failed of 8.
 
 ## Not done / caveats
