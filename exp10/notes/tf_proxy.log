@@ -1,0 +1,56 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 9205.42it/s]
+Traceback (most recent call last):
+  File "/data/behavioral-lens-fast/exp10/scripts/tf_proxy.py", line 80, in <module>
+    ed = [escape(ids, len(ids), 31 * i) for i, (_, ids, _, _, _) in enumerate(T)]   # deep in the loop: the 4,096-token end
+  File "/data/behavioral-lens-fast/exp10/scripts/tf_proxy.py", line 80, in <listcomp>
+    ed = [escape(ids, len(ids), 31 * i) for i, (_, ids, _, _, _) in enumerate(T)]   # deep in the loop: the 4,096-token end
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/data/behavioral-lens-fast/exp10/scripts/tf_proxy.py", line 64, in escape
+    out = model.generate(pre, attention_mask=torch.ones_like(pre), do_sample=True, temperature=0.6, top_p=0.95, top_k=20, max_new_tokens=256,
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/transformers/generation/utils.py", line 2582, in generate
+    result = decoding_method(
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/transformers/generation/utils.py", line 2782, in _sample
+    outputs = self._prefill(
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/transformers/generation/utils.py", line 3828, in _prefill
+    return self(**model_inputs, return_dict=True)
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/transformers/utils/generic.py", line 907, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 1665, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/transformers/utils/generic.py", line 1036, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/transformers/utils/output_capturing.py", line 252, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 1203, in forward
+    hidden_states = decoder_layer(
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/transformers/modeling_layers.py", line 93, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1885, in _call_impl
+    return inner()
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1833, in inner
+    result = forward_call(*args, **kwargs)
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 784, in forward
+    hidden_states = self.linear_attn(
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 535, in forward
+    core_attn_out, last_recurrent_state = self.chunk_gated_delta_rule(
+  File "/home/ec2-user/miniconda3/envs/vllm/lib/python3.10/site-packages/transformers/models/qwen3_5/modeling_qwen3_5.py", line 323, in torch_chunk_gated_delta_rule
+    core_attn_out = core_attn_out.transpose(1, 2).contiguous().to(initial_dtype)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 64.00 MiB. GPU 0 has a total capacity of 94.97 GiB of which 34.88 MiB is free. Process 1130334 has 83.72 GiB memory in use. Including non-PyTorch memory, this process has 3.78 GiB memory in use. Process 1566496 has 7.41 GiB memory in use. Of the allocated memory 3.05 GiB is allocated by PyTorch, and 65.08 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

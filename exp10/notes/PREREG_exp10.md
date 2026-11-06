@@ -40,3 +40,10 @@ rollouts of 256 tokens each (Astra's sampling); "escape" = less than half of the
 Target: GSM8K completion and accuracy in screening (400 generations each).
 - **A1** The escape rate has a higher Spearman correlation with GSM8K completion than Δ loop NLL does.
 - **A2** Δ loop NLL's Spearman with GSM8K accuracy is below 0.5 once p10c-family variants are included.
+
+## Addendum B (2026-11-06 ~08:35 UTC): does exp9's single-latent edit hold up in generation?
+
+Exp9 found that p50c's recipe along the top autoencoder latent (16k, seed 0: latent 4979 after layer 15, 2258 after layer 19)
+gives 58–88% of u's teacher-forced loop effect. Teacher-forced effects just misranked p10c vs p50c, so: same recipe (Astra's
+64 columns, α = 6, decoder directions sign-aligned with u), screening protocol.
+- **B1** GSM8K accuracy at least 0.45 (base 0.15, p50c 0.57), i.e. at least 70% of p50c's gain.
