@@ -1,0 +1,47 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 11851.66it/s]
+eval texts: loop 100 normal 25 wiki 60
+states done
+L15 w1024 s0: fvu loop 0.229 norm 0.250 | max|cos| 0.507 (n>0.5: 1) OMP k(0.9) None | delta r.u 1.49 = sum contrib 1.44 + err | top1 0.22 top5 0.38 n50 13 n80 65 | top1 cos 0.51
+L15 w4096 s0: fvu loop 0.178 norm 0.182 | max|cos| 0.606 (n>0.5: 1) OMP k(0.9) 43 | delta r.u 1.49 = sum contrib 1.45 + err | top1 0.31 top5 0.41 n50 19 n80 198 | top1 cos 0.61
+L15 w16384 s0: fvu loop 0.169 norm 0.163 | max|cos| 0.593 (n>0.5: 2) OMP k(0.9) 38 | delta r.u 1.49 = sum contrib 1.45 + err | top1 0.22 top5 0.38 n50 26 n80 338 | top1 cos 0.54
+L15 w16384 s1: fvu loop 0.170 norm 0.163 | max|cos| 0.553 (n>0.5: 1) OMP k(0.9) 42 | delta r.u 1.49 = sum contrib 1.45 + err | top1 0.19 top5 0.40 n50 23 n80 349 | top1 cos 0.55
+L15 w65536 s0: fvu loop 0.190 norm 0.182 | max|cos| 0.564 (n>0.5: 2) OMP k(0.9) 37 | delta r.u 1.49 = sum contrib 1.45 + err | top1 0.24 top5 0.41 n50 13 n80 218 | top1 cos 0.56
+L15 cross-width (top-1 latent of each SAE vs 16k s0 top-8): {'w1024_s0': [0.512, 0.811, -0.126, 0.304], 'w4096_s0': [0.735, 0.759, -0.165, 0.478], 'w16384_s0': [1.0, 0.492, -0.103, 0.249], 'w16384_s1': [0.772, 0.71, -0.16, 0.435], 'w65536_s0': [0.858, 0.541, -0.146, 0.118]}
+L19 w1024 s0: fvu loop 0.210 norm 0.250 | max|cos| 0.600 (n>0.5: 1) OMP k(0.9) None | delta r.u 2.51 = sum contrib 2.46 + err | top1 0.36 top5 0.68 n50 2 n80 21 | top1 cos 0.60
+L19 w4096 s0: fvu loop 0.158 norm 0.177 | max|cos| 0.717 (n>0.5: 2) OMP k(0.9) 42 | delta r.u 2.51 = sum contrib 2.46 + err | top1 0.36 top5 0.59 n50 3 n80 99 | top1 cos 0.72
+L19 w16384 s0: fvu loop 0.146 norm 0.155 | max|cos| 0.720 (n>0.5: 2) OMP k(0.9) 36 | delta r.u 2.51 = sum contrib 2.46 + err | top1 0.40 top5 0.58 n50 3 n80 143 | top1 cos 0.72
+L19 w16384 s1: fvu loop 0.146 norm 0.154 | max|cos| 0.694 (n>0.5: 1) OMP k(0.9) 37 | delta r.u 2.51 = sum contrib 2.45 + err | top1 0.47 top5 0.57 n50 2 n80 166 | top1 cos 0.69
+L19 w65536 s0: fvu loop 0.163 norm 0.174 | max|cos| 0.683 (n>0.5: 1) OMP k(0.9) 38 | delta r.u 2.51 = sum contrib 2.47 + err | top1 0.38 top5 0.54 n50 4 n80 131 | top1 cos 0.68
+L19 cross-width (top-1 latent of each SAE vs 16k s0 top-8): {'w1024_s0': [0.828, 0.219, -0.185, 0.612], 'w4096_s0': [0.971, 0.256, -0.615, 0.439], 'w16384_s0': [1.0, 0.281, -0.585, 0.436], 'w16384_s1': [0.851, 0.592, -0.465, 0.693], 'w65536_s0': [0.884, 0.442, -0.423, 0.674]}
+auto-interp L15 w1024 s0: 4 latents
+auto-interp L15 w4096 s0: 4 latents
+auto-interp L15 w16384 s0: 22 latents
+auto-interp L15 w16384 s1: 4 latents
+auto-interp L15 w65536 s0: 4 latents
+auto-interp L19 w1024 s0: 4 latents
+auto-interp L19 w4096 s0: 4 latents
+auto-interp L19 w16384 s0: 22 latents
+auto-interp L19 w16384 s1: 4 latents
+auto-interp L19 w65536 s0: 4 latents
+L15 16k loop_side: AP 0.94 shuffled 0.66; categories ['formatting/whitespace', 'maths content', 'verbatim repetition/copying']
+L15 16k norm_side: AP 0.86 shuffled 0.68; categories ['doubt/self-check', 'maths content', 'restating or re-reading the problem']
+L15 16k random: AP 0.84 shuffled 0.61; categories ['doubt/self-check', 'maths content', 'other', 'restating or re-reading the problem', 'verbatim repetition/copying']
+L19 16k loop_side: AP 0.94 shuffled 0.66; categories ['doubt/self-check', 'maths content', 'other', 'restating or re-reading the problem', 'verbatim repetition/copying']
+L19 16k norm_side: AP 0.99 shuffled 0.60; categories ['formatting/whitespace', 'restating or re-reading the problem']
+L19 16k random: AP 0.88 shuffled 0.63; categories ['doubt/self-check', 'formatting/whitespace', 'maths content', 'other']
+edit top1_w1024_s0            d_loop +0.0395 d_prod +0.0158 frac_of_u +0.71 cos_u {15: 0.5069515705108643, 19: 0.6001177430152893}
+edit top1_w4096_s0            d_loop +0.0446 d_prod +0.0285 frac_of_u +0.80 cos_u {15: 0.60628741979599, 19: 0.7171496152877808}
+edit top1_w16384_s0           d_loop +0.0362 d_prod +0.0288 frac_of_u +0.65 cos_u {15: 0.5357052087783813, 19: 0.7195903658866882}
+edit top5_weighted_w16k       d_loop +0.0445 d_prod +0.0349 frac_of_u +0.80 cos_u {15: 0.6463903784751892, 19: 0.7471493482589722}
+edit top10_weighted_w16k      d_loop +0.0476 d_prod +0.0362 frac_of_u +0.86 cos_u {15: 0.6614986062049866, 19: 0.7552458047866821}
+edit omp10_w16k               d_loop +0.0585 d_prod +0.0337 frac_of_u +1.05 cos_u {15: 0.7945283055305481, 19: 0.8311091065406799}
+edit random_latent0           d_loop -0.0003 d_prod -0.0001 frac_of_u -0.00 cos_u {15: -0.07964546978473663, 19: 0.044775303453207016}
+edit random_latent1           d_loop +0.0004 d_prod +0.0001 frac_of_u +0.01 cos_u {15: -0.05818773806095123, 19: 0.03621945157647133}
+edit random_latent2           d_loop +0.0001 d_prod +0.0003 frac_of_u +0.00 cos_u {15: 0.08907679468393326, 19: 0.0016129538416862488}
+edit random_latent3           d_loop +0.0003 d_prod +0.0005 frac_of_u +0.01 cos_u {15: -0.0756416842341423, 19: -0.0180633794516325}
+edit random_latent4           d_loop +0.0004 d_prod +0.0003 frac_of_u +0.01 cos_u {15: -0.029508139938116074, 19: 0.003313235240057111}
+edit top1_w16384_s1           d_loop +0.0321 d_prod +0.0253 frac_of_u +0.58 cos_u {15: 0.5533113479614258, 19: 0.6944055557250977}
+edit top1_w65536_s0           d_loop +0.0493 d_prod +0.0301 frac_of_u +0.88 cos_u {15: 0.5635280609130859, 19: 0.6825438737869263}
+edit u                        d_loop +0.0557 d_prod +0.0336 frac_of_u +1.00 cos_u {15: 1.0, 19: 1.0000001192092896}
+done

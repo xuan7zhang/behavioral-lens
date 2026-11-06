@@ -1,0 +1,13 @@
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/320 [00:00<?, ?it/s]Loading weights: 100%|██████████| 320/320 [00:00<00:00, 10814.85it/s]
+windows 9814; generation tokens 7.3M, wikitext 10.2M
+step 500/4150 tokens 2.0M 140s | w1024s0 fvu 0.263 dead 0.000 | w4096s0 fvu 0.250 dead 0.000 | w16384s0 fvu 0.288 dead 0.000 | w16384s1 fvu 0.287 dead 0.000 | w65536s0 fvu 0.382 dead 0.000
+step 1000/4150 tokens 4.1M 280s | w1024s0 fvu 0.232 dead 0.000 | w4096s0 fvu 0.201 dead 0.000 | w16384s0 fvu 0.220 dead 0.000 | w16384s1 fvu 0.219 dead 0.000 | w65536s0 fvu 0.281 dead 0.000
+step 1500/4150 tokens 6.1M 419s | w1024s0 fvu 0.222 dead 0.000 | w4096s0 fvu 0.181 dead 0.000 | w16384s0 fvu 0.190 dead 0.000 | w16384s1 fvu 0.190 dead 0.000 | w65536s0 fvu 0.234 dead 0.000
+step 2000/4150 tokens 8.2M 517s | w1024s0 fvu 0.218 dead 0.000 | w4096s0 fvu 0.171 dead 0.000 | w16384s0 fvu 0.173 dead 0.000 | w16384s1 fvu 0.173 dead 0.000 | w65536s0 fvu 0.208 dead 0.000
+step 2500/4150 tokens 10.2M 657s | w1024s0 fvu 0.214 dead 0.000 | w4096s0 fvu 0.164 dead 0.000 | w16384s0 fvu 0.162 dead 0.000 | w16384s1 fvu 0.162 dead 0.000 | w65536s0 fvu 0.190 dead 0.000
+step 3000/4150 tokens 12.3M 796s | w1024s0 fvu 0.212 dead 0.000 | w4096s0 fvu 0.160 dead 0.000 | w16384s0 fvu 0.153 dead 0.000 | w16384s1 fvu 0.153 dead 0.000 | w65536s0 fvu 0.177 dead 0.000
+step 3500/4150 tokens 14.3M 893s | w1024s0 fvu 0.212 dead 0.000 | w4096s0 fvu 0.158 dead 0.000 | w16384s0 fvu 0.147 dead 0.000 | w16384s1 fvu 0.147 dead 0.000 | w65536s0 fvu 0.167 dead 0.000
+step 4000/4150 tokens 16.4M 1029s | w1024s0 fvu 0.208 dead 0.000 | w4096s0 fvu 0.154 dead 0.000 | w16384s0 fvu 0.143 dead 0.000 | w16384s1 fvu 0.143 dead 0.000 | w65536s0 fvu 0.162 dead 0.000
+step 4150/4150 tokens 17.0M 1063s | w1024s0 fvu 0.208 dead 0.000 | w4096s0 fvu 0.154 dead 0.000 | w16384s0 fvu 0.143 dead 0.000 | w16384s1 fvu 0.143 dead 0.000 | w65536s0 fvu 0.162 dead 0.000
+saved
